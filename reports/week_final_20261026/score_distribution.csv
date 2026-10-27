@@ -1,0 +1,13 @@
+﻿G,V,score_mean,score_p05,score_median,score_p95,exact_score_0p5,score_between0p4_and0p6,interpretation
+G0,V0,0.6176571677763228,5.963682383480773e-06,0.9996646642684937,1.0,4,12,Uncalibrated conditional A/B proxy; exact0.5 accepted under fixed rule
+G0,Vrand,0.5714329995688388,0.4687906503677368,0.562176525592804,0.7310585379600525,223,843,Uncalibrated conditional A/B proxy; exact0.5 accepted under fixed rule
+G0,Vtarget,0.5216471628600539,0.5,0.531209409236908,0.531209409236908,413,1196,Uncalibrated conditional A/B proxy; exact0.5 accepted under fixed rule
+G1,V0,0.6120932499931678,6.144174221844878e-06,0.9996646642684937,1.0,3,14,Uncalibrated conditional A/B proxy; exact0.5 accepted under fixed rule
+G1,Vrand,0.5743405337267895,0.4687906503677368,0.562176525592804,0.7310585379600525,239,819,Uncalibrated conditional A/B proxy; exact0.5 accepted under fixed rule
+G1,Vtarget,0.5227415247705071,0.5,0.531209409236908,0.562176525592804,379,1196,Uncalibrated conditional A/B proxy; exact0.5 accepted under fixed rule
+G2,V0,0.6230543973023532,4.7850949158601e-06,0.9996646642684937,1.0,3,14,Uncalibrated conditional A/B proxy; exact0.5 accepted under fixed rule
+G2,Vrand,0.5727648007431158,0.4687906503677368,0.562176525592804,0.7310585379600525,245,833,Uncalibrated conditional A/B proxy; exact0.5 accepted under fixed rule
+G2,Vtarget,0.5224255822274996,0.5,0.531209409236908,0.562176525592804,399,1196,Uncalibrated conditional A/B proxy; exact0.5 accepted under fixed rule
+G3,V0,0.6275322087135056,5.422219146566931e-06,0.9996843636035919,1.0,4,16,Uncalibrated conditional A/B proxy; exact0.5 accepted under fixed rule
+G3,Vrand,0.5736632362057932,0.4687906503677368,0.562176525592804,0.7310585379600525,244,836,Uncalibrated conditional A/B proxy; exact0.5 accepted under fixed rule
+G3,Vtarget,0.5230769209538814,0.5,0.531209409236908,0.562176525592804,383,1196,Uncalibrated conditional A/B proxy; exact0.5 accepted under fixed rule

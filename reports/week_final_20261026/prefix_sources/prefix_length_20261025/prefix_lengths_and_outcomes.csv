@@ -1,0 +1,355 @@
+﻿experiment,split,variant,prefix,category,responses,flips,flip_rate,mean_log_odds_delta,words,characters,raw_characters,prefix_tokens,tokens_without_edge_whitespace,prompt_token_delta,prompt_token_delta_min,prompt_token_delta_max
+phrases,A,original,,control,64,0,0.0,0.0,0,0,0,0,0,0.0,0,0
+phrases,A,blank_control,"
+",control,64,0,0.0,-0.3144532822770998,0,0,1,1,0,0.0,0,0
+phrases,A,neutral_control,"Response text:
+",control,64,2,0.03125,0.05273436941206455,2,14,15,3,3,3.0,3,3
+phrases,A,we_need_to,"we need to
+",we_need_reference,64,8,0.125,1.242187466006726,3,10,11,4,3,4.0,4,4
+phrases,A,we_have_to,"we have to
+",necessity,64,10,0.15625,0.9785156404832378,3,10,11,4,3,4.0,4,4
+phrases,A,we_must,"we must
+",necessity,64,12,0.1875,1.8027342807326932,2,7,8,3,2,3.0,3,3
+phrases,A,we_are_required_to,"we are required to
+",necessity,64,5,0.078125,0.109375020256266,4,18,19,5,4,5.0,5,5
+phrases,A,it_is_necessary_to,"it is necessary to
+",necessity,64,8,0.125,1.0117187724681571,4,18,19,5,4,5.0,5,5
+phrases,A,it_is_essential_to,"it is essential to
+",necessity,64,15,0.234375,1.8417967519490048,4,18,19,5,4,5.0,5,5
+phrases,A,the_task_requires_us_to,"the task requires us to
+",necessity,64,3,0.046875,-0.042968740803189576,5,23,24,6,5,6.0,6,6
+phrases,A,this_requires_us_to,"this requires us to
+",necessity,64,7,0.109375,0.7753905823919922,4,19,20,5,4,5.0,5,5
+phrases,A,we_should,"we should
+",modality_changed,64,9,0.140625,1.078125024214387,2,9,10,3,2,3.0,3,3
+phrases,A,we_ought_to,"we ought to
+",modality_changed,64,11,0.171875,1.4082031077705324,3,11,12,4,3,4.0,4,4
+phrases,A,we_are_supposed_to,"we are supposed to
+",modality_changed,64,4,0.0625,0.17382804863154888,4,18,19,5,4,5.0,5,5
+phrases,A,we_are_expected_to,"we are expected to
+",modality_changed,64,5,0.078125,0.2207031233701855,4,18,19,5,4,5.0,5,5
+phrases,A,we_will,"we will
+",modality_changed,64,10,0.15625,1.300781223573722,2,7,8,3,2,3.0,3,3
+phrases,A,we_can,"we can
+",modality_changed,64,11,0.171875,1.7695312391151674,2,6,7,3,2,3.0,3,3
+phrases,A,let_us,"let us
+",modality_changed,64,6,0.09375,0.47851556830573827,2,6,7,3,2,3.0,3,3
+phrases,A,lets,"let's
+",modality_changed,64,8,0.125,0.49609373352723196,1,5,6,3,2,3.0,3,3
+phrases,A,require,"require
+",syntax_stress,64,7,0.109375,0.6796873943239916,1,7,8,2,1,2.0,2,2
+phrases,A,required,"required
+",syntax_stress,64,7,0.109375,0.6054688396397978,1,8,9,2,1,2.0,2,2
+phrases,A,require_to,"require to
+",syntax_stress,64,12,0.1875,1.5253906997968443,2,10,11,3,2,3.0,3,3
+phrases,A,we_require_to,"we require to
+",syntax_stress,64,8,0.125,0.6464843223802745,3,13,14,4,3,4.0,4,4
+phrases,A,this_requires,"this requires
+",syntax_stress,64,3,0.046875,0.12304691481404006,2,13,14,3,2,3.0,3,3
+phrases,A,we_need,"we need
+",syntax_stress,64,8,0.125,0.8007812064606696,2,7,8,3,2,3.0,3,3
+phrases,A,need_to,"need to
+",syntax_stress,64,10,0.15625,1.2050781498546712,2,7,8,3,2,3.0,3,3
+phrases,A,uppercase,"WE NEED TO
+",surface_format,64,3,0.046875,0.1953124389401637,3,10,11,4,3,4.0,4,4
+phrases,A,title_colon,"We need to:
+",surface_format,64,3,0.046875,0.13085932680405676,3,11,12,4,4,4.0,4,4
+phrases,A,period,"we need to.
+",surface_format,64,14,0.21875,1.9355468810535967,3,11,12,4,4,4.0,4,4
+phrases,A,extra_space,"we need to 
+",surface_format,64,9,0.140625,1.324218746041879,3,10,12,4,3,4.0,4,4
+phrases,A,double_newline,"we need to
+
+",surface_format,64,12,0.1875,2.033203116734512,3,10,12,4,3,4.0,4,4
+phrases,A,to_solve_for,"To solve for
+",solve_for_family,64,6,0.09375,0.46289059321861714,3,12,13,4,3,4.0,4,4
+phrases,A,to_find,"To find
+",solve_for_family,64,8,0.125,0.6445311661227606,2,7,8,3,2,3.0,3,3
+phrases,A,to_determine,"To determine
+",solve_for_family,64,1,0.015625,0.31445309647824615,2,12,13,3,2,3.0,3,3
+phrases,A,to_calculate,"To calculate
+",solve_for_family,64,5,0.078125,0.27148431970272213,2,12,13,3,2,3.0,3,3
+phrases,A,in_order_to_solve_for,"In order to solve for
+",solve_for_family,64,9,0.140625,0.3710936486022547,5,21,22,6,5,6.0,6,6
+phrases,A,to_work_out,"To work out
+",solve_for_family,64,2,0.03125,-0.011718776426278055,3,11,12,4,3,4.0,4,4
+phrases,A,to_obtain,"To obtain
+",solve_for_family,64,6,0.09375,0.37890624394640326,2,9,10,3,2,3.0,3,3
+phrases,A,solving_for,"Solving for
+",solve_for_family,64,1,0.015625,-0.5546875725267455,2,11,12,4,3,4.0,4,4
+phrases,A,thought_process,"Thought process:
+",reasoning_header,64,2,0.03125,-0.07226568553596735,2,16,17,3,3,3.0,3,3
+phrases,A,reasoning,"Reasoning:
+",reasoning_header,64,2,0.03125,-0.056640717783011496,1,10,11,3,3,3.0,3,3
+phrases,A,analysis,"Analysis:
+",reasoning_header,64,1,0.015625,-0.6972656843718141,1,9,10,2,2,2.0,2,2
+phrases,A,solution,"Solution:
+",reasoning_header,64,0,0.0,-0.3281250601867214,1,9,10,2,2,2.0,2,2
+phrases,A,original_step_by_step,"Let's solve this problem step by step.
+",reasoning_header,64,0,0.0,-0.7265625658910722,7,38,39,9,9,9.0,9,9
+phrases,A,reason_step_by_step,"Let's reason step by step.
+",reasoning_header,64,0,0.0,-0.4082031350117177,5,26,27,7,7,7.0,7,7
+phrases,A,we_solve_step_by_step,"We solve this problem step by step.
+",reasoning_header,64,1,0.015625,-0.4999999920837581,7,35,36,8,8,8.0,8,8
+phrases,C,original,,control,48,0,0.0,0.0,0,0,0,0,0,0.0,0,0
+phrases,C,blank_control,"
+",control,48,0,0.0,-0.3151041592160861,0,0,1,1,0,0.0,0,0
+phrases,C,neutral_control,"Response text:
+",control,48,0,0.0,-0.23437501645336548,2,14,15,3,3,3.0,3,3
+phrases,C,we_need_to,"we need to
+",we_need_reference,48,9,0.1875,1.2161459208776553,3,10,11,4,3,4.0,4,4
+phrases,C,we_have_to,"we have to
+",necessity,48,5,0.10416666666666667,0.8593750409781933,3,10,11,4,3,4.0,4,4
+phrases,C,we_must,"we must
+",necessity,48,11,0.22916666666666666,1.8125000490496557,2,7,8,3,2,3.0,3,3
+phrases,C,we_are_required_to,"we are required to
+",necessity,48,3,0.0625,0.06770837927858035,4,18,19,5,4,5.0,5,5
+phrases,C,it_is_necessary_to,"it is necessary to
+",necessity,48,7,0.14583333333333334,0.8229167312383652,4,18,19,5,4,5.0,5,5
+phrases,C,it_is_essential_to,"it is essential to
+",necessity,48,11,0.22916666666666666,1.7057292101283867,4,18,19,5,4,5.0,5,5
+phrases,C,the_task_requires_us_to,"the task requires us to
+",necessity,48,4,0.08333333333333333,-0.08854159526526928,5,23,24,6,5,6.0,6,6
+phrases,C,this_requires_us_to,"this requires us to
+",necessity,48,6,0.125,0.6666667299966017,4,19,20,5,4,5.0,5,5
+phrases,C,we_should,"we should
+",modality_changed,48,9,0.1875,1.2994792244086664,2,9,10,3,2,3.0,3,3
+phrases,C,we_ought_to,"we ought to
+",modality_changed,48,10,0.20833333333333334,1.2395833948006232,3,11,12,4,3,4.0,4,4
+phrases,C,we_are_supposed_to,"we are supposed to
+",modality_changed,48,3,0.0625,0.1848958016683658,4,18,19,5,4,5.0,5,5
+phrases,C,we_are_expected_to,"we are expected to
+",modality_changed,48,5,0.10416666666666667,0.19531252731879553,4,18,19,5,4,5.0,5,5
+phrases,C,we_will,"we will
+",modality_changed,48,10,0.20833333333333334,1.4088542113701503,2,7,8,3,2,3.0,3,3
+phrases,C,we_can,"we can
+",modality_changed,48,13,0.2708333333333333,1.8203125667447846,2,6,7,3,2,3.0,3,3
+phrases,C,let_us,"let us
+",modality_changed,48,6,0.125,0.638020932674408,2,6,7,3,2,3.0,3,3
+phrases,C,lets,"let's
+",modality_changed,48,6,0.125,0.6640625521540642,1,5,6,3,2,3.0,3,3
+phrases,C,require,"require
+",syntax_stress,48,8,0.16666666666666666,0.6276042343427738,1,7,8,2,1,2.0,2,2
+phrases,C,required,"required
+",syntax_stress,48,7,0.14583333333333334,0.7161458370586237,1,8,9,2,1,2.0,2,2
+phrases,C,require_to,"require to
+",syntax_stress,48,9,0.1875,1.2317708972841501,2,10,11,3,2,3.0,3,3
+phrases,C,we_require_to,"we require to
+",syntax_stress,48,6,0.125,0.544270816569527,3,13,14,4,3,4.0,4,4
+phrases,C,this_requires,"this requires
+",syntax_stress,48,4,0.08333333333333333,0.01302091715236505,2,13,14,3,2,3.0,3,3
+phrases,C,we_need,"we need
+",syntax_stress,48,6,0.125,0.82812508319815,2,7,8,3,2,3.0,3,3
+phrases,C,need_to,"need to
+",syntax_stress,48,10,0.20833333333333334,1.0963540996114414,2,7,8,3,2,3.0,3,3
+phrases,C,uppercase,"WE NEED TO
+",surface_format,48,5,0.10416666666666667,0.1614584308117628,3,10,11,4,3,4.0,4,4
+phrases,C,title_colon,"We need to:
+",surface_format,48,3,0.0625,0.2265625037252903,3,11,12,4,4,4.0,4,4
+phrases,C,period,"we need to.
+",surface_format,48,10,0.20833333333333334,1.9713541592160861,3,11,12,4,4,4.0,4,4
+phrases,C,extra_space,"we need to 
+",surface_format,48,8,0.16666666666666666,1.2656249683350325,3,10,12,4,3,4.0,4,4
+phrases,C,double_newline,"we need to
+
+",surface_format,48,11,0.22916666666666666,2.132812602135042,3,10,12,4,3,4.0,4,4
+phrases,C,to_solve_for,"To solve for
+",solve_for_family,48,6,0.125,0.1640625117967526,3,12,13,4,3,4.0,4,4
+phrases,C,to_find,"To find
+",solve_for_family,48,6,0.125,0.49999997081855935,2,7,8,3,2,3.0,3,3
+phrases,C,to_determine,"To determine
+",solve_for_family,48,4,0.08333333333333333,0.1979166641831398,2,12,13,3,2,3.0,3,3
+phrases,C,to_calculate,"To calculate
+",solve_for_family,48,5,0.10416666666666667,0.17968746895591417,2,12,13,3,2,3.0,3,3
+phrases,C,in_order_to_solve_for,"In order to solve for
+",solve_for_family,48,4,0.08333333333333333,0.06510419708987077,5,21,22,6,5,6.0,6,6
+phrases,C,to_work_out,"To work out
+",solve_for_family,48,4,0.08333333333333333,-0.18229169957339764,3,11,12,4,3,4.0,4,4
+phrases,C,to_obtain,"To obtain
+",solve_for_family,48,4,0.08333333333333333,0.17968752731879553,2,9,10,3,2,3.0,3,3
+phrases,C,solving_for,"Solving for
+",solve_for_family,48,2,0.041666666666666664,-0.6067707935969034,2,11,12,4,3,4.0,4,4
+phrases,C,thought_process,"Thought process:
+",reasoning_header,48,2,0.041666666666666664,0.0781251136213541,2,16,17,3,3,3.0,3,3
+phrases,C,reasoning,"Reasoning:
+",reasoning_header,48,2,0.041666666666666664,0.26041672316690284,1,10,11,3,3,3.0,3,3
+phrases,C,analysis,"Analysis:
+",reasoning_header,48,0,0.0,-0.6041665909190973,1,9,10,2,2,2.0,2,2
+phrases,C,solution,"Solution:
+",reasoning_header,48,0,0.0,-0.25260406111677486,1,9,10,2,2,2.0,2,2
+phrases,C,original_step_by_step,"Let's solve this problem step by step.
+",reasoning_header,48,2,0.041666666666666664,-0.6223956507941087,7,38,39,9,9,9.0,9,9
+phrases,C,reason_step_by_step,"Let's reason step by step.
+",reasoning_header,48,1,0.020833333333333332,-0.5104167331010103,5,26,27,7,7,7.0,7,7
+phrases,C,we_solve_step_by_step,"We solve this problem step by step.
+",reasoning_header,48,2,0.041666666666666664,-0.617187519868215,7,35,36,8,8,8.0,8,8
+AWL_headers,A,original,,control,64,0,0.0,0.0,0,0,0,0,0,0.0,0,0
+AWL_headers,A,colon_control,":
+",control,64,0,0.0,-0.2851562553551048,0,1,2,1,1,1.0,1,1
+AWL_headers,A,neutral_control,"Response text:
+",control,64,2,0.03125,0.05273436941206455,2,14,15,3,3,3.0,3,3
+AWL_headers,A,analyse,"Analyse:
+",AWL,64,1,0.015625,-0.6738281799480319,1,8,9,3,3,3.0,3,3
+AWL_headers,A,examine,"Examine:
+",nonAWL,64,3,0.046875,-0.15039063710719347,1,8,9,3,3,3.0,3,3
+AWL_headers,A,assess,"Assess:
+",AWL,64,3,0.046875,0.22265622622217052,1,7,8,3,3,3.0,3,3
+AWL_headers,A,check,"Check:
+",nonAWL,64,2,0.03125,0.01953117223456502,1,6,7,2,2,2.0,2,2
+AWL_headers,A,compute,"Compute:
+",AWL,64,1,0.015625,-0.5371094706933945,1,8,9,2,2,2.0,2,2
+AWL_headers,A,calculate,"Calculate:
+",nonAWL,64,1,0.015625,-0.6250000188592821,1,10,11,2,2,2.0,2,2
+AWL_headers,A,deduce,"Deduce:
+",AWL,64,1,0.015625,-0.40429702843539417,1,7,8,4,4,4.0,4,4
+AWL_headers,A,reason,"Reason:
+",nonAWL,64,2,0.03125,-0.058593749068677425,1,7,8,2,2,2.0,2,2
+AWL_headers,A,demonstrate,"Demonstrate:
+",AWL,64,0,0.0,-0.878906330675818,1,12,13,3,3,3.0,3,3
+AWL_headers,A,show,"Show:
+",nonAWL,64,0,0.0,-1.3417969404254109,1,5,6,2,2,2.0,2,2
+AWL_headers,A,establish,"Establish:
+",AWL,64,0,0.0,-0.4218749881256372,1,10,11,2,2,2.0,2,2
+AWL_headers,A,prove,"Prove:
+",nonAWL,64,0,0.0,-0.9042968035209924,1,6,7,3,3,3.0,3,3
+AWL_headers,A,obtain,"Obtain:
+",AWL,64,0,0.0,-0.8730469329748303,1,7,8,3,3,3.0,3,3
+AWL_headers,A,get,"Get:
+",nonAWL,64,0,0.0,-0.7812499868450686,1,4,5,2,2,2.0,2,2
+AWL_headers,A,require,"Require:
+",AWL,64,4,0.0625,0.19531242083758116,1,8,9,2,2,2.0,2,2
+AWL_headers,A,need,"Need:
+",nonAWL,64,3,0.046875,0.18359371577389538,1,5,6,2,2,2.0,2,2
+AWL_headers,A,identify,"Identify:
+",AWL,64,0,0.0,-0.5488282334990799,1,9,10,3,3,3.0,3,3
+AWL_headers,A,find,"Find:
+",nonAWL,64,0,0.0,-0.5527344043366611,1,5,6,2,2,2.0,2,2
+AWL_headers,A,evaluate,"Evaluate:
+",AWL,64,0,0.0,-0.7832031000871211,1,9,10,2,2,2.0,2,2
+AWL_headers,A,judge,"Judge:
+",nonAWL,64,7,0.109375,1.091796860389877,1,6,7,2,2,2.0,2,2
+AWL_headers,A,formulate,"Formulate:
+",AWL,64,2,0.03125,-0.09960935940034688,1,10,11,3,3,3.0,3,3
+AWL_headers,A,write,"Write:
+",nonAWL,64,2,0.03125,-0.3710938224103302,1,6,7,2,2,2.0,2,2
+AWL_headers,A,utilise,"Utilise:
+",AWL,64,0,0.0,-0.652343847323209,1,8,9,3,3,3.0,3,3
+AWL_headers,A,use,"Use:
+",nonAWL,64,2,0.03125,-0.13281253003515303,1,4,5,2,2,2.0,2,2
+AWL_headers,A,implement,"Implement:
+",AWL,64,0,0.0,-1.3320313123986125,1,10,11,2,2,2.0,2,2
+AWL_headers,A,do,"Do:
+",nonAWL,64,1,0.015625,-0.572265685768798,1,3,4,2,2,2.0,2,2
+AWL_headers,A,conclude,"Conclude:
+",AWL,64,1,0.015625,-0.6113281998550519,1,9,10,3,3,3.0,3,3
+AWL_headers,A,finish,"Finish:
+",nonAWL,64,0,0.0,-1.3789062731957529,1,7,8,2,2,2.0,2,2
+AWL_headers,A,investigate,"Investigate:
+",AWL,64,3,0.046875,-0.06054689432494342,1,12,13,3,3,3.0,3,3
+AWL_headers,A,study,"Study:
+",nonAWL,64,2,0.03125,-0.47460946161299944,1,6,7,2,2,2.0,2,2
+AWL_headers,A,clarify,"Clarify:
+",AWL,64,4,0.0625,0.0527343088760972,1,8,9,3,3,3.0,3,3
+AWL_headers,A,explain,"Explain:
+",nonAWL,64,4,0.0625,0.06250006740447134,1,8,9,3,3,3.0,3,3
+AWL_headers,A,commence,"Commence:
+",AWL,64,0,0.0,-1.1347656953148544,1,9,10,3,3,3.0,3,3
+AWL_headers,A,begin,"Begin:
+",nonAWL,64,0,0.0,-0.4082030530553311,1,6,7,2,2,2.0,2,2
+AWL_headers,A,proceed,"Proceed:
+",AWL,64,0,0.0,-0.410156270256266,1,8,9,2,2,2.0,2,2
+AWL_headers,A,continue,"Continue:
+",nonAWL,64,0,0.0,-1.3847656317520887,1,9,10,2,2,2.0,2,2
+AWL_headers,A,assist,"Assist:
+",AWL,64,3,0.046875,-1.06640619233076,1,7,8,3,3,3.0,3,3
+AWL_headers,A,help,"Help:
+",nonAWL,64,7,0.109375,0.7285156736616045,1,5,6,2,2,2.0,2,2
+AWL_headers,A,retain,"Retain:
+",AWL,64,4,0.0625,-0.46484369796235114,1,7,8,3,3,3.0,3,3
+AWL_headers,A,keep,"Keep:
+",nonAWL,64,0,0.0,-0.6289062217110768,1,5,6,2,2,2.0,2,2
+AWL_headers,C,original,,control,48,0,0.0,0.0,0,0,0,0,0,0.0,0,0
+AWL_headers,C,colon_control,":
+",control,48,2,0.041666666666666664,-0.1953123981753985,0,1,2,1,1,1.0,1,1
+AWL_headers,C,neutral_control,"Response text:
+",control,48,0,0.0,-0.23437501645336548,2,14,15,3,3,3.0,3,3
+AWL_headers,C,analyse,"Analyse:
+",AWL,48,0,0.0,-0.617187537252903,1,8,9,3,3,3.0,3,3
+AWL_headers,C,examine,"Examine:
+",nonAWL,48,0,0.0,-0.3255207985639572,1,8,9,3,3,3.0,3,3
+AWL_headers,C,assess,"Assess:
+",AWL,48,4,0.08333333333333333,0.5624999528129896,1,7,8,3,3,3.0,3,3
+AWL_headers,C,check,"Check:
+",nonAWL,48,3,0.0625,0.11458327621221542,1,6,7,2,2,2.0,2,2
+AWL_headers,C,compute,"Compute:
+",AWL,48,1,0.020833333333333332,-0.7734374701976776,1,8,9,2,2,2.0,2,2
+AWL_headers,C,calculate,"Calculate:
+",nonAWL,48,1,0.020833333333333332,-0.8515623845160007,1,10,11,2,2,2.0,2,2
+AWL_headers,C,deduce,"Deduce:
+",AWL,48,1,0.020833333333333332,-0.3359373143563668,1,7,8,4,4,4.0,4,4
+AWL_headers,C,reason,"Reason:
+",nonAWL,48,1,0.020833333333333332,-0.03125001365939776,1,7,8,2,2,2.0,2,2
+AWL_headers,C,demonstrate,"Demonstrate:
+",AWL,48,0,0.0,-0.859375004346172,1,12,13,3,3,3.0,3,3
+AWL_headers,C,show,"Show:
+",nonAWL,48,0,0.0,-1.3203124264255166,1,5,6,2,2,2.0,2,2
+AWL_headers,C,establish,"Establish:
+",AWL,48,1,0.020833333333333332,-0.5260416182378927,1,10,11,2,2,2.0,2,2
+AWL_headers,C,prove,"Prove:
+",nonAWL,48,1,0.020833333333333332,-0.7890624503294627,1,6,7,3,3,3.0,3,3
+AWL_headers,C,obtain,"Obtain:
+",AWL,48,0,0.0,-1.0598958594103653,1,7,8,3,3,3.0,3,3
+AWL_headers,C,get,"Get:
+",nonAWL,48,0,0.0,-1.0078125248352687,1,4,5,2,2,2.0,2,2
+AWL_headers,C,require,"Require:
+",AWL,48,1,0.020833333333333332,0.08333332960804303,1,8,9,2,2,2.0,2,2
+AWL_headers,C,need,"Need:
+",nonAWL,48,0,0.0,0.013020862514774004,1,5,6,2,2,2.0,2,2
+AWL_headers,C,identify,"Identify:
+",AWL,48,1,0.020833333333333332,-0.5911458215365807,1,9,10,3,3,3.0,3,3
+AWL_headers,C,find,"Find:
+",nonAWL,48,1,0.020833333333333332,-0.5781248342245817,1,5,6,2,2,2.0,2,2
+AWL_headers,C,evaluate,"Evaluate:
+",AWL,48,1,0.020833333333333332,-0.8802082346131405,1,9,10,2,2,2.0,2,2
+AWL_headers,C,judge,"Judge:
+",nonAWL,48,10,0.20833333333333334,1.4140625360111396,1,6,7,2,2,2.0,2,2
+AWL_headers,C,formulate,"Formulate:
+",AWL,48,1,0.020833333333333332,-0.07552077807486057,1,10,11,3,3,3.0,3,3
+AWL_headers,C,write,"Write:
+",nonAWL,48,1,0.020833333333333332,-0.32552082029481727,1,6,7,2,2,2.0,2,2
+AWL_headers,C,utilise,"Utilise:
+",AWL,48,1,0.020833333333333332,-0.6067707544813553,1,8,9,3,3,3.0,3,3
+AWL_headers,C,use,"Use:
+",nonAWL,48,2,0.041666666666666664,-0.25781243791182834,1,4,5,2,2,2.0,2,2
+AWL_headers,C,implement,"Implement:
+",AWL,48,1,0.020833333333333332,-1.338541663872699,1,10,11,2,2,2.0,2,2
+AWL_headers,C,do,"Do:
+",nonAWL,48,1,0.020833333333333332,-0.6015625273187956,1,3,4,2,2,2.0,2,2
+AWL_headers,C,conclude,"Conclude:
+",AWL,48,0,0.0,-0.7473959233611822,1,9,10,3,3,3.0,3,3
+AWL_headers,C,finish,"Finish:
+",nonAWL,48,1,0.020833333333333332,-1.2942708106711507,1,7,8,2,2,2.0,2,2
+AWL_headers,C,investigate,"Investigate:
+",AWL,48,4,0.08333333333333333,0.11197929208477338,1,12,13,3,3,3.0,3,3
+AWL_headers,C,study,"Study:
+",nonAWL,48,1,0.020833333333333332,-0.4895832370966673,1,6,7,2,2,2.0,2,2
+AWL_headers,C,clarify,"Clarify:
+",AWL,48,3,0.0625,0.19010418839752674,1,8,9,3,3,3.0,3,3
+AWL_headers,C,explain,"Explain:
+",nonAWL,48,4,0.08333333333333333,0.049479223787784576,1,8,9,3,3,3.0,3,3
+AWL_headers,C,commence,"Commence:
+",AWL,48,0,0.0,-1.2083332908029358,1,9,10,3,3,3.0,3,3
+AWL_headers,C,begin,"Begin:
+",nonAWL,48,1,0.020833333333333332,-0.5390625214204192,1,6,7,2,2,2.0,2,2
+AWL_headers,C,proceed,"Proceed:
+",AWL,48,2,0.041666666666666664,-0.2916665238638719,1,8,9,2,2,2.0,2,2
+AWL_headers,C,continue,"Continue:
+",nonAWL,48,1,0.020833333333333332,-1.3645831813725333,1,9,10,2,2,2.0,2,2
+AWL_headers,C,assist,"Assist:
+",AWL,48,3,0.0625,-1.34374992766728,1,7,8,3,3,3.0,3,3
+AWL_headers,C,help,"Help:
+",nonAWL,48,5,0.10416666666666667,0.7343749968955914,1,5,6,2,2,2.0,2,2
+AWL_headers,C,retain,"Retain:
+",AWL,48,2,0.041666666666666664,-0.5000000186264515,1,7,8,3,3,3.0,3,3
+AWL_headers,C,keep,"Keep:
+",nonAWL,48,0,0.0,-0.7942707600692908,1,5,6,2,2,2.0,2,2

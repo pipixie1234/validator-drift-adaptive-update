@@ -1,0 +1,9 @@
+﻿split,G_round,variant,matched_TP,matched_FP,matched_unknown,matched_TN,matched_FN,FP_flipped,TN_flipped,TP_flipped,unknown_flipped,FN_flipped
+A,G2,delete,326,320,95,352,45,14,12,3,3,1
+A,G2,synonym,326,320,95,352,45,5,6,2,,
+A,G3,delete,340,388,90,306,28,15,5,5,4,
+A,G3,synonym,340,388,90,306,28,10,,6,2,1
+C,G2,delete,35,49,20,58,12,,2,1,1,
+C,G2,synonym,35,49,20,58,12,1,1,,1,
+C,G3,delete,34,50,7,61,16,2,1,1,,2
+C,G3,synonym,34,50,7,61,16,1,1,,1,

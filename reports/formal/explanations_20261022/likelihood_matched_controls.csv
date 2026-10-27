@@ -1,0 +1,7 @@
+﻿target,correct,pairs,selected_delta_nll,control_delta_nll,selected_minus_control_delta,low,high,valid_replicates,limitation
+G1,True,9,-0.015143020511619334,-0.006711615385308343,-0.008431405126310992,-0.012067710031880247,-0.004876544849090525,2000,"Same-question accepted same-outcome alternatives, not randomized no-update/noiseless-feedback training controls."
+G1,False,10,-0.023436347046622556,-0.007919844389093298,-0.01551650265752926,-0.020825796343012088,-0.010554932832400075,2000,"Same-question accepted same-outcome alternatives, not randomized no-update/noiseless-feedback training controls."
+G1,,6,-0.022038715229774616,-0.007203666253638664,-0.014835048976135952,-0.024322099223939183,-0.007008785833727435,2000,"Same-question accepted same-outcome alternatives, not randomized no-update/noiseless-feedback training controls."
+G2,True,12,-0.013383386095985453,-0.0002734477429997605,-0.013109938352985689,-0.017798461910969926,-0.008573053119611223,2000,"Same-question accepted same-outcome alternatives, not randomized no-update/noiseless-feedback training controls."
+G2,False,9,-0.02539566923034012,-0.005301081792694586,-0.02009458743764553,-0.025670055171276265,-0.014400476652788778,2000,"Same-question accepted same-outcome alternatives, not randomized no-update/noiseless-feedback training controls."
+G2,,8,-0.015669165385232997,-0.0018986082909589518,-0.013770557094274044,-0.02134987131265985,-0.008145071864796898,2000,"Same-question accepted same-outcome alternatives, not randomized no-update/noiseless-feedback training controls."

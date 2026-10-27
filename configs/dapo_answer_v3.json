@@ -1,0 +1,23 @@
+{
+  "version": "dapo_answer_v3_20261021",
+  "implementation": "src/pilot/day2_protocol.py",
+  "implementation_sha256": "fbd7037a610a600f376e600003fd2319391f6e1582dde9b9dc5b1f56b57cb387",
+  "reference": "Signed integer source reference retained separately, never sent to G/V.",
+  "extract": "Balanced boxed/fbox or explicit hash marker; never last number in prose. Nonconflicting descriptive suffix allowed; conflicting later math is unknown.",
+  "multiple_boxes": "Accept only if every box normalizes to an exactly equal rational; otherwise unknown.",
+  "equivalence": "Exact Fraction: signed integers, decimals, grouped thousands, simple fractions including LaTeX frac, established nonconflicting unit normalization. Equivalent34,34.0,68/2 accepted.",
+  "unsupported": "Undecidable/symbolic/non-rational expressions unsupported by exact-rational path remain unknown, not negative.",
+  "truncation": "Always unknown even if an apparent final box is present.",
+  "question_quarantine": "Entire question and all candidates excluded from primary metrics and all training/evaluation sets until a versioned source repair. Keep original100/400 archival accounting separately.",
+  "unknown": "Eligible-question answer unknown remains in coverage and correctness bounds; never V negative supervision.",
+  "fields": [
+    "question_status",
+    "parse_status",
+    "answer_type",
+    "extracted_answer",
+    "comparison",
+    "grader_version",
+    "answer_unknown_reason",
+    "revision_history"
+  ]
+}

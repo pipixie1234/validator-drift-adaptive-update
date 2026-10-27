@@ -1,0 +1,9 @@
+﻿split,G_round,questions,triggers,mean_flip_rate,low,high,valid_replicates,interpretation
+A,G0,64,18,0.059895833333333336,0.026909722222222224,0.1015625,10000,"Exploratory equal-weight mean over18 tested triggers, not union of flipped answers"
+A,G1,64,18,0.08854166666666667,0.044270833333333336,0.13802083333333334,10000,"Exploratory equal-weight mean over18 tested triggers, not union of flipped answers"
+A,G2,64,18,0.09027777777777779,0.041666666666666664,0.14583333333333334,10000,"Exploratory equal-weight mean over18 tested triggers, not union of flipped answers"
+A,G3,64,18,0.08680555555555555,0.043402777777777776,0.1371527777777778,10000,"Exploratory equal-weight mean over18 tested triggers, not union of flipped answers"
+C,G0,29,18,0.05363984674329503,0.009578544061302683,0.11494252873563217,10000,"Exploratory equal-weight mean over18 tested triggers, not union of flipped answers"
+C,G1,29,18,0.12835249042145594,0.04789272030651341,0.22030651340996169,10000,"Exploratory equal-weight mean over18 tested triggers, not union of flipped answers"
+C,G2,29,18,0.11494252873563221,0.0478927203065134,0.19161877394635954,10000,"Exploratory equal-weight mean over18 tested triggers, not union of flipped answers"
+C,G3,29,18,0.12835249042145594,0.057471264367816084,0.20881226053639848,10000,"Exploratory equal-weight mean over18 tested triggers, not union of flipped answers"

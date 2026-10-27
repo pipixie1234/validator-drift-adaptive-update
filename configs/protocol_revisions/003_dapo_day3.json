@@ -1,0 +1,117 @@
+{
+  "revision": "003_DAPO_day3_20261021",
+  "research_goal": "Verifier reliability across generator updates; no assumed generator improvement",
+  "dataset": "open-r1/DAPO-Math-17k-Processed",
+  "dataset_revision": "31dd309567e3da778038cc87d868b6097a3ccf68",
+  "source_file_sha256": "40f672fe8b6dbeee953ae5acc75a38e99144e682450e07c625c87c734ec76285",
+  "models": {
+    "G": {
+      "path": "/root/workspace/Qwen2.5-Math-1.5B-Instruct",
+      "fingerprint": "9e4b4c5cdc0568a7ddc18ac782925809f1b45edeca3b98224580e17bfb032622",
+      "adapter_for_primary_inference": null
+    },
+    "V": {
+      "path": "/root/workspace/Qwen3-4B-Instruct-2507",
+      "fingerprint": "cd87ced708c07dd0c0e502cf7747fcd3b987cb4bbe9cc643d281fc9212d94c70",
+      "adapter_for_primary_inference": null
+    }
+  },
+  "prompts": {
+    "G_system": "Please reason step by step, and put your final answer within \\boxed{}.",
+    "G_user_suffix": "\n\nGive a complete solution. End with exactly one final answer in \\boxed{...}. Use the mathematical form requested in the question. Do not add another answer after the box.",
+    "V_system": "Judge whether the FINAL ANSWER in the candidate response correctly answers the question. Work out the answer independently. A means the final answer is correct; B means it is incorrect. Judge final-answer correctness, not the completeness of the explanation. Respond with exactly A or B."
+  },
+  "sampling": {
+    "num_return_sequences": 4,
+    "max_new_tokens": 3840,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true
+  },
+  "G_output_budget_rule": "min(3840,4096 - exact rendered prompt token count); same rule and tokenizer for G0/G1/G2",
+  "G_context": 4096,
+  "G_max_prompt_tokens": 1024,
+  "V_scoring": {
+    "labels": [
+      "A",
+      "B"
+    ],
+    "accept_threshold": 0.5,
+    "max_context": 8192
+  },
+  "training": {
+    "G": {
+      "objective": "response_only_SFT",
+      "max_length": 4096,
+      "max_examples_per_round": 512,
+      "epochs": 1,
+      "micro_batch": 1,
+      "gradient_accumulation": 8,
+      "learning_rate": 0.0001,
+      "lora_r": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.05,
+      "optimizer": "AdamW",
+      "seed": 42,
+      "G1_initialization": "original G0 plus new adapter",
+      "G2_initialization": "continue the G1 adapter",
+      "sample_selection": "pilot.day3_protocol.select_feedback; whole invalid questions excluded; one random V0-accepted response per question; unknown answer labels do not filter selections; cap512 without duplicating rows",
+      "quality_reporting": "For each actual A selection, separately report correct/wrong/unknown and bounds after selection; never silently filter by truth.",
+      "truncation": "Never truncate tensors; reject over-context examples, log IDs/reasons; generation-truncated answers excluded by fixed structural rule."
+    },
+    "V_smoke": {
+      "seed": 42,
+      "purpose": "day3 engineering smoke only; adapters never become G1/G2/Vrand/Vtarget",
+      "research_plan": "/root/workspace/一周前置实验方案_20261020.md",
+      "research_plan_sha256": "7e12931dfa606f966d2c3d663f3d5061d6e90780c063d2ab013aaf559288cc80",
+      "max_length": {
+        "G": 4096,
+        "V": 8192
+      },
+      "micro_batch": 1,
+      "gradient_accumulation": 8,
+      "optimizer_steps": 2,
+      "examples_per_role": 16,
+      "r": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "learning_rate": 0.0001,
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ],
+      "G_selection": "Frozen feedback rule on primary C: whole-question quarantine, no truncated or over-context responses; one random V0-accepted response per question, include longest and15 shuffled others; no gold input.",
+      "V_selection": "Development only;8 natural independently labelled correct+8 wrong, one longest fitting example per label plus7 seeded-shuffled examples with distinct questions within each label; interleave A/B; no source-unresolved or unknown labels.",
+      "train_target": "G response-only; V A/B-only plus template EOS; prompt/padding masked",
+      "no_tensor_truncation": true,
+      "formal_training_started": false,
+      "length_stress": "Before optimizer steps, run one additional loss/backward-only probe on longest completed supplementary valid-question response (V requires a supported independent label); no optimizer step for this probe, gradients cleared. Supplements remain separate from main C and actual16-example smoke selection.",
+      "formal_G_output_budget": "min(3840,4096-exact_prompt_tokens)"
+    },
+    "V_update_future": "Independent V0 initializations for random/target branches, identical context and optimization; exact matched sample budget frozen after B is available, before either update."
+  },
+  "answer_protocol_file": "configs/dapo_answer_v3.json",
+  "answer_protocol_sha256": "8b3d20082d458e89735bee27eaaf4f4b8bcecece5141cad32c7a0ffb2fa46ce5",
+  "working_point_file": "reports/day3/working_point.json",
+  "working_point_sha256": "32198e4b5329c60aca11949637de59f0123af43e746dae450cfc5c92ba5238be",
+  "length_decision_file": "reports/day3/length_decision.json",
+  "length_decision_sha256": "cab3397cbb592f18090e0bc5918808a501f30de096650b7f40b8e02f19e885cd",
+  "quarantine_file": "data/dapo/manifests/question_quarantine.jsonl",
+  "quarantine_sha256": "a31eb485aa51e8136387ac1c4c22c52e4e6357aa71a306bfb9bc4a55fed1fcf2",
+  "formal_split_manifest": "data/dapo/formal/manifest.json",
+  "formal_split_sha256": "77b842d939832d3146f9cf15ea54e0143af348a2462e1cd6f40401cb38f3648c",
+  "preserved_day2_config_sha256": "cc477a8f761b473ef816a02a6fb9ead06828c62f49f6c1decaa8913a0b28bc09",
+  "preserved_original_G400_sha256": "ab24658a0006ad53cfc7f831ada271f235b810d8651b9bc870252fd60c804b3e",
+  "preserved_original_V400_sha256": "8521380d54f601b880f5c60e9e78b0315734ef5207a1e9a87b325903f42bbbd4",
+  "primary_analysis_scope": "96 eligible C questions384 outputs; entire4 bad questions16 outputs quarantined; original100 remain C and excluded from all formal pools.",
+  "changes": "User-directed whole-question quarantine; complete separate native-length check; formal G output cap3840 with total native4096 and V threshold0.5. Original3072 development400 unchanged, supplemental outputs separate. No gold-based feedback filtering.",
+  "formal_training_started": false,
+  "G1_G2_status": "Day3 only; start generator updates in the next stage from G0, never from smoke adapters",
+  "T_inferred": false,
+  "source_quality_limit": "Only obvious source failures screened. Approximate lexical family dedup cannot guarantee semantic identity or eliminate pretraining exposure."
+}

@@ -1,0 +1,10 @@
+{
+  "amends_plan_sha256": "353ae17239f18f3169b9e7762feb2fdf1179913257ef0757442110a2273e832c",
+  "reason": "Numerical smoke detected1/16 decision differences with batch4 left padding. No formal C/E results observed. Preserve original V scoring semantics exactly.",
+  "evaluation": "One answer at a time; original two prompt+label rows A/B, unchanged attention masks/default positions. logits_to_keep selects original predicted position only.",
+  "validation": "For each V,16 fixed prompt-length-distributed probes compared to original conditional_label_scores; require identical decisions, max score difference<2e-6 and max LL difference<2e-5, else use original full scorer for that V.",
+  "reference_and_training": "Frozen V0 reference and policy training remain the same single-prompt next-label forward; objective/data/optimizer unchanged.",
+  "old_scores": "All formal evaluation is newly scored; no historical scores mixed.",
+  "probe_sha256": "6c1b2e78f1e121cec46c45ae9913417e7bc1e2feedbdafc91b64dad2a6029982",
+  "reporting": "Disclose failed batch4 smoke and actual sparse-head/fallback choices for each model."
+}

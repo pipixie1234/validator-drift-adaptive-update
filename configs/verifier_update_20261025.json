@@ -1,0 +1,239 @@
+{
+  "created_at": "2026-10-25T13:20:15.169880+00:00",
+  "purpose": "V0 vs independently initialized Vrand/Vtarget; B-only natural-label SFT, adaptation and historical retention on frozen C outputs",
+  "sources_sha256": {
+    "runs/formal/G0_B.jsonl": "26de7204292fb25d4a90c8be47f42c22962d7d142db082cb651947276df4f82d",
+    "runs/formal/labels_G0_B.jsonl": "f5ccab3f59542c80c9c8adb8fbed0e37fa4c61952141e190b53be8845eeff1b7",
+    "runs/formal/V0_G0_B.jsonl": "b487731d4adcb2bc85ec4d98d2a94ff8127a073c58a57880e7ef4ef2ad81a4a8",
+    "runs/formal/G1_B.jsonl": "a211aea3f15ce2324a394030196ed1ada85b03215dc2b2ff4af252a204a0dada",
+    "runs/formal/labels_G1_B.jsonl": "29bcd40ce0555f55036e5993902a3477126687cb2fa674051a6cf62790de97a3",
+    "runs/formal/V0_G1_B.jsonl": "7a021dceeae271f8b2ef3e6d1a579cdf4f373c20dd5dfed5d1d653f4a220ab3d",
+    "runs/formal/G2_B.jsonl": "279f13112fae87b05e9ce2632e682d0622aeb152cb45e7fb2627201dd01f9857",
+    "runs/formal/labels_G2_B.jsonl": "60217bea0b129b770618793c5b6089097c1e65ec4633f66f9c5ed0c61e0ad326",
+    "runs/formal/V0_G2_B.jsonl": "5414f7c4d0b96b89a837f3f2648506946c220d0fa02f7cd2116c829b3f335a67",
+    "runs/formal/G0_C.jsonl": "20d76cb915bcc7fe6c37dd4e228934f423836e6952ed077e2fcc17cc2581b844",
+    "runs/formal/labels_G0_C.jsonl": "86c78d5a8e7d87613b7c2cb1fc26839a2a4f50c23d59cc681fa8ede97fda5150",
+    "runs/formal/V0_G0_C.jsonl": "6e8521dc419c2f768ae5f2aa9165e4ae306d4148d7ad319042b2f4012039ed78",
+    "runs/formal/G1_C.jsonl": "255e3d9a223265e9e4e88dbf448c8364af305fda4b907ee212092f046206e27e",
+    "runs/formal/labels_G1_C.jsonl": "78cbc0bb53a3ae499295488721628c3133085036b0a583eaf08a72387082e5ca",
+    "runs/formal/V0_G1_C.jsonl": "a3c766e995e44362647f1895b4f653e3cb3db7a24912eb00032fe0fcc2321664",
+    "runs/formal/G2_C.jsonl": "6e857f85059bc5a343e4b2f071592d528fa49c402b6d3c4f9a2b4811ad156e4f",
+    "runs/formal/labels_G2_C.jsonl": "cfe567d7d4286657c4884676d7a48752050d4b4c3729715e19d04ac453bb6781",
+    "runs/formal/V0_G2_C.jsonl": "ce068f7151dce6ea0e21ff1f9ec6daa2ef575db2e8ba3b76702be36255b9dac5",
+    "runs/g3_extension_20261024/G2_C.jsonl": "8619c77f278ef8643b39edcb76d5cc61d2faaa8b64af8efe1cc2829c32cc18f5",
+    "runs/g3_extension_20261024/labels_G2_C.jsonl": "2b4347a4b91f006a4255305a231119c12997291c444df3c09baf12f855089a7d",
+    "runs/g3_extension_20261024/V0_G2_C.jsonl": "de5d3b65344c34aa8349ec092b4d2d7bf73446cde6d5f297b0cac31d495b1498",
+    "runs/g3_extension_20261024/G3_C.jsonl": "821c6adb0da3772a5ba4af51876c57994c03b666bad7f47ac9ce23880323a6b3",
+    "runs/g3_extension_20261024/labels_G3_C.jsonl": "a503ca64b9bb6ab5b4524987f99b24cc4c6b2d58ee4b77075505c038273f5507",
+    "runs/g3_extension_20261024/V0_G3_C.jsonl": "27319bbce9c5a570801f8fff82dae7e5b43ece269358630ff19652ac35f0d66a",
+    "src/pilot/runtime.py": "936b9cb7881893ec8f75bd2ecc1c7da641db9930b33cb366fb08f84dbf6311d7",
+    "src/pilot/verifier_update.py": "0be5adc7f305f855d600186fb30a2f232b4a2db1cf163dcc7f4c7b89b0c8bd4f",
+    "src/pilot/core.py": "d31a2562868fa7b586d8fe56afcf8fd3efe89817fb32564e714810c220a1bd5a",
+    "src/pilot/formal_train.py": "086f49e3672c0e93140f580d0c098af01925020d14bcb19b2b9493a514246050"
+  },
+  "inputs_sha256": {
+    "B_eligible.jsonl": "2c324e820f2c3082532ac6355513c2681787cf833fd8b874ec2f61116634bcf4",
+    "C_evaluation.jsonl": "35acc0500c330c28bb1eef49b195cc5da6c7b1a80c594f4a1cddd1ffc453f626",
+    "Vrand/selected.jsonl": "ff79c0139e0787ca21cbdc4e3f524a73e9b79127ee346a8b22aab62743e727fb",
+    "Vrand/tokenized.jsonl": "100778e6b92bcff749c074456b467f0d0bce6c56caad4888e6b72c1752cc7f0e",
+    "Vtarget/selected.jsonl": "5881ec41f65ea885ad6df6f4e18eb0e1ab44081f3b793da7c6ed0b6bec2ff385",
+    "Vtarget/tokenized.jsonl": "87e0a287d469ce0ee550acba44a4be995dc7f421a45df56fbc2920cf11a8aa6d"
+  },
+  "models": {
+    "G": {
+      "path": "/root/workspace/Qwen2.5-Math-1.5B-Instruct",
+      "fingerprint": "9e4b4c5cdc0568a7ddc18ac782925809f1b45edeca3b98224580e17bfb032622",
+      "adapter_for_primary_inference": null
+    },
+    "V": {
+      "path": "/root/workspace/Qwen3-4B-Instruct-2507",
+      "fingerprint": "cd87ced708c07dd0c0e502cf7747fcd3b987cb4bbe9cc643d281fc9212d94c70",
+      "adapter_for_primary_inference": null
+    }
+  },
+  "fixed_scoring": {
+    "labels": [
+      "A",
+      "B"
+    ],
+    "accept_threshold": 0.5,
+    "max_context": 8192
+  },
+  "prompts": {
+    "G_system": "Please reason step by step, and put your final answer within \\boxed{}.",
+    "G_user_suffix": "\n\nGive a complete solution. End with exactly one final answer in \\boxed{...}. Use the mathematical form requested in the question. Do not add another answer after the box.",
+    "V_system": "Judge whether the FINAL ANSWER in the candidate response correctly answers the question. Work out the answer independently. A means the final answer is correct; B means it is incorrect. Judge final-answer correctness, not the completeness of the explanation. Respond with exactly A or B."
+  },
+  "training": {
+    "epochs": 1,
+    "examples_each": 256,
+    "optimizer_steps": 32,
+    "micro_batch": 1,
+    "gradient_accumulation": 8,
+    "learning_rate": 0.0001,
+    "optimizer": "AdamW",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "weight_decay": 0.01,
+    "max_gradient_norm": 1.0,
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "max_context": 8192,
+    "gradient_checkpointing": true,
+    "seed": 42,
+    "checkpoint_every_steps": 16,
+    "target": "A/B + template im_end and newline, prompt/padding masked;3 supervised tokens/answer, no truncation",
+    "initialization": "Each arm fresh V0 + same-seed new LoRA, no development/smoke/G adapter or other-arm inheritance"
+  },
+  "selection": {
+    "training_split": "B only; all2400 candidate independent labels counted in acquisition cost",
+    "round_counts": {
+      "G0": 64,
+      "G1": 64,
+      "G2": 128
+    },
+    "truth_counts": {
+      "correct": 128,
+      "wrong": 128
+    },
+    "target": "Within each G,label request75% V0 errors and25% correct V0 decisions, fixed hash order. FN scarcity filled with valid controls. One answer per G,label,question and no repeated full prompt within arm.",
+    "random": "Random within exactly matched G,label,V-input-length bins, no V scores/decisions used; same one-per-G,label,question and prompt dedup. First overall input-token match within1%. Conditional random, not unstratified.",
+    "pair_order": "Match G,label,length-bin at every row; common seeded shuffle gives same strata order per optimizer step",
+    "random_matching": {
+      "attempt": 2,
+      "input_token_ratio_vs_target": 0.9947310576674424,
+      "tolerance": 0.01
+    },
+    "summaries": {
+      "Vrand": {
+        "responses": 256,
+        "questions": 165,
+        "input_tokens": 246184,
+        "supervised_tokens": 768,
+        "decision_label_tokens": 256,
+        "V0_mistakes": 91,
+        "by_round_label": {
+          "G0:True": {
+            "count": 32,
+            "V0_errors": 5
+          },
+          "G0:False": {
+            "count": 32,
+            "V0_errors": 17
+          },
+          "G1:True": {
+            "count": 32,
+            "V0_errors": 6
+          },
+          "G1:False": {
+            "count": 32,
+            "V0_errors": 23
+          },
+          "G2:True": {
+            "count": 64,
+            "V0_errors": 9
+          },
+          "G2:False": {
+            "count": 64,
+            "V0_errors": 31
+          }
+        },
+        "max_input_tokens": 3072
+      },
+      "Vtarget": {
+        "responses": 256,
+        "questions": 149,
+        "input_tokens": 247488,
+        "supervised_tokens": 768,
+        "decision_label_tokens": 256,
+        "V0_mistakes": 171,
+        "by_round_label": {
+          "G0:True": {
+            "count": 32,
+            "V0_errors": 24
+          },
+          "G0:False": {
+            "count": 32,
+            "V0_errors": 24
+          },
+          "G1:True": {
+            "count": 32,
+            "V0_errors": 24
+          },
+          "G1:False": {
+            "count": 32,
+            "V0_errors": 24
+          },
+          "G2:True": {
+            "count": 64,
+            "V0_errors": 27
+          },
+          "G2:False": {
+            "count": 64,
+            "V0_errors": 48
+          }
+        },
+        "max_input_tokens": 2729
+      }
+    },
+    "excluded": {
+      "G0:unknown": 37,
+      "G1:unknown": 36,
+      "G2:unknown": 61
+    },
+    "label_acquisition_candidates": 2400,
+    "eligible_known_candidates": 2266,
+    "same_B_question_pool": true,
+    "overall_question_coverage_not_exactly_matched": true
+  },
+  "evaluation": {
+    "split": "C95 repeated-use development; no C training or hyperparameter search",
+    "views": [
+      "G0_TF",
+      "G1_TF",
+      "G2_TF",
+      "G2_vLLM",
+      "G3_vLLM"
+    ],
+    "answers_each": 380,
+    "primary": "Vtarget-Vrand on G2_TF FPR and FNR, paired whole-question bootstrap10000; G0_TF retention/history",
+    "secondary": "G1_TF, G2_vLLM and held-out-generation-stage G3_vLLM; all V evaluated on identical cached answers",
+    "engine_limit": "B G0/G1/G2 and primary C G0/G1/G2 from original Transformers. Later G2/G3 vLLM transfer separate; do not join pure training curve across engines.",
+    "metrics": [
+      "FPR",
+      "FNR",
+      "balanced_accuracy",
+      "V_accuracy",
+      "accepted_error_FDR",
+      "retention_all",
+      "AUROC",
+      "Brier_proxy"
+    ],
+    "score_limit": "Original conditional full A/B likelihood softmax proxy, uncalibrated; threshold0.5 unchanged",
+    "T": "Still sealed, not evaluated or used for selection; final-test experiment requires a separate frozen execution"
+  },
+  "seed": 20261025,
+  "bootstrap": 10000,
+  "G_training": false,
+  "G_generation": false,
+  "T_decoded": false,
+  "preservation": "Existing runs/reports/configs not overwritten or deleted; complete hash inventory saved. Shared GPU work ledger append is intentionally excluded.",
+  "limits": [
+    "One training seed, one update size, no test-set claim",
+    "B reference labels not fully human certified; unknowns never negatives",
+    "Selection changes question coverage and context within matched strata; not a proof of a unique learning mechanism"
+  ]
+}

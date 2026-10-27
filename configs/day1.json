@@ -1,0 +1,40 @@
+{
+  "PROJECT_ROOT": "/root/workspace/cross_round_pilot",
+  "G_MODEL_DIR": "/root/workspace/Qwen2.5-Math-1.5B-Instruct",
+  "V_MODEL_DIR": "/root/workspace/Qwen3-4B-Instruct-2507",
+  "seed": 42,
+  "day1_questions": 50,
+  "generation": {
+    "num_return_sequences": 4,
+    "max_new_tokens": 768,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true
+  },
+  "training": {
+    "max_length": 1536,
+    "micro_batch": 1,
+    "gradient_accumulation": 8,
+    "smoke_steps": 2,
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "learning_rate": 0.0001
+  },
+  "verifier": {
+    "labels": [
+      "A",
+      "B"
+    ],
+    "accept_threshold": 0.5,
+    "max_context": 4096
+  },
+  "scope": "day1_environment_and_minimal_validation_only",
+  "final_test_locked": true,
+  "answer_extraction_protocol": {
+    "required_format": "hash",
+    "diagnostic_extension": "unique_terminal_numeric_box",
+    "decision_source": "C format diagnostics v1/v2/v3; no T evaluation",
+    "format_compliance_reported_separately": true
+  }
+}

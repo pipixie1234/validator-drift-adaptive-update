@@ -1,0 +1,185 @@
+﻿split,variant,prefix,group,AWL_members,AWL_families,responses,flip_rate
+A,original,,control,[],[],64,0.0
+C,original,,control,[],[],48,0.0
+A,blank_control,"
+",control,[],[],64,0.0
+C,blank_control,"
+",control,[],[],48,0.0
+A,neutral_control,"Response text:
+",control,"[""response"", ""text""]","[""respond"", ""text""]",64,0.03125
+C,neutral_control,"Response text:
+",control,"[""response"", ""text""]","[""respond"", ""text""]",48,0.0
+A,we_need_to,"we need to
+",AWL_absent,[],[],64,0.125
+C,we_need_to,"we need to
+",AWL_absent,[],[],48,0.1875
+A,we_have_to,"we have to
+",AWL_absent,[],[],64,0.15625
+C,we_have_to,"we have to
+",AWL_absent,[],[],48,0.10416666666666667
+A,we_must,"we must
+",AWL_absent,[],[],64,0.1875
+C,we_must,"we must
+",AWL_absent,[],[],48,0.22916666666666666
+A,we_are_required_to,"we are required to
+",AWL_present,"[""required""]","[""require""]",64,0.078125
+C,we_are_required_to,"we are required to
+",AWL_present,"[""required""]","[""require""]",48,0.0625
+A,it_is_necessary_to,"it is necessary to
+",AWL_absent,[],[],64,0.125
+C,it_is_necessary_to,"it is necessary to
+",AWL_absent,[],[],48,0.14583333333333334
+A,it_is_essential_to,"it is essential to
+",AWL_absent,[],[],64,0.234375
+C,it_is_essential_to,"it is essential to
+",AWL_absent,[],[],48,0.22916666666666666
+A,the_task_requires_us_to,"the task requires us to
+",AWL_present,"[""requires"", ""task""]","[""require"", ""task""]",64,0.046875
+C,the_task_requires_us_to,"the task requires us to
+",AWL_present,"[""requires"", ""task""]","[""require"", ""task""]",48,0.08333333333333333
+A,this_requires_us_to,"this requires us to
+",AWL_present,"[""requires""]","[""require""]",64,0.109375
+C,this_requires_us_to,"this requires us to
+",AWL_present,"[""requires""]","[""require""]",48,0.125
+A,we_should,"we should
+",AWL_absent,[],[],64,0.140625
+C,we_should,"we should
+",AWL_absent,[],[],48,0.1875
+A,we_ought_to,"we ought to
+",AWL_absent,[],[],64,0.171875
+C,we_ought_to,"we ought to
+",AWL_absent,[],[],48,0.20833333333333334
+A,we_are_supposed_to,"we are supposed to
+",AWL_absent,[],[],64,0.0625
+C,we_are_supposed_to,"we are supposed to
+",AWL_absent,[],[],48,0.0625
+A,we_are_expected_to,"we are expected to
+",AWL_absent,[],[],64,0.078125
+C,we_are_expected_to,"we are expected to
+",AWL_absent,[],[],48,0.10416666666666667
+A,we_will,"we will
+",AWL_absent,[],[],64,0.15625
+C,we_will,"we will
+",AWL_absent,[],[],48,0.20833333333333334
+A,we_can,"we can
+",AWL_absent,[],[],64,0.171875
+C,we_can,"we can
+",AWL_absent,[],[],48,0.2708333333333333
+A,let_us,"let us
+",AWL_absent,[],[],64,0.09375
+C,let_us,"let us
+",AWL_absent,[],[],48,0.125
+A,lets,"let's
+",AWL_absent,[],[],64,0.125
+C,lets,"let's
+",AWL_absent,[],[],48,0.125
+A,require,"require
+",AWL_present,"[""require""]","[""require""]",64,0.109375
+C,require,"require
+",AWL_present,"[""require""]","[""require""]",48,0.16666666666666666
+A,required,"required
+",AWL_present,"[""required""]","[""require""]",64,0.109375
+C,required,"required
+",AWL_present,"[""required""]","[""require""]",48,0.14583333333333334
+A,require_to,"require to
+",AWL_present,"[""require""]","[""require""]",64,0.1875
+C,require_to,"require to
+",AWL_present,"[""require""]","[""require""]",48,0.1875
+A,we_require_to,"we require to
+",AWL_present,"[""require""]","[""require""]",64,0.125
+C,we_require_to,"we require to
+",AWL_present,"[""require""]","[""require""]",48,0.125
+A,this_requires,"this requires
+",AWL_present,"[""requires""]","[""require""]",64,0.046875
+C,this_requires,"this requires
+",AWL_present,"[""requires""]","[""require""]",48,0.08333333333333333
+A,we_need,"we need
+",AWL_absent,[],[],64,0.125
+C,we_need,"we need
+",AWL_absent,[],[],48,0.125
+A,need_to,"need to
+",AWL_absent,[],[],64,0.15625
+C,need_to,"need to
+",AWL_absent,[],[],48,0.20833333333333334
+A,uppercase,"WE NEED TO
+",AWL_absent,[],[],64,0.046875
+C,uppercase,"WE NEED TO
+",AWL_absent,[],[],48,0.10416666666666667
+A,title_colon,"We need to:
+",AWL_absent,[],[],64,0.046875
+C,title_colon,"We need to:
+",AWL_absent,[],[],48,0.0625
+A,period,"we need to.
+",AWL_absent,[],[],64,0.21875
+C,period,"we need to.
+",AWL_absent,[],[],48,0.20833333333333334
+A,extra_space,"we need to 
+",AWL_absent,[],[],64,0.140625
+C,extra_space,"we need to 
+",AWL_absent,[],[],48,0.16666666666666666
+A,double_newline,"we need to
+
+",AWL_absent,[],[],64,0.1875
+C,double_newline,"we need to
+
+",AWL_absent,[],[],48,0.22916666666666666
+A,to_solve_for,"To solve for
+",AWL_absent,[],[],64,0.09375
+C,to_solve_for,"To solve for
+",AWL_absent,[],[],48,0.125
+A,to_find,"To find
+",AWL_absent,[],[],64,0.125
+C,to_find,"To find
+",AWL_absent,[],[],48,0.125
+A,to_determine,"To determine
+",AWL_absent,[],[],64,0.015625
+C,to_determine,"To determine
+",AWL_absent,[],[],48,0.08333333333333333
+A,to_calculate,"To calculate
+",AWL_absent,[],[],64,0.078125
+C,to_calculate,"To calculate
+",AWL_absent,[],[],48,0.10416666666666667
+A,in_order_to_solve_for,"In order to solve for
+",AWL_absent,[],[],64,0.140625
+C,in_order_to_solve_for,"In order to solve for
+",AWL_absent,[],[],48,0.08333333333333333
+A,to_work_out,"To work out
+",AWL_absent,[],[],64,0.03125
+C,to_work_out,"To work out
+",AWL_absent,[],[],48,0.08333333333333333
+A,to_obtain,"To obtain
+",AWL_present,"[""obtain""]","[""obtain""]",64,0.09375
+C,to_obtain,"To obtain
+",AWL_present,"[""obtain""]","[""obtain""]",48,0.08333333333333333
+A,solving_for,"Solving for
+",AWL_absent,[],[],64,0.015625
+C,solving_for,"Solving for
+",AWL_absent,[],[],48,0.041666666666666664
+A,thought_process,"Thought process:
+",AWL_present,"[""process""]","[""process""]",64,0.03125
+C,thought_process,"Thought process:
+",AWL_present,"[""process""]","[""process""]",48,0.041666666666666664
+A,reasoning,"Reasoning:
+",AWL_absent,[],[],64,0.03125
+C,reasoning,"Reasoning:
+",AWL_absent,[],[],48,0.041666666666666664
+A,analysis,"Analysis:
+",AWL_present,"[""analysis""]","[""analyse""]",64,0.015625
+C,analysis,"Analysis:
+",AWL_present,"[""analysis""]","[""analyse""]",48,0.0
+A,solution,"Solution:
+",AWL_absent,[],[],64,0.0
+C,solution,"Solution:
+",AWL_absent,[],[],48,0.0
+A,original_step_by_step,"Let's solve this problem step by step.
+",AWL_absent,[],[],64,0.0
+C,original_step_by_step,"Let's solve this problem step by step.
+",AWL_absent,[],[],48,0.041666666666666664
+A,reason_step_by_step,"Let's reason step by step.
+",AWL_absent,[],[],64,0.0
+C,reason_step_by_step,"Let's reason step by step.
+",AWL_absent,[],[],48,0.020833333333333332
+A,we_solve_step_by_step,"We solve this problem step by step.
+",AWL_absent,[],[],64,0.015625
+C,we_solve_step_by_step,"We solve this problem step by step.
+",AWL_absent,[],[],48,0.041666666666666664

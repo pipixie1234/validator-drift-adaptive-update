@@ -1,0 +1,14 @@
+{
+  "execution_revision": "002_two_gpus_four_generator_processes",
+  "devices": [
+    {"physical_index": 0, "uuid": "GPU-b98c204c-3f11-26d6-384a-e82bb686daa6", "name": "NVIDIA GeForce RTX 4090"},
+    {"physical_index": 1, "uuid": "GPU-daadacfb-4b10-ce9a-0bac-0fbccdfabec5", "name": "NVIDIA GeForce RTX 4090"}
+  ],
+  "generator_processes_per_gpu": 2,
+  "generator_processes_total": 4,
+  "device_binding": "Each subprocess receives exactly one GPU UUID in CUDA_VISIBLE_DEVICES; frozen cuda:0 resolves to that physical GPU.",
+  "question_partition": "Round-robin disjoint whole questions among four workers; completed cached questions omitted.",
+  "generation_function": "Unchanged pilot.formal_run.run through the frozen pilot.formal_parallel.worker wrapper.",
+  "V_scoring_and_SFT": "Sequential stages on physical GPU 0; existing frozen implementation unchanged.",
+  "budget": "Global40 GPU-hours retained. Count each active physical GPU once per elapsed second, regardless of its two worker processes. Offline interval excluded."
+}

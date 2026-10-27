@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "day2_files_preserved": 57,
+  "original400_and_scores_unchanged": true,
+  "C_original_questions": 100,
+  "C_eligible_questions": 96,
+  "C_quarantined_questions": 4,
+  "eligible_candidates": 384,
+  "quarantined_candidates": 16,
+  "supplementary_candidates_separate": 32,
+  "question_hash_family_UUID_split_disjointness": true,
+  "semantic_dedup_guarantee": false,
+  "SFT_selection_has_no_gold_input": true,
+  "A_B_T_inference_started": false,
+  "T_inferred": false,
+  "G1_G2_formal_training_started": false,
+  "G_and_V_natural_label_smokes_passed": true,
+  "formal_protocol_sha256": "259d53ccdd37cd15cb0949799c7e411cfc0a781c9fdf14816e43b8c3df5ca77a",
+  "frozen_implementation_sha256": {
+    "src/pilot/core.py": "d31a2562868fa7b586d8fe56afcf8fd3efe89817fb32564e714810c220a1bd5a",
+    "src/pilot/runtime.py": "936b9cb7881893ec8f75bd2ecc1c7da641db9930b33cb366fb08f84dbf6311d7",
+    "src/pilot/day2_protocol.py": "fbd7037a610a600f376e600003fd2319391f6e1582dde9b9dc5b1f56b57cb387",
+    "src/pilot/day3_protocol.py": "1d914fdc52bc88739f9425fe36fa55b19b0298914fdc743ebcf59544d122b561",
+    "src/pilot/day3_smoke.py": "8e332efa900f87f26af893c9afce695a13b94a2757e93d216f0de9fbc86e5901",
+    "src/pilot/day3_length_replay.py": "98e4925618ac90d24292e1af82d145555f04f81d74e7c5e86a2cb533ce72a475",
+    "src/pilot/day3_finish.py": "0b1b5c050db682cc30f5cf47cc0bc5238dbc8ec4893433fb79bd9f69bfbef2f5"
+  }
+}

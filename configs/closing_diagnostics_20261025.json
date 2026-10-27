@@ -1,0 +1,360 @@
+{
+  "created_at": "2026-10-25T08:28:52.710038+00:00",
+  "purpose": "Close three outstanding diagnostics before moving on; not an additional G update",
+  "source_sha256": {
+    "configs/fpr_patterns_20261024.json": "3b6b866b93a7c5e323023087fc68093dd3edabcbd21f9b44fdbd2042f46d5fc3",
+    "configs/natural_invariance_20261024.json": "9668ac543f80375e2c94a08a6c8affff654a4b9d882a6e614f42995b0be90d08",
+    "configs/prefix_paraphrase_20261024.json": "d7fbd7c0f6dcf0ed26446ccb2b35825c6b5195a0c50a4fc66e7548dbdb5a5063",
+    "runs/g3_extension_20261024/stage_train/train/G2/selected.jsonl": "de2d5c86f1961d82c61b1f343b203b252b90a81fe2e3cf0260d5e3e8ebb26ba7",
+    "runs/g3_extension_20261024/stage_train/train/G2/selection.manifest.json": "8a04f8b8bf329cf1813da7b4808560db01c3c0511ccee83c3d4abfea9015b107",
+    "src/pilot/closing_diagnostics.py": "c718c2f0ec173ef0e03ba515e3371ff1c91defb10705812fe3b1e58b21f38a7f",
+    "src/pilot/natural_invariance.py": "4342ffd73f9b2f3f435118057609bb8d6cba8e7f49bd7d4df576f941cb349a3e",
+    "src/pilot/runtime.py": "936b9cb7881893ec8f75bd2ecc1c7da641db9930b33cb366fb08f84dbf6311d7",
+    "runs/prefix_paraphrase_20261024/V0_scores.jsonl": "adb8a0f46d3819b8d21a3996df2f7f7a52270c4f1c2102f213e1b05f216c7d1e",
+    "runs/natural_invariance_20261024/V0_scores.jsonl": "748eadd614e0dbac183db7254d7f77def409fc24436e8f6c4239f9181cc5e76a",
+    "runs/g3_extension_20261024/V0_G2_A.jsonl": "4b12005f9192a48ab7913b6dd06bbd59f835e8929f111bd5eb7cb9e67833b4f6",
+    "runs/g3_extension_20261024/V0_G2_C.jsonl": "de5d3b65344c34aa8349ec092b4d2d7bf73446cde6d5f297b0cac31d495b1498",
+    "runs/g3_extension_20261024/V0_G3_A.jsonl": "2aa7cc926dc39d9135e2d8ff55ee582038e4714b9a1be67f8fb7d8a50164fd5a",
+    "runs/g3_extension_20261024/V0_G3_C.jsonl": "27319bbce9c5a570801f8fff82dae7e5b43ece269358630ff19652ac35f0d66a"
+  },
+  "input_sha256": {
+    "all_source_answers.jsonl": "fcac2cca62eafa547b2a1a4ab8e0a67f96d6d3f25b519321b6551f2227e5a610",
+    "surface_answers.jsonl": "ed181460a7322939bd3e63332e61bbab766f90de670ad84cd36a5f7cda36ece7",
+    "answer_control_answers.jsonl": "642209a8ed039341cb527a8180fab2270804b6666dceb48fc42aa5a317eb678d",
+    "jobs.jsonl": "f7533e9def67925f36ae2e013eaf30187973d7a4e2ce1d3f53937985a66f5e90",
+    "label_checks.jsonl": "8a3e1f2dee81fee83830a241a20b2ad1bae497bae22710b62393b0dff129eebd"
+  },
+  "chain": {
+    "primary": "Same-engine G2 A598 -> fixedV0 accepted -> actual511 SFT examples -> G3 A598",
+    "patterns": [
+      "we need to",
+      "to solve for",
+      "solve for the",
+      "to determine the probability",
+      "we can",
+      "we will",
+      "we must",
+      "it is essential to",
+      "let's reason step by step",
+      "let's solve this problem step by step",
+      "reasoning",
+      "analysis",
+      "thought process",
+      "AWL_word_any",
+      "nonAWL_word_any"
+    ],
+    "window": "First160chars, stop at first formula/digit/newline; starts among first12 words; case-insensitive exact word sequences",
+    "question_matched": "Repeat chain on actual selected511 questions, average within question before averaging questions; paired bootstrap",
+    "truth_role": "Join independent truth for quality records only, never select/retrain by truth",
+    "original_G0_G1": "Not mixed into primary G2/G3 because generation engine changed"
+  },
+  "symmetric": {
+    "rules": "Exact previous intervention_span/edited functions; one first eligible opening span",
+    "all_cells": "All naturally matching answers: TP/FN/FP/TN and unknown; no decision-based sample filter",
+    "nonmatching": "Unchanged full-pool cached V0 scores; full A598 and C95 denominators",
+    "variants": [
+      "original",
+      "delete",
+      "synonym"
+    ],
+    "contrast": "FPR_G3-FPR_G2 before/after same edit; reduction = original gap minus edited gap. Descriptive counterfactual, not identified training mediation."
+  },
+  "answer_control": {
+    "cohort": "Same G3 natural TP cohort as preceding invariance experiment; single box and no additional hash assertion",
+    "change": "Change only boxed integer value n to (n+1)%1000, preserving all other bytes; independently verify new final answer is wrong",
+    "comparison": "On exactly same eligible TP answers, compare sensitivity to final-answer corruption vs deletion/synonym; originals accepted",
+    "limit": "Reasoning may now contradict final number; final-answer-only judging protocol still fixes label; no claim of full solution validation",
+    "exclusions": [
+      {
+        "candidate_id": "dapo:train:5b817ffc-38f1-4bfc-80cc-b834439af5bd:extension004:G3:1",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:5b817ffc-38f1-4bfc-80cc-b834439af5bd:extension004:G3:2",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:0a241258-54ca-45bf-b806-a13d89cbe31e:extension004:G3:0",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:0a241258-54ca-45bf-b806-a13d89cbe31e:extension004:G3:1",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:0a241258-54ca-45bf-b806-a13d89cbe31e:extension004:G3:3",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:9655bddd-be4f-45fa-bece-b8afaf470e49:extension004:G3:2",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:1201cdd1-f19d-47e3-aa51-f1b31c6d46da:extension004:G3:0",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:aa8f3d32-6d91-4766-9925-82d2a5791598:extension004:G3:0",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:aa8f3d32-6d91-4766-9925-82d2a5791598:extension004:G3:1",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:aa8f3d32-6d91-4766-9925-82d2a5791598:extension004:G3:2",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:aa8f3d32-6d91-4766-9925-82d2a5791598:extension004:G3:3",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:c143c0a0-615d-454b-bcf1-83666db617b4:extension004:G3:0",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:c143c0a0-615d-454b-bcf1-83666db617b4:extension004:G3:1",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:c143c0a0-615d-454b-bcf1-83666db617b4:extension004:G3:2",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:c143c0a0-615d-454b-bcf1-83666db617b4:extension004:G3:3",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:d4f80306-f1dd-409d-9d68-3006fa10e708:extension004:G3:0",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:d4f80306-f1dd-409d-9d68-3006fa10e708:extension004:G3:1",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:d4f80306-f1dd-409d-9d68-3006fa10e708:extension004:G3:2",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:d4f80306-f1dd-409d-9d68-3006fa10e708:extension004:G3:3",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:3382127c-5b3a-4039-a12a-20520447a527:extension004:G3:0",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:9da4756f-7a86-4204-847a-e57ddf4a6dd7:extension004:G3:0",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:9da4756f-7a86-4204-847a-e57ddf4a6dd7:extension004:G3:1",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:9da4756f-7a86-4204-847a-e57ddf4a6dd7:extension004:G3:2",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:9da4756f-7a86-4204-847a-e57ddf4a6dd7:extension004:G3:3",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:e1579fbc-c150-43ad-97ca-0b61b6e3d619:extension004:G3:3",
+        "split": "A",
+        "reason": "additional_hash_assertion"
+      },
+      {
+        "candidate_id": "dapo:train:b52723c8-c9e8-46d4-bd72-b20907ad0338:extension004:G3:2",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:c002442c-1f87-43c9-bbef-26b86fca4662:extension004:G3:0",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:c002442c-1f87-43c9-bbef-26b86fca4662:extension004:G3:1",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:c002442c-1f87-43c9-bbef-26b86fca4662:extension004:G3:2",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:c002442c-1f87-43c9-bbef-26b86fca4662:extension004:G3:3",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15:extension004:G3:1",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15:extension004:G3:3",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:58421902-9b91-4587-8cf9-1afa707922ca:extension004:G3:2",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:58421902-9b91-4587-8cf9-1afa707922ca:extension004:G3:3",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:153bee40-ebb5-43a8-9fbd-f312071e37a2:extension004:G3:3",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:57d2456f-7169-403b-8957-2c6ad17dc134:extension004:G3:0",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:57d2456f-7169-403b-8957-2c6ad17dc134:extension004:G3:2",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:57d2456f-7169-403b-8957-2c6ad17dc134:extension004:G3:3",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:2f07db29-c7ab-43f1-83f5-c8220d01f58b:extension004:G3:0",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:2f07db29-c7ab-43f1-83f5-c8220d01f58b:extension004:G3:1",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:2f07db29-c7ab-43f1-83f5-c8220d01f58b:extension004:G3:2",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:2f07db29-c7ab-43f1-83f5-c8220d01f58b:extension004:G3:3",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363:extension004:G3:2",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:cc634cb0-ad2c-4eae-89d8-6668810055a4:extension004:G3:0",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:cc634cb0-ad2c-4eae-89d8-6668810055a4:extension004:G3:2",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:cc634cb0-ad2c-4eae-89d8-6668810055a4:extension004:G3:3",
+        "split": "A",
+        "reason": "not_integer_0_to_999"
+      },
+      {
+        "candidate_id": "dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:2",
+        "split": "C",
+        "reason": "not_integer_0_to_999"
+      }
+    ]
+  },
+  "fixed_V0": {
+    "fingerprint": "cd87ced708c07dd0c0e502cf7747fcd3b987cb4bbe9cc643d281fc9212d94c70",
+    "adapter": null,
+    "threshold": 0.5,
+    "scoring": {
+      "labels": [
+        "A",
+        "B"
+      ],
+      "accept_threshold": 0.5,
+      "max_context": 8192
+    },
+    "max_context": 8192
+  },
+  "counts": {
+    "all_source": 5544,
+    "surface_answers": 2632,
+    "answer_controls": 327,
+    "logical_jobs": 8223,
+    "fresh_original_sentinels": 24
+  },
+  "fresh_sentinel_candidate_ids": [
+    "dapo:train:0bebc3fd-fad6-4d4e-8fc9-f6d4bff5d768:extension004:G3:0",
+    "dapo:train:1cb3517e-4ad5-4a96-bd67-1affc424eb25:extension004:G3:3",
+    "dapo:train:4e83e2a8-31e4-49b8-9bfa-30882daa44ec:extension004:G3:0",
+    "dapo:train:50659edd-5963-473c-8a61-28ca65b6135c:extension004:G2:2",
+    "dapo:train:59cf81ff-d265-4911-8f22-ed1a43e06eec:extension004:G2:0",
+    "dapo:train:5b7f1e32-eacb-4ab0-972d-e53f22dffd17:extension004:G3:3",
+    "dapo:train:61acc98e-e64b-499b-a6a2-5d11b6a558bc:extension004:G2:2",
+    "dapo:train:77480081-a576-4a44-beb1-a36a8c6ed159:extension004:G2:1",
+    "dapo:train:7dc4cf8f-62a0-460e-9748-ebe523d7482f:extension004:G2:0",
+    "dapo:train:7dc4cf8f-62a0-460e-9748-ebe523d7482f:extension004:G2:1",
+    "dapo:train:8973774b-9073-4d7e-bbbc-37c14a72a7f1:extension004:G3:3",
+    "dapo:train:899448ca-6b93-46a3-8a06-b3e7b5bd176f:extension004:G2:3",
+    "dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7:extension004:G3:3",
+    "dapo:train:93241b34-d07a-49fb-a7b8-95dee225546d:extension004:G3:0",
+    "dapo:train:93241b34-d07a-49fb-a7b8-95dee225546d:extension004:G3:2",
+    "dapo:train:96f058d9-2c30-4770-ae00-50d5475165f9:extension004:G3:3",
+    "dapo:train:9bec99db-3496-436f-afe8-ec036a88364f:extension004:G3:1",
+    "dapo:train:a7c3941b-3aae-4afa-9e74-3d6587972c64:extension004:G3:3",
+    "dapo:train:cf866c42-0a46-4139-9da9-bf6db3ec5ce1:extension004:G2:3",
+    "dapo:train:d0bd7d63-c68f-4c0b-9f68-9a395c0d385e:extension004:G2:1",
+    "dapo:train:d0ce6c9f-9fbc-4dcf-9559-db36550f3a37:extension004:G3:1",
+    "dapo:train:dc982546-51de-4d46-b972-b072b41f0d5c:extension004:G2:0",
+    "dapo:train:dd3a0a9b-3875-4999-bb4e-e7895955328c:extension004:G2:0",
+    "dapo:train:ed2546ff-5223-4494-bca3-ce1cbc648798:extension004:G2:3"
+  ],
+  "bootstrap": 10000,
+  "seed": 20261025,
+  "intervals": "Paired whole questions, exploratory pointwise intervals; training-seed variation not included",
+  "B_used": false,
+  "T_read": false,
+  "G_generation": false,
+  "G_training": false,
+  "V_update": false
+}

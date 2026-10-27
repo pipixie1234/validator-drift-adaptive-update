@@ -1,0 +1,171 @@
+{
+  "revision": "004_G2_to_G3_fixed_V0_extension_20261024",
+  "created_at": "2026-10-24T09:29:31.750417+00:00",
+  "purpose": "Test whether one more G update changes fixed V0 error rates; no claim G capability must improve.",
+  "parent_checkpoint": "original formal G2_SFT",
+  "parent_adapter_fingerprint": "e6bbb6d23a02542ff1e9d2694e1d785af674239a943ee67293845460d08d70d2",
+  "parent_path": "/root/workspace/cross_round_pilot/runs/formal/checkpoints/G2_SFT",
+  "engine": "vllm",
+  "engine_settings": {
+    "dtype": "bfloat16",
+    "lora_dtype": "bfloat16",
+    "max_model_len": 4096,
+    "tensor_parallel_size": 1,
+    "gpu_memory_utilization": 0.7,
+    "max_num_seqs": 64,
+    "max_num_batched_tokens": 4096,
+    "enable_lora": true,
+    "max_lora_rank": 16,
+    "max_loras": 1,
+    "enforce_eager": true,
+    "seed": 42,
+    "generation_config": "vllm"
+  },
+  "vllm_execution": "Continuous engine.add_request/step, FINAL_ONLY n4; same underlying engine and sampling as benchmark; atomic completed-question caches.",
+  "engine_decision": {
+    "matched_questions": 8,
+    "candidates_each": 4,
+    "vllm": {
+      "completed_at": "2026-10-24T09:23:34.897302+00:00",
+      "load_seconds": 20.296043986454606,
+      "total_seconds": 146.66612295620143,
+      "counts": {
+        "C": 32
+      },
+      "output_tokens": 26592,
+      "manifest_sha256": "f9e3037944896c90d9f732aae3aa161a46e5b325a26629f34ec0977c8a959032",
+      "disk_adapter_unchanged": true
+    },
+    "transformers_4_processes": {
+      "completed_at": "2026-10-24T09:26:29.312496+00:00",
+      "total_seconds": 174.26328102312982,
+      "output_tokens": 27265,
+      "candidates": 32,
+      "engine": "4 original Transformers processes, whole-question sharded",
+      "tokens_per_wall_second": 156.45866323600976,
+      "manifest_sha256": "411fa4fd6bce5b4e83b1b519c904ad247c64121c2fecf4a60b5ade0eed9ae2fc"
+    },
+    "vllm_completed": 31,
+    "TF_completed": 31,
+    "correctness_or_V_used_to_choose_engine": false,
+    "vllm_parse_diagnostic": 31,
+    "TF_parse_diagnostic": 31,
+    "matched_wall_speed_ratio_TF_over_vllm": 1.1881631389081557,
+    "runtime_LoRA_precision_limit": "vLLM BF16 vs original PEFT FP32; new G2 and G3 both use selected engine; old outputs only historical/bridge."
+  },
+  "original_sources_sha256": {
+    "configs/protocol_revisions/003_dapo_day3.json": "259d53ccdd37cd15cb0949799c7e411cfc0a781c9fdf14816e43b8c3df5ca77a",
+    "src/pilot/formal_train.py": "086f49e3672c0e93140f580d0c098af01925020d14bcb19b2b9493a514246050",
+    "src/pilot/formal_run.py": "b034c4ec3da39380f3bed25a82c0c8162cdd9268c4f8d3d8a2c5233a4d0332a8",
+    "src/pilot/runtime.py": "936b9cb7881893ec8f75bd2ecc1c7da641db9930b33cb366fb08f84dbf6311d7",
+    "src/pilot/day3_protocol.py": "1d914fdc52bc88739f9425fe36fa55b19b0298914fdc743ebcf59544d122b561",
+    "src/pilot/day2_protocol.py": "fbd7037a610a600f376e600003fd2319391f6e1582dde9b9dc5b1f56b57cb387",
+    "runs/formal/train/G2/report.json": "8db74f99cf511018f7777d5270cc9a609538ff4af57aa18c289815eff8dae62e",
+    "runs/formal/checkpoints/G2_SFT/adapter_model.safetensors": "e1f34e52174573a8edb5a9b08c785162d3f9fc7e50d7f64963bca5312b8a1629",
+    "runs/formal/checkpoints/G2_SFT/adapter_config.json": "981fe025039b4cd8ae2f9c9b3eb8bb9868f5ce2918362bc8ff4f1bdda63a41d6",
+    "runs/formal/G0_A.jsonl": "aabb65413008fc3e999e96c10fba9e582336541b233962f4020cd1a45cb87fb9",
+    "runs/formal/V0_G0_A.jsonl": "12113b32e4d862cddf2839339676c52b4e6189ac7e1c5b1a0e1da194545a7601",
+    "runs/formal/labels_G0_A.jsonl": "24fcf4c978bc3110f5ebd1146070cdadd9f2cfcecc1da27a7435e8c1ba79e226",
+    "runs/formal/G1_A.jsonl": "cbab8fff90ff1b275bf90ea3030d1e31dfbb1208402a6eee4693cca725429dc9",
+    "runs/formal/V0_G1_A.jsonl": "4470ac6ed6c4bf589d2a7525b614280b5661dc7b4689a59ffca5e8a7ca518607",
+    "runs/formal/labels_G1_A.jsonl": "1b4300bee20d122436da11884ed09a03dd368ac03f95efe5d8e8e6fbe884dea1",
+    "runs/formal/G0_C.jsonl": "20d76cb915bcc7fe6c37dd4e228934f423836e6952ed077e2fcc17cc2581b844",
+    "runs/formal/V0_G0_C.jsonl": "6e8521dc419c2f768ae5f2aa9165e4ae306d4148d7ad319042b2f4012039ed78",
+    "runs/formal/labels_G0_C.jsonl": "86c78d5a8e7d87613b7c2cb1fc26839a2a4f50c23d59cc681fa8ede97fda5150",
+    "runs/formal/G1_C.jsonl": "255e3d9a223265e9e4e88dbf448c8364af305fda4b907ee212092f046206e27e",
+    "runs/formal/V0_G1_C.jsonl": "a3c766e995e44362647f1895b4f653e3cb3db7a24912eb00032fe0fcc2321664",
+    "runs/formal/labels_G1_C.jsonl": "78cbc0bb53a3ae499295488721628c3133085036b0a583eaf08a72387082e5ca",
+    "runs/formal/G2_C.jsonl": "6e857f85059bc5a343e4b2f071592d528fa49c402b6d3c4f9a2b4811ad156e4f",
+    "runs/formal/V0_G2_C.jsonl": "ce068f7151dce6ea0e21ff1f9ec6daa2ef575db2e8ba3b76702be36255b9dac5",
+    "runs/formal/labels_G2_C.jsonl": "cfe567d7d4286657c4884676d7a48752050d4b4c3729715e19d04ac453bb6781"
+  },
+  "input_sha256": {
+    "A": "b8b60f22f9e9d476f977e09b182a04394d680ff3f59457ce04d6847b6489cc08",
+    "C": "a607af27b94be69c925df790a24bc9636dc7583314a75509911fd7e0d1466e27"
+  },
+  "questions": {
+    "A": 598,
+    "C": 95
+  },
+  "candidates_per_question": 4,
+  "whole_question_exclusions": {
+    "A": [
+      "4b578eb4-1eb5-4e4e-9c89-68c2cffa64e0",
+      "93eb13ae-df32-4080-bdbf-36f09f2b6fc6"
+    ],
+    "C": [
+      "original4 quarantine",
+      "24d751b7-4429-4605-9754-d1451911fb26"
+    ]
+  },
+  "sampling": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "top_k": 50,
+    "seed": "42+int(digest(question_id)[:8],16)%1000000",
+    "n": 4,
+    "max_context": 4096,
+    "max_new_tokens": "min(3840,4096-exact_prompt_tokens)",
+    "EOS": [
+      151645,
+      151643
+    ]
+  },
+  "fixed_V0": {
+    "parameter_fingerprint": "cd87ced708c07dd0c0e502cf7747fcd3b987cb4bbe9cc643d281fc9212d94c70",
+    "adapter": null,
+    "prompts": "Judge whether the FINAL ANSWER in the candidate response correctly answers the question. Work out the answer independently. A means the final answer is correct; B means it is incorrect. Judge final-answer correctness, not the completeness of the explanation. Respond with exactly A or B.",
+    "implementation_sha256": "936b9cb7881893ec8f75bd2ecc1c7da641db9930b33cb366fb08f84dbf6311d7",
+    "engine": "original Transformers conditional A/B log-likelihood",
+    "threshold": 0.5,
+    "context": 8192
+  },
+  "selection": "Frozen select_feedback; V0>=0.5, complete nontruncated, at most one seeded random response per question, cap512. Truth read only AFTER selection commit.",
+  "training": {
+    "objective": "response_only_SFT",
+    "max_length": 4096,
+    "max_examples_per_round": 512,
+    "epochs": 1,
+    "micro_batch": 1,
+    "gradient_accumulation": 8,
+    "learning_rate": 0.0001,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "optimizer": "AdamW",
+    "seed": 42,
+    "G1_initialization": "original G0 plus new adapter",
+    "G2_initialization": "continue the G1 adapter",
+    "sample_selection": "pilot.day3_protocol.select_feedback; whole invalid questions excluded; one random V0-accepted response per question; unknown answer labels do not filter selections; cap512 without duplicating rows",
+    "quality_reporting": "For each actual A selection, separately report correct/wrong/unknown and bounds after selection; never silently filter by truth.",
+    "truncation": "Never truncate tensors; reject over-context examples, log IDs/reasons; generation-truncated answers excluded by fixed structural rule."
+  },
+  "G3_initialization": "continue actual original G2 adapter; fresh optimizer moments, original seed42 LoRA SFT settings",
+  "engineering_probe": "Compute 17 + 23. No B/C/T content in trainer.",
+  "private_trainer_aliases": "Private trainer G1 parent directory points to original G2; private target G2 denotes extension G3. Original code unchanged.",
+  "analysis": {
+    "contrasts": [
+      "G3 minus G2 on A598",
+      "G3 minus G2 on C95",
+      "same G2 new-engine C minus cached original TF C"
+    ],
+    "metrics": [
+      "FPR",
+      "FNR",
+      "balanced_accuracy",
+      "G_accuracy_verified",
+      "G_accuracy_lower_all",
+      "unknown_fraction",
+      "retention_all"
+    ],
+    "bootstrap": 10000,
+    "seed": 20261024,
+    "unit": "paired whole questions, exploratory percentile95; no multiplicity correction or training-seed uncertainty",
+    "A_role": "feedback training domain",
+    "C_role": "not used in G training; repeatedly used development diagnostic, not final test",
+    "no_stopping_based_on_favorable_results": true
+  },
+  "B_used": false,
+  "T_read": false,
+  "old_protocol_current_pointer_unchanged": true
+}

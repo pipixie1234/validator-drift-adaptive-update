@@ -1,0 +1,40 @@
+{
+  "revision": "002_two_gpus_four_generator_processes",
+  "recorded_at": "2026-10-21T12:32:48.918605+00:00",
+  "authorization": "用户：现在已经是双卡了，帮我按照原来的预想，每个卡配两个进程",
+  "previous_revision_path": "configs/execution_revisions/001_two_generator_processes.json",
+  "previous_revision_sha256": "a2b1d6c65854e09c6e847da46e4937e5f3dc7e18279dd693f8d5a110f0573aea",
+  "original_source_freeze_sha256": "fd613433681a797e3c672af5094f6a845873ec3e365dd710247d8789ff6ebcab",
+  "changed_files": {
+    "src/pilot/formal_pipeline.py": {
+      "previous_sha256": "ec7658bc5f0e19cc520ae8d2b759fd0daea668bf6cc6fe4e7eab4793477af9f5",
+      "archived_previous_path": "runs/formal/execution_revisions/002_before_multigpu/src/pilot/formal_pipeline.py",
+      "active_sha256": "833b5f32baf6f11c6c8397e5562f66ccc805c48813c60fa5eca9d9f55a1eb33b"
+    },
+    "src/pilot/formal_report.py": {
+      "previous_sha256": "a398e141b5f991d3ebdaf0d4f0b2bd60ce06ea361abcdb771b0591fe8b914f2d",
+      "archived_previous_path": "runs/formal/execution_revisions/002_before_multigpu/src/pilot/formal_report.py",
+      "active_sha256": "28bce2168c62d2d2b78b7deefc6ef186fdd3926ad50ae2e0713a5607001fe4ec"
+    }
+  },
+  "added_files_sha256": {
+    "configs/formal_multigpu.json": "04f639eb2d19c157f667176aca2afe86e5b1cdcf30f0f38393fb4000f39b1175",
+    "src/pilot/formal_multigpu.py": "cb478e93337118bc4cb99a0f5a7646f34d80cbb7346a5dce9a1c2a8d5be8ec03",
+    "src/pilot/formal_multigpu_revision.py": "6f8beef09621a08bd7ed617dcc19c1dfe0b8fec8cf111a7e4d601641ce3bc863",
+    "tests/test_formal_multigpu.py": "4a35e3095cafe9fca4f098fe42102671cf834a0e07d9ad46e8793acdd2b6cbae"
+  },
+  "resize_stop_manifest_path": "runs/formal/hardware_resize/stop_manifest.json",
+  "resize_stop_manifest_sha256": "305058860fcd76c01643f658cc68b84776160e802e3b34b46367ee9ee67493d2",
+  "smoke_result_path": "runs/formal/multigpu_smoke/result.json",
+  "smoke_result_sha256": "c5e0aeb4c9b799b31beb134c6a3f65d2155782f56491b7ca4c4bd3c86c3997b9",
+  "frozen_protocol_changed": false,
+  "original_generation_function_changed": false,
+  "V0_scoring_changed": false,
+  "prior_saved_answers_and_G1_adapter_retained": true,
+  "initial_resume_stage": "generate_G1_B",
+  "already_saved_G1_B_questions": 113,
+  "remaining_G1_B_questions": 87,
+  "hardware": "2 x NVIDIA GeForce RTX4090 24GB; two original-sampler G processes per physical GPU",
+  "budget": "Global40 GPU-hours including historical2 hours unchanged; integrate active physical GPUs over time, two processes sharing one card count once; offline interval excluded.",
+  "V_scoring_and_SFT": "Existing sequential implementation, physical GPU0; no training hyperparameter or optimizer changes."
+}

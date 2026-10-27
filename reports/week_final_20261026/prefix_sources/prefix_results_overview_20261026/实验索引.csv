@@ -1,0 +1,9 @@
+﻿experiment,scope,answers,logical_scores,report
+四阶段同前缀,A64+C29，同题四G，各1条原TN；21设置,372,7812,../cross_round_prefix_20261025/cross_round_prefix_report.md
+最初EFP注入,G3 A64+C48，各1条原TN；12设置,112,1344,../fpr_patterns_20261024/EFP_SITE_report.md
+广泛前缀及自然近义替换,G3原TN112条×46；自然命中498条×10,两个不同队列,10132,../prefix_paraphrase_20261024/paraphrase_report.md
+G3正确回答FNR,A839+C147全部已知正确，21设置,986,20706,../prefix_fnr_20261025/prefix_FNR_report.md
+自然TP/TN删除替换,741条原判对且自然命中回答；3设置,741,2223,../natural_invariance_20261024/natural_invariance_report.md
+AWL词表内外,G3原TN112条，20对词及控制,112,4816,../awl_comparison_20261024/AWL_comparison_report.md
+长度关联,复用旧前缀分数，未新增评分,同旧队列,0,../prefix_length_20261025/prefix_length_report.md
+自然表达训练链及对称编辑,训练选样链、G2/G3自然删除/替换、答案改错对照,多个独立队列,8269,../closing_diagnostics_20261025/supplementary_evidence_report.md

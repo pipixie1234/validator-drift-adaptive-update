@@ -1,0 +1,61 @@
+﻿stage,pattern,responses,with_pattern,prevalence,questions_with_pattern
+G2_candidates,we need to,2392,432,0.1806020066889632,141
+G2_candidates,to solve for,2392,118,0.04933110367892977,48
+G2_candidates,solve for the,2392,55,0.022993311036789296,23
+G2_candidates,to determine the probability,2392,64,0.026755852842809364,21
+G2_candidates,we can,2392,0,0.0,0
+G2_candidates,we will,2392,17,0.007107023411371237,6
+G2_candidates,we must,2392,0,0.0,0
+G2_candidates,it is essential to,2392,0,0.0,0
+G2_candidates,let's reason step by step,2392,0,0.0,0
+G2_candidates,let's solve this problem step by step,2392,0,0.0,0
+G2_candidates,reasoning,2392,0,0.0,0
+G2_candidates,analysis,2392,0,0.0,0
+G2_candidates,thought process,2392,0,0.0,0
+G2_candidates,AWL_word_any,2392,45,0.018812709030100336,14
+G2_candidates,nonAWL_word_any,2392,980,0.4096989966555184,297
+V0_accepted,we need to,1502,200,0.13315579227696406,96
+V0_accepted,to solve for,1502,58,0.03861517976031957,32
+V0_accepted,solve for the,1502,31,0.020639147802929428,16
+V0_accepted,to determine the probability,1502,35,0.02330226364846871,16
+V0_accepted,we can,1502,0,0.0,0
+V0_accepted,we will,1502,10,0.006657789613848202,4
+V0_accepted,we must,1502,0,0.0,0
+V0_accepted,it is essential to,1502,0,0.0,0
+V0_accepted,let's reason step by step,1502,0,0.0,0
+V0_accepted,let's solve this problem step by step,1502,0,0.0,0
+V0_accepted,reasoning,1502,0,0.0,0
+V0_accepted,analysis,1502,0,0.0,0
+V0_accepted,thought process,1502,0,0.0,0
+V0_accepted,AWL_word_any,1502,29,0.019307589880159785,11
+V0_accepted,nonAWL_word_any,1502,585,0.38948069241011984,238
+actual_G3_SFT,we need to,511,83,0.162426614481409,83
+actual_G3_SFT,to solve for,511,24,0.046966731898238745,24
+actual_G3_SFT,solve for the,511,15,0.029354207436399216,15
+actual_G3_SFT,to determine the probability,511,11,0.021526418786692758,11
+actual_G3_SFT,we can,511,0,0.0,0
+actual_G3_SFT,we will,511,3,0.005870841487279843,3
+actual_G3_SFT,we must,511,0,0.0,0
+actual_G3_SFT,it is essential to,511,0,0.0,0
+actual_G3_SFT,let's reason step by step,511,0,0.0,0
+actual_G3_SFT,let's solve this problem step by step,511,0,0.0,0
+actual_G3_SFT,reasoning,511,0,0.0,0
+actual_G3_SFT,analysis,511,0,0.0,0
+actual_G3_SFT,thought process,511,0,0.0,0
+actual_G3_SFT,AWL_word_any,511,11,0.021526418786692758,11
+actual_G3_SFT,nonAWL_word_any,511,208,0.4070450097847358,208
+G3_outputs,we need to,2392,410,0.1714046822742475,124
+G3_outputs,to solve for,2392,165,0.06897993311036789,59
+G3_outputs,solve for the,2392,85,0.035535117056856184,32
+G3_outputs,to determine the probability,2392,66,0.027591973244147156,19
+G3_outputs,we can,2392,1,0.0004180602006688963,1
+G3_outputs,we will,2392,16,0.006688963210702341,5
+G3_outputs,we must,2392,0,0.0,0
+G3_outputs,it is essential to,2392,0,0.0,0
+G3_outputs,let's reason step by step,2392,0,0.0,0
+G3_outputs,let's solve this problem step by step,2392,0,0.0,0
+G3_outputs,reasoning,2392,0,0.0,0
+G3_outputs,analysis,2392,0,0.0,0
+G3_outputs,thought process,2392,0,0.0,0
+G3_outputs,AWL_word_any,2392,47,0.019648829431438128,14
+G3_outputs,nonAWL_word_any,2392,946,0.39548494983277593,268

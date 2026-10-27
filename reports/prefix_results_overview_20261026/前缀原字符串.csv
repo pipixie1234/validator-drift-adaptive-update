@@ -1,0 +1,42 @@
+﻿name,prefix,category,prefix_json_literal,standalone_prefix_tokens,standalone_prefix_token_ids
+original,,control,"""""",0,[]
+blank_control,"
+",control,"""\n""",1,[198]
+neutral_control,"Response text:
+",control,"""Response text:\n""",3,"[2582, 1467, 510]"
+to_solve_for,"To solve for
+",solve_for_family,"""To solve for\n""",4,"[1249, 11625, 369, 198]"
+we_need_to,"we need to
+",we_need_reference,"""we need to\n""",4,"[896, 1184, 311, 198]"
+we_can,"we can
+",modality_changed,"""we can\n""",3,"[896, 646, 198]"
+we_will,"we will
+",modality_changed,"""we will\n""",3,"[896, 686, 198]"
+we_have_to,"we have to
+",necessity,"""we have to\n""",4,"[896, 614, 311, 198]"
+we_should,"we should
+",modality_changed,"""we should\n""",3,"[896, 1265, 198]"
+we_must,"we must
+",necessity,"""we must\n""",3,"[896, 1969, 198]"
+it_is_essential_to,"it is essential to
+",necessity,"""it is essential to\n""",5,"[275, 374, 7565, 311, 198]"
+thought_process,"Thought process:
+",reasoning_header,"""Thought process:\n""",3,"[84169, 1882, 510]"
+reasoning,"Reasoning:
+",reasoning_header,"""Reasoning:\n""",3,"[25139, 287, 510]"
+analysis,"Analysis:
+",reasoning_header,"""Analysis:\n""",2,"[26573, 510]"
+original_step_by_step,"Let's solve this problem step by step.
+",reasoning_header,"""Let's solve this problem step by step.\n""",9,"[10061, 594, 11625, 419, 3491, 3019, 553, 3019, 624]"
+reason_step_by_step,"Let's reason step by step.
+",reasoning_header,"""Let's reason step by step.\n""",7,"[10061, 594, 2874, 3019, 553, 3019, 624]"
+solve_for_the,"solve for the
+",EFP_discovered,"""solve for the\n""",4,"[59419, 369, 279, 198]"
+to_determine_probability,"To determine the probability
+",EFP_discovered,"""To determine the probability\n""",5,"[1249, 8253, 279, 18927, 198]"
+symbol_colon,":
+",punctuation,""":\n""",1,[510]
+symbol_period,".
+",punctuation,""".\n""",1,[624]
+symbol_comma,",
+",punctuation,""",\n""",1,[345]

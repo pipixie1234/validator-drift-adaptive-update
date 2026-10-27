@@ -1,0 +1,39 @@
+{
+  "seed": 42,
+  "G_MODEL_DIR": "/root/workspace/Qwen2.5-Math-1.5B-Instruct",
+  "V_MODEL_DIR": "/root/workspace/Qwen3-4B-Instruct-2507",
+  "gsm8k_C_questions": 100,
+  "math_questions_per_subject_level": 2,
+  "math_dataset": "EleutherAI/hendrycks_math",
+  "math_revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+  "math_eligibility": "train only; exclude problems containing [asy] or <img before sampling because models are text-only; no answer-based filtering; exclude unknown difficulty (Level ?) before sampling",
+  "generation": {
+    "num_return_sequences": 4,
+    "max_new_tokens": 1536,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true
+  },
+  "verifier": {
+    "labels": [
+      "A",
+      "B"
+    ],
+    "accept_threshold": 0.5,
+    "max_context": 4096
+  },
+  "G_system": "Please reason step by step, and put your final answer within \\boxed{}.",
+  "G_user_suffix": "\n\nGive a complete solution. End with exactly one final answer in \\boxed{...}. Use the mathematical form requested in the question. Do not add another answer after the box.",
+  "V_system": "Judge whether the FINAL ANSWER in the candidate response correctly answers the question. Work out the answer independently. A means the final answer is correct; B means it is incorrect. Judge final-answer correctness, not the completeness of the explanation. Respond with exactly A or B.",
+  "answer_protocol": "boxed_v2: balanced braces; explicit boxed/hash answers only; units or descriptive suffix allowed when no later conflicting math assertion; repeated boxes must normalize equivalently; truncation always unresolved; MATH exact rational/symbolic equality via restricted LaTeX Lark parser, never execute generated code; unsupported or undecidable equivalence remains unknown",
+  "task_selection_rule": {
+    "math_min_verifiable_coverage": 0.85,
+    "math_min_natural_errors": 30,
+    "math_min_error_questions": 10,
+    "prefer_math_when_gsm8k_error_rate_below": 0.08,
+    "prefer_math_when_gsm8k_error_questions_below": 10
+  },
+  "final_test_policy": "GSM8K T files untouched; do not download or evaluate MATH test; all day2 samples are development-only",
+  "budget_gpu_hours_cap": 4,
+  "scope": "day2 diagnostic and task/protocol selection; no G/V parameter updates"
+}

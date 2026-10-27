@@ -1,0 +1,9 @@
+﻿variant,operation,FP_removed,FP_newly_created,FN_newly_created,FN_removed,FPR_delta,FNR_delta,BA_delta,net_wrong_decisions_delta
+original,strip exact artificially injected prefix back to original body,0,0,0,0,-0.0,-0.0,0.0,0
+neutral_control,strip exact artificially injected prefix back to original body,0,6,3,2,0.027522935779816515,0.006802721088435374,-0.017162828434125945,7
+we_need_to,strip exact artificially injected prefix back to original body,16,1,5,0,-0.06880733944954129,0.034013605442176874,0.017396867003682207,-10
+we_can,strip exact artificially injected prefix back to original body,23,0,10,1,-0.10550458715596331,0.061224489795918366,0.02214004868002247,-14
+we_will,strip exact artificially injected prefix back to original body,17,1,8,1,-0.07339449541284404,0.047619047619047616,0.012887723896898212,-9
+it_is_essential_to,strip exact artificially injected prefix back to original body,20,0,9,1,-0.09174311926605505,0.05442176870748299,0.01866067527928603,-12
+symbol_comma,strip exact artificially injected prefix back to original body,18,0,9,0,-0.08256880733944955,0.061224489795918366,0.01067215877176559,-9
+reason_step_by_step,strip exact artificially injected prefix back to original body,2,5,0,3,0.013761467889908258,-0.02040816326530612,0.0033233476876989316,0

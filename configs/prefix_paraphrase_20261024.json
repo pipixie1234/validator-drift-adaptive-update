@@ -1,0 +1,351 @@
+{
+  "created_at": "2026-10-24T13:20:44.447212+00:00",
+  "purpose": "Test lexical, modal, syntactic and formatting sensitivity with fixed answers and fixed V0",
+  "variants": {
+    "prefix": [
+      {
+        "name": "original",
+        "prefix": "",
+        "category": "control"
+      },
+      {
+        "name": "blank_control",
+        "prefix": "\n",
+        "category": "control"
+      },
+      {
+        "name": "neutral_control",
+        "prefix": "Response text:\n",
+        "category": "control"
+      },
+      {
+        "name": "we_need_to",
+        "prefix": "we need to\n",
+        "category": "we_need_reference"
+      },
+      {
+        "name": "we_have_to",
+        "prefix": "we have to\n",
+        "category": "necessity"
+      },
+      {
+        "name": "we_must",
+        "prefix": "we must\n",
+        "category": "necessity"
+      },
+      {
+        "name": "we_are_required_to",
+        "prefix": "we are required to\n",
+        "category": "necessity"
+      },
+      {
+        "name": "it_is_necessary_to",
+        "prefix": "it is necessary to\n",
+        "category": "necessity"
+      },
+      {
+        "name": "it_is_essential_to",
+        "prefix": "it is essential to\n",
+        "category": "necessity"
+      },
+      {
+        "name": "the_task_requires_us_to",
+        "prefix": "the task requires us to\n",
+        "category": "necessity"
+      },
+      {
+        "name": "this_requires_us_to",
+        "prefix": "this requires us to\n",
+        "category": "necessity"
+      },
+      {
+        "name": "we_should",
+        "prefix": "we should\n",
+        "category": "modality_changed"
+      },
+      {
+        "name": "we_ought_to",
+        "prefix": "we ought to\n",
+        "category": "modality_changed"
+      },
+      {
+        "name": "we_are_supposed_to",
+        "prefix": "we are supposed to\n",
+        "category": "modality_changed"
+      },
+      {
+        "name": "we_are_expected_to",
+        "prefix": "we are expected to\n",
+        "category": "modality_changed"
+      },
+      {
+        "name": "we_will",
+        "prefix": "we will\n",
+        "category": "modality_changed"
+      },
+      {
+        "name": "we_can",
+        "prefix": "we can\n",
+        "category": "modality_changed"
+      },
+      {
+        "name": "let_us",
+        "prefix": "let us\n",
+        "category": "modality_changed"
+      },
+      {
+        "name": "lets",
+        "prefix": "let's\n",
+        "category": "modality_changed"
+      },
+      {
+        "name": "require",
+        "prefix": "require\n",
+        "category": "syntax_stress"
+      },
+      {
+        "name": "required",
+        "prefix": "required\n",
+        "category": "syntax_stress"
+      },
+      {
+        "name": "require_to",
+        "prefix": "require to\n",
+        "category": "syntax_stress"
+      },
+      {
+        "name": "we_require_to",
+        "prefix": "we require to\n",
+        "category": "syntax_stress"
+      },
+      {
+        "name": "this_requires",
+        "prefix": "this requires\n",
+        "category": "syntax_stress"
+      },
+      {
+        "name": "we_need",
+        "prefix": "we need\n",
+        "category": "syntax_stress"
+      },
+      {
+        "name": "need_to",
+        "prefix": "need to\n",
+        "category": "syntax_stress"
+      },
+      {
+        "name": "uppercase",
+        "prefix": "WE NEED TO\n",
+        "category": "surface_format"
+      },
+      {
+        "name": "title_colon",
+        "prefix": "We need to:\n",
+        "category": "surface_format"
+      },
+      {
+        "name": "period",
+        "prefix": "we need to.\n",
+        "category": "surface_format"
+      },
+      {
+        "name": "extra_space",
+        "prefix": "we need to \n",
+        "category": "surface_format"
+      },
+      {
+        "name": "double_newline",
+        "prefix": "we need to\n\n",
+        "category": "surface_format"
+      },
+      {
+        "name": "to_solve_for",
+        "prefix": "To solve for\n",
+        "category": "solve_for_family"
+      },
+      {
+        "name": "to_find",
+        "prefix": "To find\n",
+        "category": "solve_for_family"
+      },
+      {
+        "name": "to_determine",
+        "prefix": "To determine\n",
+        "category": "solve_for_family"
+      },
+      {
+        "name": "to_calculate",
+        "prefix": "To calculate\n",
+        "category": "solve_for_family"
+      },
+      {
+        "name": "in_order_to_solve_for",
+        "prefix": "In order to solve for\n",
+        "category": "solve_for_family"
+      },
+      {
+        "name": "to_work_out",
+        "prefix": "To work out\n",
+        "category": "solve_for_family"
+      },
+      {
+        "name": "to_obtain",
+        "prefix": "To obtain\n",
+        "category": "solve_for_family"
+      },
+      {
+        "name": "solving_for",
+        "prefix": "Solving for\n",
+        "category": "solve_for_family"
+      },
+      {
+        "name": "thought_process",
+        "prefix": "Thought process:\n",
+        "category": "reasoning_header"
+      },
+      {
+        "name": "reasoning",
+        "prefix": "Reasoning:\n",
+        "category": "reasoning_header"
+      },
+      {
+        "name": "analysis",
+        "prefix": "Analysis:\n",
+        "category": "reasoning_header"
+      },
+      {
+        "name": "solution",
+        "prefix": "Solution:\n",
+        "category": "reasoning_header"
+      },
+      {
+        "name": "original_step_by_step",
+        "prefix": "Let's solve this problem step by step.\n",
+        "category": "reasoning_header"
+      },
+      {
+        "name": "reason_step_by_step",
+        "prefix": "Let's reason step by step.\n",
+        "category": "reasoning_header"
+      },
+      {
+        "name": "we_solve_step_by_step",
+        "prefix": "We solve this problem step by step.\n",
+        "category": "reasoning_header"
+      }
+    ],
+    "natural": [
+      {
+        "name": "original",
+        "replacement": "we need to",
+        "category": "unchanged"
+      },
+      {
+        "name": "we_should",
+        "replacement": "we should",
+        "category": "modality_changed"
+      },
+      {
+        "name": "we_have_to",
+        "replacement": "we have to",
+        "category": "near_synonym"
+      },
+      {
+        "name": "we_must",
+        "replacement": "we must",
+        "category": "near_synonym"
+      },
+      {
+        "name": "it_is_necessary_to",
+        "replacement": "it is necessary to",
+        "category": "impersonal_rewrite"
+      },
+      {
+        "name": "the_task_requires_us_to",
+        "replacement": "the task requires us to",
+        "category": "requires_rewrite"
+      },
+      {
+        "name": "we_require_to",
+        "replacement": "we require to",
+        "category": "syntax_stress"
+      },
+      {
+        "name": "require",
+        "replacement": "require",
+        "category": "syntax_stress"
+      },
+      {
+        "name": "delete_target",
+        "replacement": "",
+        "category": "deletion_control"
+      },
+      {
+        "name": "we_can",
+        "replacement": "we can",
+        "category": "modality_changed"
+      }
+    ]
+  },
+  "prefix_samples": {
+    "A": 64,
+    "C": 48
+  },
+  "natural_samples": {
+    "A": 410,
+    "C": 88
+  },
+  "source_sha256": {
+    "configs/fpr_patterns_20261024.json": "3b6b866b93a7c5e323023087fc68093dd3edabcbd21f9b44fdbd2042f46d5fc3",
+    "runs/fpr_patterns_20261024/EFP_intervention_frozen.json": "34d878825d19b9ed0eb2e8b6396fb94b58e2095f73ace66831a89925c03521ec",
+    "runs/fpr_patterns_20261024/EFP_probe_answers.jsonl": "4f66296e6e2aae2b69df469c3ef40d30aa41fa9bd9b06e96a5dc96a24d8fb57b",
+    "runs/fpr_patterns_20261024/EFP_V0_scores.jsonl": "d7af21539b7c933ad077ad96c5a2e2620c0604936a198619ecc3d478d3c7b97f",
+    "src/pilot/runtime.py": "936b9cb7881893ec8f75bd2ecc1c7da641db9930b33cb366fb08f84dbf6311d7",
+    "configs/protocol_revisions/004_g3_extension_20261024.json": "9198b672ece526d970a7ac22cdd8681f18f376f4cb2863b7ef69382ac3b02fc3"
+  },
+  "input_sha256": {
+    "prefix": "4f66296e6e2aae2b69df469c3ef40d30aa41fa9bd9b06e96a5dc96a24d8fb57b",
+    "natural": "e6047f235c4ea89d25ea622d47c474c2101a7be6c727222573b4b06ace88409d"
+  },
+  "independent_answer_preservation_sha256": "77b17353bb25d113f96d1be76432af10a24a8b9d3a5fdbdcf0461dcd0b0d6e8f",
+  "variant_counts": {
+    "prefix": 46,
+    "natural": 10
+  },
+  "planned_scores": 10132,
+  "prefix_arm": "Same112 originally rejected wrong G3 answers as EFP; replace injected standalone prefix with all prespecified variants. One question each, A_confirmation64/C48.",
+  "natural_arm": "ALL498 G3 outputs naturally containing we need to in frozen opening window; only first qualifying occurrence replaced in place. Includes true/false/unknown; preserve all labels.",
+  "natural_window": "Before first formula/backslash/digit/newline, first160chars and among first12 word start positions; exact whitespace-separated we need to span",
+  "natural_case": "Match original first-letter case; do not rewrite original-control bytes; preserve exact prefix/suffix outside recorded span",
+  "modal_semantics": "we should/we can etc alter modal force; require/we require to may be ungrammatical. Report categories separately, not all as semantically identical synonyms.",
+  "fixed_V0": {
+    "fingerprint": "cd87ced708c07dd0c0e502cf7747fcd3b987cb4bbe9cc643d281fc9212d94c70",
+    "adapter": null,
+    "threshold": 0.5,
+    "runtime_sha256": "936b9cb7881893ec8f75bd2ecc1c7da641db9930b33cb366fb08f84dbf6311d7",
+    "scoring": {
+      "labels": [
+        "A",
+        "B"
+      ],
+      "accept_threshold": 0.5,
+      "max_context": 8192
+    },
+    "max_context": 8192
+  },
+  "reuse_rule": "Only identical old prefix+question+original body with fixed model/scoring provenance; independently rescore every original in both arms and match cached original score/decision.",
+  "primary_contrasts": {
+    "prefix": "every new prefix minus we_need_to, paired two-sided exact McNemar; BH across variants*two pools",
+    "natural": "each replacement minus original FPR on known wrong; cluster by question, bootstrap10000 seed20261024; BH across9*2 tests using cluster-influence Student t p"
+  },
+  "secondary": "Prefix vs neutral control separate BH family; natural known-correct FNR separate BH family. Unknown acceptance descriptive only.",
+  "overall_G3_projection": "All natural occurrences included; unchanged nonmatching answers reuse baseline scores. Exact edited-G3 whole-pool FPR/FNR, not G2-G3 mediation or causal training contribution.",
+  "selection": "All variants frozen before new scores; no result-driven variant/sample expansion; report all variants and intervals, no best-prefix-only headline",
+  "seed": 20261024,
+  "bootstrap": 10000,
+  "B_used": false,
+  "T_read": false,
+  "G_training": false,
+  "G_generation": false,
+  "V_engine": "Original Transformers, not changed to vLLM for scoring"
+}

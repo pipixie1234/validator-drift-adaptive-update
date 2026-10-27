@@ -1,0 +1,7 @@
+﻿split,contrast,role,delta,low,high,valid_replicates,interpretation
+A,G3-G2,primary_same_vLLM,-0.0034722222222222238,-0.0625,0.05729166666666666,10000,Exploratory uniform-prefix average; no confirmatory p-value
+A,G1-G0,secondary_same_Transformers,0.028645833333333336,-0.025173611111111112,0.08246527777777778,10000,Exploratory uniform-prefix average; no confirmatory p-value
+A,G3-G0,descriptive_engine_confounded,0.026909722222222217,-0.02604166666666667,0.08072916666666666,10000,Exploratory uniform-prefix average; no confirmatory p-value
+C,G3-G2,primary_same_vLLM,0.013409961685823757,-0.09578544061302684,0.1283524904214559,10000,Exploratory uniform-prefix average; no confirmatory p-value
+C,G1-G0,secondary_same_Transformers,0.07471264367816091,-0.03256704980842909,0.18395593869731736,10000,Exploratory uniform-prefix average; no confirmatory p-value
+C,G3-G0,descriptive_engine_confounded,0.07471264367816091,-0.0038793103448275736,0.16283524904214564,10000,Exploratory uniform-prefix average; no confirmatory p-value

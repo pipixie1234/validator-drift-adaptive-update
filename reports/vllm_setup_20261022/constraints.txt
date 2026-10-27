@@ -1,0 +1,6 @@
+torch==2.7.1+cu126
+torchvision==0.22.1+cu126
+torchaudio==2.7.1+cu126
+transformers==4.56.2
+numpy==2.2.6
+vllm==0.10.0+cu126

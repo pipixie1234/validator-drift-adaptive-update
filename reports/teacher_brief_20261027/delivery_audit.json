@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "date": "2026-10-27",
+  "slides": 19,
+  "summary_pdf_pages": 11,
+  "excel_sheets": 22,
+  "excel_data_rows": {
+    "01_七天与后续流程": 8,
+    "02_题池与指标": 5,
+    "03_T固定V0": 4,
+    "04_T跨轮配对区间": 15,
+    "05_G实际训练": 3,
+    "06_G监督质量对照": 4,
+    "07_G对照配对区间": 15,
+    "08_前缀完整面板": 8,
+    "09_前缀双向翻转": 8,
+    "10_跨G同前缀": 168,
+    "11_机制对照": 7,
+    "12_自然编辑跨轮差": 6,
+    "13_原V更新T结果": 12,
+    "14_修复训练配置": 4,
+    "15_新E所有指标": 30,
+    "16_修复与新增错误": 24,
+    "17_增强直接对照": 18,
+    "18_局部修复和新翻转": 5,
+    "19_参考文献": 4,
+    "20_数据来源与哈希": 20
+  },
+  "source_files_rechecked": 20,
+  "source_data_unchanged": true,
+  "model_training_or_scoring_added": false,
+  "PPTX_text_editable": true,
+  "PDF_Chinese_fonts_embedded": true,
+  "all_slide_textboxes_fit": true,
+  "raw_counts_and_FPR_FNR_recomputed": true,
+  "zip_crc_passed": true,
+  "artifacts": {
+    "研究总结.md": {
+      "bytes": 21818,
+      "sha256": "43a89ccefc3a710c5e6f7ceccb8a977149a8c9999257f99befa013d7ba2f6300"
+    },
+    "关键实验结果.xlsx": {
+      "bytes": 71616,
+      "sha256": "2cf9e6611b9b950fbf2a8cc21bd0d1c01ab1248316018a94954d0b829a2900f1"
+    },
+    "导师汇报.pdf": {
+      "bytes": 469822,
+      "sha256": "92355088bc9ceb9562d4c8ed4b2dccf9c3690626aa589802e9a0e816d174cd16"
+    },
+    "导师汇报.pptx": {
+      "bytes": 376539,
+      "sha256": "ab63207fca3c90af587d677a8c255bd242a15fd6d73e087d317b7fc7c72868a9"
+    },
+    "研究总结.pdf": {
+      "bytes": 495035,
+      "sha256": "fb4d70e1b80dd117233f1390a1f0c1b6fb577c7c0ae4888abbf431ca79736a24"
+    },
+    "导师交流材料.zip": {
+      "bytes": 1567055,
+      "sha256": "f0ecb90b6c3e80229782b10a1aaf9909327575caf9b1b6ab392089deb1d02721"
+    }
+  },
+  "all_summary_and_slide_font_glyphs_verified": true,
+  "prior_experiment_files_verified_unchanged": 4433
+}

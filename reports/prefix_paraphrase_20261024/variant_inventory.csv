@@ -1,0 +1,103 @@
+﻿arm,name,prefix,category,replacement
+prefix,original,,control,
+prefix,blank_control,"
+",control,
+prefix,neutral_control,"Response text:
+",control,
+prefix,we_need_to,"we need to
+",we_need_reference,
+prefix,we_have_to,"we have to
+",necessity,
+prefix,we_must,"we must
+",necessity,
+prefix,we_are_required_to,"we are required to
+",necessity,
+prefix,it_is_necessary_to,"it is necessary to
+",necessity,
+prefix,it_is_essential_to,"it is essential to
+",necessity,
+prefix,the_task_requires_us_to,"the task requires us to
+",necessity,
+prefix,this_requires_us_to,"this requires us to
+",necessity,
+prefix,we_should,"we should
+",modality_changed,
+prefix,we_ought_to,"we ought to
+",modality_changed,
+prefix,we_are_supposed_to,"we are supposed to
+",modality_changed,
+prefix,we_are_expected_to,"we are expected to
+",modality_changed,
+prefix,we_will,"we will
+",modality_changed,
+prefix,we_can,"we can
+",modality_changed,
+prefix,let_us,"let us
+",modality_changed,
+prefix,lets,"let's
+",modality_changed,
+prefix,require,"require
+",syntax_stress,
+prefix,required,"required
+",syntax_stress,
+prefix,require_to,"require to
+",syntax_stress,
+prefix,we_require_to,"we require to
+",syntax_stress,
+prefix,this_requires,"this requires
+",syntax_stress,
+prefix,we_need,"we need
+",syntax_stress,
+prefix,need_to,"need to
+",syntax_stress,
+prefix,uppercase,"WE NEED TO
+",surface_format,
+prefix,title_colon,"We need to:
+",surface_format,
+prefix,period,"we need to.
+",surface_format,
+prefix,extra_space,"we need to 
+",surface_format,
+prefix,double_newline,"we need to
+
+",surface_format,
+prefix,to_solve_for,"To solve for
+",solve_for_family,
+prefix,to_find,"To find
+",solve_for_family,
+prefix,to_determine,"To determine
+",solve_for_family,
+prefix,to_calculate,"To calculate
+",solve_for_family,
+prefix,in_order_to_solve_for,"In order to solve for
+",solve_for_family,
+prefix,to_work_out,"To work out
+",solve_for_family,
+prefix,to_obtain,"To obtain
+",solve_for_family,
+prefix,solving_for,"Solving for
+",solve_for_family,
+prefix,thought_process,"Thought process:
+",reasoning_header,
+prefix,reasoning,"Reasoning:
+",reasoning_header,
+prefix,analysis,"Analysis:
+",reasoning_header,
+prefix,solution,"Solution:
+",reasoning_header,
+prefix,original_step_by_step,"Let's solve this problem step by step.
+",reasoning_header,
+prefix,reason_step_by_step,"Let's reason step by step.
+",reasoning_header,
+prefix,we_solve_step_by_step,"We solve this problem step by step.
+",reasoning_header,
+natural,original,,unchanged,we need to
+natural,we_should,,modality_changed,we should
+natural,we_have_to,,near_synonym,we have to
+natural,we_must,,near_synonym,we must
+natural,it_is_necessary_to,,impersonal_rewrite,it is necessary to
+natural,the_task_requires_us_to,,requires_rewrite,the task requires us to
+natural,we_require_to,,syntax_stress,we require to
+natural,require,,syntax_stress,require
+natural,delete_target,,deletion_control,
+natural,we_can,,modality_changed,we can

@@ -1,0 +1,87 @@
+{
+  "n": 150,
+  "correct": 142,
+  "incorrect": 8,
+  "TP": 137,
+  "TN": 2,
+  "FP": 6,
+  "FN": 5,
+  "G_accuracy": 0.9466666666666667,
+  "V_accuracy": 0.9266666666666666,
+  "false_accept_rate": 0.75,
+  "false_reject_rate": 0.035211267605633804,
+  "accepted_error_fraction": 0.04195804195804196,
+  "acceptance_rate": 0.9533333333333334,
+  "balanced_accuracy": 0.6073943661971831,
+  "independently_wrong_question_count": 4,
+  "total_candidates": 200,
+  "verifiable_coverage": 0.75,
+  "format_status_counts": {
+    "verified_numeric": 150,
+    "missing_marker": 49,
+    "truncated": 1
+  },
+  "truncated_count": 1,
+  "format_compliant_count": 0,
+  "answer_format_counts": {
+    "boxed": 150,
+    "unparsed": 50
+  },
+  "strict_hash_only_metrics": {
+    "n": 0,
+    "correct": 0,
+    "incorrect": 0,
+    "TP": 0,
+    "TN": 0,
+    "FP": 0,
+    "FN": 0,
+    "G_accuracy": null,
+    "V_accuracy": null,
+    "false_accept_rate": null,
+    "false_reject_rate": null,
+    "accepted_error_fraction": null,
+    "acceptance_rate": null,
+    "balanced_accuracy": null
+  },
+  "protocol_deviation": "G did not follow required #### format; independently verifiable terminal numeric boxes are an explicitly reported C diagnostic extension.",
+  "auroc": 0.7825704225352113,
+  "bootstrap_valid_replicates": {
+    "G_accuracy": 1000,
+    "false_accept_rate": 987,
+    "false_reject_rate": 1000,
+    "accepted_error_fraction": 1000,
+    "acceptance_rate": 1000
+  },
+  "question_cluster_bootstrap_95ci": {
+    "G_accuracy": [
+      0.8789451449369557,
+      0.9932897091722596
+    ],
+    "false_accept_rate": [
+      0.0,
+      1.0
+    ],
+    "false_reject_rate": [
+      0.0,
+      0.10324256388772517
+    ],
+    "accepted_error_fraction": [
+      0.0,
+      0.10001798561151078
+    ],
+    "acceptance_rate": [
+      0.8888706140350877,
+      0.9934221276229791
+    ]
+  },
+  "output_length_tokens": {
+    "min": 119,
+    "median": 300.5,
+    "p95": 527.7499999999998,
+    "max": 768,
+    "mean": 316.195
+  },
+  "operational_G_accuracy_format_failure_as_wrong": 0.0,
+  "G_accuracy_unverifiable_as_wrong": 0.71,
+  "operational_acceptance_all_scored": 0.965
+}

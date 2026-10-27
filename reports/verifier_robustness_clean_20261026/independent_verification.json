@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "at": "2026-10-27T06:44:24.904567+00:00",
+  "repair_damage_rows_recounted": 189,
+  "new_E_primary_paired_intervals_independently_recomputed": 48,
+  "raw_scores": 35580,
+  "E_raw_questions": 64,
+  "E_primary_valid_questions": 60,
+  "E_whole_question_quarantine": [
+    "dapo:train:3a6cf923-bbb4-42fb-a31e-52a7fddbc95e",
+    "dapo:train:6487d117-7012-40d5-bbb2-320bcd726ad7",
+    "dapo:train:69074642-9da5-4f3b-b1e2-35178d4196aa",
+    "dapo:train:c1f8d6f8-cce1-4369-ad0b-abf98105e70b"
+  ],
+  "all_training_masks_and_actual_presentations_verified": true,
+  "same_seed_initial_adapter_4arms": true,
+  "full_template_and_tokens_independently_reencoded": 7116,
+  "new_E_question_hash_family_UUID_disjoint": true,
+  "original_math_body_and_unknowns_preserved": true,
+  "archive_CRC_and_manifest_verified": true,
+  "PDF_pages": 5,
+  "old_models_and_raw_data_retained": true
+}

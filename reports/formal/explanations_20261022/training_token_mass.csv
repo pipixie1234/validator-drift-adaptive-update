@@ -1,0 +1,7 @@
+﻿target,correct,examples,supervised_tokens,token_fraction,note
+G1,True,223,161003,0.388118024250898,Token mass is not gradient contribution; original objective averages per-example mean token loss.
+G1,False,259,233019,0.5617216691174698,Token mass is not gradient contribution; original objective averages per-example mean token loss.
+G1,,18,20808,0.050160306631632234,Token mass is not gradient contribution; original objective averages per-example mean token loss.
+G2,True,229,179445,0.42735683920980244,Token mass is not gradient contribution; original objective averages per-example mean token loss.
+G2,False,259,230790,0.5496374093523381,Token mass is not gradient contribution; original objective averages per-example mean token loss.
+G2,,13,9660,0.023005751437859465,Token mass is not gradient contribution; original objective averages per-example mean token loss.

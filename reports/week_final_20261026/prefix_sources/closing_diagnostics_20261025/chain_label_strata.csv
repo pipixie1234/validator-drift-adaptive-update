@@ -1,0 +1,181 @@
+﻿stage,label,pattern,responses,with_pattern,prevalence
+G2_candidates,correct,we need to,856,91,0.10630841121495327
+G2_candidates,correct,to solve for,856,32,0.037383177570093455
+G2_candidates,correct,solve for the,856,20,0.02336448598130841
+G2_candidates,correct,to determine the probability,856,22,0.02570093457943925
+G2_candidates,correct,we can,856,0,0.0
+G2_candidates,correct,we will,856,8,0.009345794392523364
+G2_candidates,correct,we must,856,0,0.0
+G2_candidates,correct,it is essential to,856,0,0.0
+G2_candidates,correct,let's reason step by step,856,0,0.0
+G2_candidates,correct,let's solve this problem step by step,856,0,0.0
+G2_candidates,correct,reasoning,856,0,0.0
+G2_candidates,correct,analysis,856,0,0.0
+G2_candidates,correct,thought process,856,0,0.0
+G2_candidates,correct,AWL_word_any,856,14,0.016355140186915886
+G2_candidates,correct,nonAWL_word_any,856,323,0.3773364485981308
+G2_candidates,wrong,we need to,1360,304,0.2235294117647059
+G2_candidates,wrong,to solve for,1360,76,0.05588235294117647
+G2_candidates,wrong,solve for the,1360,34,0.025
+G2_candidates,wrong,to determine the probability,1360,40,0.029411764705882353
+G2_candidates,wrong,we can,1360,0,0.0
+G2_candidates,wrong,we will,1360,9,0.006617647058823529
+G2_candidates,wrong,we must,1360,0,0.0
+G2_candidates,wrong,it is essential to,1360,0,0.0
+G2_candidates,wrong,let's reason step by step,1360,0,0.0
+G2_candidates,wrong,let's solve this problem step by step,1360,0,0.0
+G2_candidates,wrong,reasoning,1360,0,0.0
+G2_candidates,wrong,analysis,1360,0,0.0
+G2_candidates,wrong,thought process,1360,0,0.0
+G2_candidates,wrong,AWL_word_any,1360,30,0.022058823529411766
+G2_candidates,wrong,nonAWL_word_any,1360,578,0.425
+G2_candidates,unknown,we need to,176,37,0.21022727272727273
+G2_candidates,unknown,to solve for,176,10,0.056818181818181816
+G2_candidates,unknown,solve for the,176,1,0.005681818181818182
+G2_candidates,unknown,to determine the probability,176,2,0.011363636363636364
+G2_candidates,unknown,we can,176,0,0.0
+G2_candidates,unknown,we will,176,0,0.0
+G2_candidates,unknown,we must,176,0,0.0
+G2_candidates,unknown,it is essential to,176,0,0.0
+G2_candidates,unknown,let's reason step by step,176,0,0.0
+G2_candidates,unknown,let's solve this problem step by step,176,0,0.0
+G2_candidates,unknown,reasoning,176,0,0.0
+G2_candidates,unknown,analysis,176,0,0.0
+G2_candidates,unknown,thought process,176,0,0.0
+G2_candidates,unknown,AWL_word_any,176,1,0.005681818181818182
+G2_candidates,unknown,nonAWL_word_any,176,79,0.44886363636363635
+V0_accepted,correct,we need to,764,70,0.09162303664921466
+V0_accepted,correct,to solve for,764,30,0.03926701570680628
+V0_accepted,correct,solve for the,764,19,0.024869109947643978
+V0_accepted,correct,to determine the probability,764,21,0.0274869109947644
+V0_accepted,correct,we can,764,0,0.0
+V0_accepted,correct,we will,764,7,0.009162303664921465
+V0_accepted,correct,we must,764,0,0.0
+V0_accepted,correct,it is essential to,764,0,0.0
+V0_accepted,correct,let's reason step by step,764,0,0.0
+V0_accepted,correct,let's solve this problem step by step,764,0,0.0
+V0_accepted,correct,reasoning,764,0,0.0
+V0_accepted,correct,analysis,764,0,0.0
+V0_accepted,correct,thought process,764,0,0.0
+V0_accepted,correct,AWL_word_any,764,13,0.017015706806282723
+V0_accepted,correct,nonAWL_word_any,764,281,0.36780104712041883
+V0_accepted,wrong,we need to,682,122,0.17888563049853373
+V0_accepted,wrong,to solve for,682,27,0.039589442815249266
+V0_accepted,wrong,solve for the,682,12,0.017595307917888565
+V0_accepted,wrong,to determine the probability,682,14,0.020527859237536656
+V0_accepted,wrong,we can,682,0,0.0
+V0_accepted,wrong,we will,682,3,0.004398826979472141
+V0_accepted,wrong,we must,682,0,0.0
+V0_accepted,wrong,it is essential to,682,0,0.0
+V0_accepted,wrong,let's reason step by step,682,0,0.0
+V0_accepted,wrong,let's solve this problem step by step,682,0,0.0
+V0_accepted,wrong,reasoning,682,0,0.0
+V0_accepted,wrong,analysis,682,0,0.0
+V0_accepted,wrong,thought process,682,0,0.0
+V0_accepted,wrong,AWL_word_any,682,15,0.021994134897360705
+V0_accepted,wrong,nonAWL_word_any,682,279,0.4090909090909091
+V0_accepted,unknown,we need to,56,8,0.14285714285714285
+V0_accepted,unknown,to solve for,56,1,0.017857142857142856
+V0_accepted,unknown,solve for the,56,0,0.0
+V0_accepted,unknown,to determine the probability,56,0,0.0
+V0_accepted,unknown,we can,56,0,0.0
+V0_accepted,unknown,we will,56,0,0.0
+V0_accepted,unknown,we must,56,0,0.0
+V0_accepted,unknown,it is essential to,56,0,0.0
+V0_accepted,unknown,let's reason step by step,56,0,0.0
+V0_accepted,unknown,let's solve this problem step by step,56,0,0.0
+V0_accepted,unknown,reasoning,56,0,0.0
+V0_accepted,unknown,analysis,56,0,0.0
+V0_accepted,unknown,thought process,56,0,0.0
+V0_accepted,unknown,AWL_word_any,56,1,0.017857142857142856
+V0_accepted,unknown,nonAWL_word_any,56,25,0.44642857142857145
+actual_G3_SFT,correct,we need to,226,29,0.12831858407079647
+actual_G3_SFT,correct,to solve for,226,8,0.035398230088495575
+actual_G3_SFT,correct,solve for the,226,6,0.02654867256637168
+actual_G3_SFT,correct,to determine the probability,226,4,0.017699115044247787
+actual_G3_SFT,correct,we can,226,0,0.0
+actual_G3_SFT,correct,we will,226,2,0.008849557522123894
+actual_G3_SFT,correct,we must,226,0,0.0
+actual_G3_SFT,correct,it is essential to,226,0,0.0
+actual_G3_SFT,correct,let's reason step by step,226,0,0.0
+actual_G3_SFT,correct,let's solve this problem step by step,226,0,0.0
+actual_G3_SFT,correct,reasoning,226,0,0.0
+actual_G3_SFT,correct,analysis,226,0,0.0
+actual_G3_SFT,correct,thought process,226,0,0.0
+actual_G3_SFT,correct,AWL_word_any,226,5,0.022123893805309734
+actual_G3_SFT,correct,nonAWL_word_any,226,91,0.4026548672566372
+actual_G3_SFT,wrong,we need to,266,50,0.18796992481203006
+actual_G3_SFT,wrong,to solve for,266,15,0.05639097744360902
+actual_G3_SFT,wrong,solve for the,266,9,0.03383458646616541
+actual_G3_SFT,wrong,to determine the probability,266,7,0.02631578947368421
+actual_G3_SFT,wrong,we can,266,0,0.0
+actual_G3_SFT,wrong,we will,266,1,0.0037593984962406013
+actual_G3_SFT,wrong,we must,266,0,0.0
+actual_G3_SFT,wrong,it is essential to,266,0,0.0
+actual_G3_SFT,wrong,let's reason step by step,266,0,0.0
+actual_G3_SFT,wrong,let's solve this problem step by step,266,0,0.0
+actual_G3_SFT,wrong,reasoning,266,0,0.0
+actual_G3_SFT,wrong,analysis,266,0,0.0
+actual_G3_SFT,wrong,thought process,266,0,0.0
+actual_G3_SFT,wrong,AWL_word_any,266,6,0.022556390977443608
+actual_G3_SFT,wrong,nonAWL_word_any,266,107,0.40225563909774437
+actual_G3_SFT,unknown,we need to,19,4,0.21052631578947367
+actual_G3_SFT,unknown,to solve for,19,1,0.05263157894736842
+actual_G3_SFT,unknown,solve for the,19,0,0.0
+actual_G3_SFT,unknown,to determine the probability,19,0,0.0
+actual_G3_SFT,unknown,we can,19,0,0.0
+actual_G3_SFT,unknown,we will,19,0,0.0
+actual_G3_SFT,unknown,we must,19,0,0.0
+actual_G3_SFT,unknown,it is essential to,19,0,0.0
+actual_G3_SFT,unknown,let's reason step by step,19,0,0.0
+actual_G3_SFT,unknown,let's solve this problem step by step,19,0,0.0
+actual_G3_SFT,unknown,reasoning,19,0,0.0
+actual_G3_SFT,unknown,analysis,19,0,0.0
+actual_G3_SFT,unknown,thought process,19,0,0.0
+actual_G3_SFT,unknown,AWL_word_any,19,0,0.0
+actual_G3_SFT,unknown,nonAWL_word_any,19,10,0.5263157894736842
+G3_outputs,correct,we need to,839,87,0.10369487485101311
+G3_outputs,correct,to solve for,839,39,0.04648390941597139
+G3_outputs,correct,solve for the,839,25,0.029797377830750895
+G3_outputs,correct,to determine the probability,839,22,0.026221692491060787
+G3_outputs,correct,we can,839,0,0.0
+G3_outputs,correct,we will,839,8,0.009535160905840286
+G3_outputs,correct,we must,839,0,0.0
+G3_outputs,correct,it is essential to,839,0,0.0
+G3_outputs,correct,let's reason step by step,839,0,0.0
+G3_outputs,correct,let's solve this problem step by step,839,0,0.0
+G3_outputs,correct,reasoning,839,0,0.0
+G3_outputs,correct,analysis,839,0,0.0
+G3_outputs,correct,thought process,839,0,0.0
+G3_outputs,correct,AWL_word_any,839,18,0.021454112038140644
+G3_outputs,correct,nonAWL_word_any,839,310,0.3694874851013111
+G3_outputs,wrong,we need to,1397,283,0.20257695060844666
+G3_outputs,wrong,to solve for,1397,118,0.08446671438797423
+G3_outputs,wrong,solve for the,1397,58,0.04151753758052971
+G3_outputs,wrong,to determine the probability,1397,44,0.031496062992125984
+G3_outputs,wrong,we can,1397,1,0.0007158196134574087
+G3_outputs,wrong,we will,1397,8,0.00572655690765927
+G3_outputs,wrong,we must,1397,0,0.0
+G3_outputs,wrong,it is essential to,1397,0,0.0
+G3_outputs,wrong,let's reason step by step,1397,0,0.0
+G3_outputs,wrong,let's solve this problem step by step,1397,0,0.0
+G3_outputs,wrong,reasoning,1397,0,0.0
+G3_outputs,wrong,analysis,1397,0,0.0
+G3_outputs,wrong,thought process,1397,0,0.0
+G3_outputs,wrong,AWL_word_any,1397,29,0.020758768790264854
+G3_outputs,wrong,nonAWL_word_any,1397,561,0.4015748031496063
+G3_outputs,unknown,we need to,156,40,0.2564102564102564
+G3_outputs,unknown,to solve for,156,8,0.05128205128205128
+G3_outputs,unknown,solve for the,156,2,0.01282051282051282
+G3_outputs,unknown,to determine the probability,156,0,0.0
+G3_outputs,unknown,we can,156,0,0.0
+G3_outputs,unknown,we will,156,0,0.0
+G3_outputs,unknown,we must,156,0,0.0
+G3_outputs,unknown,it is essential to,156,0,0.0
+G3_outputs,unknown,let's reason step by step,156,0,0.0
+G3_outputs,unknown,let's solve this problem step by step,156,0,0.0
+G3_outputs,unknown,reasoning,156,0,0.0
+G3_outputs,unknown,analysis,156,0,0.0
+G3_outputs,unknown,thought process,156,0,0.0
+G3_outputs,unknown,AWL_word_any,156,0,0.0
+G3_outputs,unknown,nonAWL_word_any,156,75,0.4807692307692308

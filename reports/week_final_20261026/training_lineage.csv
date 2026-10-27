@@ -1,0 +1,6 @@
+﻿model,parent,training_pool,examples,steps,epochs,input_tokens,loss_tokens,selected_correct_by_original_reference,selected_wrong_by_original_reference,selected_unknown,selected_verified_error_fraction,seconds_train_save_reload,truncated_examples,base_frozen,adapter_fingerprint,source,note,decision_tokens
+G1,G0,A,500,63,1,486046,414830,223,259,18,0.5373443983402489,162.6184903709218,0,True,dfd9bf6f882a76834c9b250565eb80f44a09689d5556c9fc74fe4d5ae3fb91ca,runs/formal/train/G1/report.json,,
+G2,G1,A,501,63,1,491444,419895,229,259,13,0.5307377049180327,166.68189098872244,0,True,e6bbb6d23a02542ff1e9d2694e1d785af674239a943ee67293845460d08d70d2,runs/formal/train/G2/report.json,,
+G3,G2,A,511,64,1,487503,414590,226,266,19,0.540650406504065,121.7907670289278,0,True,9d6511fe8337d6f8f44be29e7375d2aec0355c3fa5ad3bda4ebcfa597a190c81,runs/g3_extension_20261024/stage_train/train/G2/report.json,actualG3 has private-stage G2 alias; actual parent/target verified by fingerprints,
+Vrand,V0,B,256,32,1,246184,768,,,,,112.1126006450504,0,True,6654c8c77c3e0ba7c98ad8ee2fc6c0ac9d3645a411f4b73a0d4257f8bf07ff06,runs/verifier_update_20261025/Vrand/training_report.json,,256
+Vtarget,V0,B,256,32,1,247488,768,,,,,107.95109917595983,0,True,1d8b7c6fedae89af77f748a38092bafe381c23382b5f62c90c5fc03bc0b38050,runs/verifier_update_20261025/Vtarget/training_report.json,,256

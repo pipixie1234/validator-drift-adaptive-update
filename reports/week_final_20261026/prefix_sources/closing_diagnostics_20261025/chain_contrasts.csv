@@ -1,0 +1,61 @@
+﻿pattern,contrast,questions,delta,low,high,valid_replicates
+we need to,V0_accepted minus G2_candidates,511,0.0034246575342465613,-0.003913894324853229,0.010767286366601373,10000
+to solve for,V0_accepted minus G2_candidates,511,-0.001141552511415525,-0.006033920417482061,0.003587736464448793,10000
+solve for the,V0_accepted minus G2_candidates,511,-0.0004892367906066536,-0.0045662100456621,0.003587736464448793,10000
+to determine the probability,V0_accepted minus G2_candidates,511,0.0,-0.0014677103718199608,0.0014677103718199608,10000
+we can,V0_accepted minus G2_candidates,511,0.0,0.0,0.0,10000
+we will,V0_accepted minus G2_candidates,511,-0.00032615786040443573,-0.0009784735812133072,0.0,10000
+we must,V0_accepted minus G2_candidates,511,0.0,0.0,0.0,10000
+it is essential to,V0_accepted minus G2_candidates,511,0.0,0.0,0.0,10000
+let's reason step by step,V0_accepted minus G2_candidates,511,0.0,0.0,0.0,10000
+let's solve this problem step by step,V0_accepted minus G2_candidates,511,0.0,0.0,0.0,10000
+reasoning,V0_accepted minus G2_candidates,511,0.0,0.0,0.0,10000
+analysis,V0_accepted minus G2_candidates,511,0.0,0.0,0.0,10000
+thought process,V0_accepted minus G2_candidates,511,0.0,0.0,0.0,10000
+AWL_word_any,V0_accepted minus G2_candidates,511,0.0,-0.002446183953033268,0.0019569471624266144,10000
+nonAWL_word_any,V0_accepted minus G2_candidates,511,0.003261578604044413,-0.005218525766470916,0.011578604044357454,10000
+we need to,actual_G3_SFT minus V0_accepted,511,0.003913894324853229,-0.005218525766470972,0.013046314416177401,10000
+to solve for,actual_G3_SFT minus V0_accepted,511,0.005055446836268754,-0.0027723418134377037,0.013372472276581865,10000
+solve for the,actual_G3_SFT minus V0_accepted,511,0.006360078277886497,0.0008153946510110859,0.012557077625570776,10000
+to determine the probability,actual_G3_SFT minus V0_accepted,511,-0.002446183953033268,-0.007827788649706457,0.002446183953033268,10000
+we can,actual_G3_SFT minus V0_accepted,511,0.0,0.0,0.0,10000
+we will,actual_G3_SFT minus V0_accepted,511,0.00032615786040443573,-0.0019569471624266144,0.0029354207436399216,10000
+we must,actual_G3_SFT minus V0_accepted,511,0.0,0.0,0.0,10000
+it is essential to,actual_G3_SFT minus V0_accepted,511,0.0,0.0,0.0,10000
+let's reason step by step,actual_G3_SFT minus V0_accepted,511,0.0,0.0,0.0,10000
+let's solve this problem step by step,actual_G3_SFT minus V0_accepted,511,0.0,0.0,0.0,10000
+reasoning,actual_G3_SFT minus V0_accepted,511,0.0,0.0,0.0,10000
+analysis,actual_G3_SFT minus V0_accepted,511,0.0,0.0,0.0,10000
+thought process,actual_G3_SFT minus V0_accepted,511,0.0,0.0,0.0,10000
+AWL_word_any,actual_G3_SFT minus V0_accepted,511,0.0004892367906066536,0.0,0.0014677103718199608,10000
+nonAWL_word_any,actual_G3_SFT minus V0_accepted,511,0.0016307893020220954,-0.010926288323548639,0.014350945857795117,10000
+we need to,G3_outputs minus G2_candidates,511,-0.008806262230919765,-0.016144814090019582,-0.0014677103718199747,10000
+to solve for,G3_outputs minus G2_candidates,511,0.01614481409001957,0.008806262230919765,0.023972602739726026,10000
+solve for the,G3_outputs minus G2_candidates,511,0.011741682974559686,0.005870841487279843,0.018101761252446183,10000
+to determine the probability,G3_outputs minus G2_candidates,511,0.0,-0.0019569471624266144,0.0019569471624266144,10000
+we can,G3_outputs minus G2_candidates,511,0.0004892367906066536,0.0,0.0014677103718199608,10000
+we will,G3_outputs minus G2_candidates,511,0.0,-0.0014677103718199608,0.0014677103718199608,10000
+we must,G3_outputs minus G2_candidates,511,0.0,0.0,0.0,10000
+it is essential to,G3_outputs minus G2_candidates,511,0.0,0.0,0.0,10000
+let's reason step by step,G3_outputs minus G2_candidates,511,0.0,0.0,0.0,10000
+let's solve this problem step by step,G3_outputs minus G2_candidates,511,0.0,0.0,0.0,10000
+reasoning,G3_outputs minus G2_candidates,511,0.0,0.0,0.0,10000
+analysis,G3_outputs minus G2_candidates,511,0.0,0.0,0.0,10000
+thought process,G3_outputs minus G2_candidates,511,0.0,0.0,0.0,10000
+AWL_word_any,G3_outputs minus G2_candidates,511,0.0,0.0,0.0,10000
+nonAWL_word_any,G3_outputs minus G2_candidates,511,-0.012720156555773021,-0.021538649706457913,-0.003424657534246589,10000
+we need to,G3_outputs minus actual_G3_SFT,511,-0.016144814090019555,-0.02788649706457924,-0.005381604696673176,10000
+to solve for,G3_outputs minus actual_G3_SFT,511,0.01223091976516634,0.003424657534246575,0.02201565557729941,10000
+solve for the,G3_outputs minus actual_G3_SFT,511,0.005870841487279843,-0.001479941291585116,0.0136986301369863,10000
+to determine the probability,G3_outputs minus actual_G3_SFT,511,0.002446183953033268,-0.002446183953033268,0.008806262230919765,10000
+we can,G3_outputs minus actual_G3_SFT,511,0.0004892367906066536,0.0,0.0014677103718199608,10000
+we will,G3_outputs minus actual_G3_SFT,511,0.0,-0.0014677103718199608,0.0014677103718199608,10000
+we must,G3_outputs minus actual_G3_SFT,511,0.0,0.0,0.0,10000
+it is essential to,G3_outputs minus actual_G3_SFT,511,0.0,0.0,0.0,10000
+let's reason step by step,G3_outputs minus actual_G3_SFT,511,0.0,0.0,0.0,10000
+let's solve this problem step by step,G3_outputs minus actual_G3_SFT,511,0.0,0.0,0.0,10000
+reasoning,G3_outputs minus actual_G3_SFT,511,0.0,0.0,0.0,10000
+analysis,G3_outputs minus actual_G3_SFT,511,0.0,0.0,0.0,10000
+thought process,G3_outputs minus actual_G3_SFT,511,0.0,0.0,0.0,10000
+AWL_word_any,G3_outputs minus actual_G3_SFT,511,-0.0004892367906066536,-0.0029354207436399216,0.002446183953033268,10000
+nonAWL_word_any,G3_outputs minus actual_G3_SFT,511,-0.01761252446183953,-0.03228962818003911,-0.0034246575342465335,10000

@@ -1,0 +1,59 @@
+{
+  "seed": 42,
+  "G_MODEL_DIR": "/root/workspace/Qwen2.5-Math-1.5B-Instruct",
+  "V_MODEL_DIR": "/root/workspace/Qwen3-4B-Instruct-2507",
+  "generation": {
+    "num_return_sequences": 4,
+    "max_new_tokens": 3072,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true
+  },
+  "verifier": {
+    "labels": [
+      "A",
+      "B"
+    ],
+    "accept_threshold": 0.5,
+    "max_context": 8192
+  },
+  "G_system": "Please reason step by step, and put your final answer within \\boxed{}.",
+  "G_user_suffix": "\n\nGive a complete solution. End with exactly one final answer in \\boxed{...}. Use the mathematical form requested in the question. Do not add another answer after the box.",
+  "V_system": "Judge whether the FINAL ANSWER in the candidate response correctly answers the question. Work out the answer independently. A means the final answer is correct; B means it is incorrect. Judge final-answer correctness, not the completeness of the explanation. Respond with exactly A or B.",
+  "answer_protocol": "boxed_v2: balanced braces; explicit boxed/hash answers only; units or descriptive suffix allowed when no later conflicting math assertion; repeated boxes must normalize equivalently; truncation always unresolved; MATH exact rational/symbolic equality via restricted LaTeX Lark parser, never execute generated code; unsupported or undecidable equivalence remains unknown",
+  "final_test_policy": "Never infer on old T or conditional new T. All 100 DAPO development families excluded from formal pools. DAPO internal heldout derives only from public training data; no contamination-free claim.",
+  "budget_gpu_hours_cap": 4,
+  "scope": "DAPO development and length diagnostic; conditional disjoint pool construction; no G/V parameter training",
+  "protocol": "dapo_diagnostic_v3",
+  "phase": "diagnostic_only_formal_G1_G2_paused",
+  "created_at": "2026-10-20T13:13:24.969593+00:00",
+  "dataset": "open-r1/DAPO-Math-17k-Processed",
+  "revision": "31dd309567e3da778038cc87d868b6097a3ccf68",
+  "source_dataset": "BytedTsinghua-SIA/DAPO-Math-17k",
+  "source_revision_observed": "65877096c24ffa7abc4e4fa5edb95cf3413a5674",
+  "source_revision_caveat": "Processed dataset does not pin its parent revision; exact parent mapping cannot be asserted. Source prompts and UUIDs retained.",
+  "file": "en/train-00000-of-00001.parquet",
+  "file_sha256": "40f672fe8b6dbeee953ae5acc75a38e99144e682450e07c625c87c734ec76285",
+  "questions": 100,
+  "length_pilot_questions": 20,
+  "G_native_context": 4096,
+  "max_prompt_tokens": 1024,
+  "family_rule": "Connected components: equal normalized question hash, same source UUID, or >=8 shared word trigrams and >=80% containment of shorter trigram set. Candidate retrieval via postings <=200 documents; approximate near-family coverage, not semantic identity proof.",
+  "eligibility": "English subset, verify no CJK; text only without explicit diagram markup/reference; prompt<=1024 to fit uniform 3072 output within native4096; exclude families touching prior A/B/C/T or MATH70; no answer/difficulty/output-based selection",
+  "sampling": "seed42 shuffle sorted family IDs; take one representative per family; first100 development before generation; reserve rest for conditional formal pools",
+  "feasibility_gate": {
+    "minimum_verifiable_coverage": 0.9,
+    "minimum_correct": 40,
+    "minimum_natural_errors": 40,
+    "minimum_error_questions": 20,
+    "minimum_correct_questions": 20,
+    "maximum_truncation_fraction": 0.02,
+    "require_all_V_scores": true,
+    "require_lower_seconds_per_error_than_day2_MATH": true
+  },
+  "conditional_formal_pool_sizes": {
+    "A_G_update": 600,
+    "B_V_update": 200,
+    "T_final": 300
+  }
+}

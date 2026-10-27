@@ -1,0 +1,14 @@
+{
+  "amends_plan_sha256": "353ae17239f18f3169b9e7762feb2fdf1179913257ef0757442110a2273e832c",
+  "authorized_by": "User2026-10-26: focus on repaired FP/FN versus newly introduced FP/FN, not comparative average score increases",
+  "endpoints": [
+    "FP_to_TN repaired FP",
+    "FN_to_TP repaired FN",
+    "TN_to_FP new FP",
+    "TP_to_FN new FN",
+    "net repaired decisions=FP_to_TN+FN_to_TP-TN_to_FP-TP_to_FN"
+  ],
+  "reporting": "Each updated V relative to V0 on identical fixed answers, paired question-cluster95% intervals; stratify C/E, G stage, original/seen/unseen prefix. All-accept/all-reject is not successful robustness.",
+  "secondary": "Continuous margins and scores retained for audit, no wrong-minus-correct average-boost hypothesis as main result",
+  "status": "frozen before training/evaluation results"
+}

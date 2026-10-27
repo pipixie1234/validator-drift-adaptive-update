@@ -1,0 +1,9 @@
+﻿split,variant,responses,questions,rejections,rejection_rate,low,high,valid_replicates,rejection_means,still_accepted,mean_acceptance_score
+A,original,339,125,0,0.0,0.0,0.0,10000,false rejection of still-correct answer,339,0.9903603843179776
+A,delete,339,125,5,0.014749262536873156,0.003003003003003003,0.028901734104046242,10000,false rejection of still-correct answer,334,0.979657255530709
+A,synonym,339,125,6,0.017699115044247787,0.0030959752321981426,0.03582089552238806,10000,false rejection of still-correct answer,333,0.9809520600643833
+A,wrong_final_answer,339,125,336,0.9911504424778761,0.9759036144578314,1.0,10000,correct rejection of deliberately wrong answer,3,0.011363391847062943
+C,original,34,16,0,0.0,0.0,0.0,10000,false rejection of still-correct answer,34,0.984639890053693
+C,delete,34,16,1,0.029411764705882353,0.0,0.10714285714285714,10000,false rejection of still-correct answer,33,0.9677465049659505
+C,synonym,34,16,0,0.0,0.0,0.0,10000,false rejection of still-correct answer,34,0.9753868089002722
+C,wrong_final_answer,34,16,34,1.0,1.0,1.0,10000,correct rejection of deliberately wrong answer,0,0.00010894403683724864

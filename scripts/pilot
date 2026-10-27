@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+export PYTHONPATH="$PROJECT_DIR/src${PYTHONPATH:+:$PYTHONPATH}"
+export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 TOKENIZERS_PARALLELISM=false
+export HF_HOME="$PROJECT_DIR/.cache/huggingface"
+export OMP_NUM_THREADS=8
+export MPLCONFIGDIR="$PROJECT_DIR/.cache/matplotlib"
+exec "$PROJECT_DIR/.venv/bin/python" -u -m "pilot.$@"

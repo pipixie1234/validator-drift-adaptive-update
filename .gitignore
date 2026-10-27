@@ -1,0 +1,75 @@
+# Local environments and downloaded dependencies
+.venv*/
+.cache/
+.tools/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Credentials and machine state
+.env
+.env.*
+!.env.example
+.git-private/
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.vscode/
+.idea/
+.DS_Store
+
+# Datasets, model weights, adapters and raw runs
+/data/
+/runs/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.parquet
+*.arrow
+*.onnx
+
+# Public reports contain summaries, not full raw cache bundles
+*.log
+*.zip
+/reports/**/*.jsonl
+/reports/**/*.json
+/reports/**/previews/
+/reports/**/scores.csv
+/reports/**/all_decisions.csv
+/reports/**/per_answer_decisions.csv
+/reports/**/per_question_flips.csv
+/reports/**/四阶段逐条分数.csv
+/reports/**/supervision_per_question.csv
+/reports/**/question_FPR_scan.csv
+/reports/**/SITE_question_input_features.csv
+/reports/**/T_review_examples.csv
+/reports/**/awl_source.html
+
+# Summary workbooks are published; full response-review workbooks stay local
+/reports/**/*.xlsx
+!/reports/week_final_20261026/week_final_metrics.xlsx
+!/reports/verifier_robustness_clean_20261026/robust_verifier_review.xlsx
+!/reports/teacher_brief_20261027/关键实验结果.xlsx
+
+# Small audits and sources used by published results
+!/reports/day1_metrics.json
+!/reports/day3/artifact_audit.json
+!/reports/day3/generation_defaults.json
+!/reports/week_final_20261026/005_week_final_20261026.json
+!/reports/week_final_20261026/006_T_source_quality_20261026.json
+!/reports/week_final_20261026/independent_verification.json
+!/reports/verifier_robustness_clean_20261026/*_training_report.json
+!/reports/verifier_robustness_clean_20261026/independent_verification.json
+!/reports/teacher_brief_20261027/delivery_audit.json
+!/reports/teacher_brief_20261027/prior_artifacts_preservation.json
+
+# Canonical source is in src/pilot, not historical report snapshots
+/reports/**/*.py
+/.publication-*

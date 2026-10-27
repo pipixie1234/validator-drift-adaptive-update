@@ -1,0 +1,149 @@
+{
+  "created_at": "2026-10-24T14:52:50.208622+00:00",
+  "purpose": "User clarified: select naturally occurring correctly judged TP and TN, then test whether deletion/paraphrase causes a new mistake",
+  "selection": "ALL G3 A/C independently known true/false, V0 decision correct, nontruncated, with an eligible natural opening span; no injected responses",
+  "variants": [
+    "original",
+    "delete",
+    "synonym"
+  ],
+  "window": "Before first formula/backslash/digit/newline, first160chars; span begins among first12 word positions",
+  "edit_rule": "Only first eligible span; earliest start, longest tie. Preserve every byte outside span. Match first-letter case of replacement.",
+  "lexical_pairs": [
+    {
+      "AWL": "analyse",
+      "nonAWL": "examine"
+    },
+    {
+      "AWL": "assess",
+      "nonAWL": "check"
+    },
+    {
+      "AWL": "compute",
+      "nonAWL": "calculate"
+    },
+    {
+      "AWL": "deduce",
+      "nonAWL": "reason"
+    },
+    {
+      "AWL": "demonstrate",
+      "nonAWL": "show"
+    },
+    {
+      "AWL": "establish",
+      "nonAWL": "prove"
+    },
+    {
+      "AWL": "obtain",
+      "nonAWL": "get"
+    },
+    {
+      "AWL": "require",
+      "nonAWL": "need"
+    },
+    {
+      "AWL": "identify",
+      "nonAWL": "find"
+    },
+    {
+      "AWL": "evaluate",
+      "nonAWL": "judge"
+    },
+    {
+      "AWL": "formulate",
+      "nonAWL": "write"
+    },
+    {
+      "AWL": "utilise",
+      "nonAWL": "use"
+    },
+    {
+      "AWL": "implement",
+      "nonAWL": "do"
+    },
+    {
+      "AWL": "conclude",
+      "nonAWL": "finish"
+    },
+    {
+      "AWL": "investigate",
+      "nonAWL": "study"
+    },
+    {
+      "AWL": "clarify",
+      "nonAWL": "explain"
+    },
+    {
+      "AWL": "commence",
+      "nonAWL": "begin"
+    },
+    {
+      "AWL": "proceed",
+      "nonAWL": "continue"
+    },
+    {
+      "AWL": "assist",
+      "nonAWL": "help"
+    },
+    {
+      "AWL": "retain",
+      "nonAWL": "keep"
+    }
+  ],
+  "phrases": {
+    "we need to": "we have to",
+    "to solve for": "to find"
+  },
+  "counts": {
+    "A": {
+      "TP": 340,
+      "TN": 306
+    },
+    "C": {
+      "TP": 34,
+      "TN": 61
+    }
+  },
+  "scores": 2223,
+  "answers_sha256": "b228dac97db4a3bfec9f49a81ca9b1b8d65b342e8494a090e43dbd4ffb4baf7b",
+  "source_sha256": {
+    "configs/fpr_patterns_20261024.json": "3b6b866b93a7c5e323023087fc68093dd3edabcbd21f9b44fdbd2042f46d5fc3",
+    "configs/awl_comparison_20261024.json": "919cb647a88573333349aa8a01a643a7369e94fe093d47408476de3b5bf96980",
+    "configs/prefix_paraphrase_20261024.json": "d7fbd7c0f6dcf0ed26446ccb2b35825c6b5195a0c50a4fc66e7548dbdb5a5063",
+    "runs/prefix_paraphrase_20261024/V0_scores.jsonl": "adb8a0f46d3819b8d21a3996df2f7f7a52270c4f1c2102f213e1b05f216c7d1e",
+    "runs/prefix_paraphrase_20261024/natural_answers.jsonl": "e6047f235c4ea89d25ea622d47c474c2101a7be6c727222573b4b06ace88409d",
+    "src/pilot/natural_invariance.py": "4342ffd73f9b2f3f435118057609bb8d6cba8e7f49bd7d4df576f941cb349a3e",
+    "src/pilot/runtime.py": "936b9cb7881893ec8f75bd2ecc1c7da641db9930b33cb366fb08f84dbf6311d7",
+    "runs/natural_invariance_20261024/label_preservation.jsonl": "2b23e2ff9dc575af37bd62c6ca2ca595a8f730a6d2e38b8281fa4cbbdeb07fe3"
+  },
+  "fixed_V0": {
+    "fingerprint": "cd87ced708c07dd0c0e502cf7747fcd3b987cb4bbe9cc643d281fc9212d94c70",
+    "adapter": null,
+    "threshold": 0.5,
+    "scoring": {
+      "labels": [
+        "A",
+        "B"
+      ],
+      "accept_threshold": 0.5,
+      "max_context": 8192
+    },
+    "max_context": 8192
+  },
+  "metrics": "TP->FN and TN->FP conditional new-error rates; whole-question bootstrap10000 seed20261024. Not full-pool FNR/FPR; selection fixes baseline error to zero.",
+  "reuse": "Only exact complete prompt/text matches from validated previous natural experiment; all current original controls freshly rescored",
+  "limitations": [
+    "Repeated-use C, not untouched test",
+    "Natural span selection and chosen vocabulary, not all G3 responses",
+    "Deletion can damage grammar; near-synonym nuances differ. Final answer label invariance does not guarantee full semantic invariance.",
+    "Comparisons between AWL and nonAWL hit subgroups are not randomized or matched; descriptive only",
+    "Effect establishes response sensitivity under this edit, not G learning to exploit a prefix or cause of cross-round drift"
+  ],
+  "B_used": false,
+  "T_read": false,
+  "G_generation": false,
+  "G_training": false,
+  "V_update": false,
+  "seed": 20261024
+}

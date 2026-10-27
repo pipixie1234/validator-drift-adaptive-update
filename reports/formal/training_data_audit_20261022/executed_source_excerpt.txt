@@ -1,0 +1,87 @@
+src/pilot/formal_select.py SHA256=dc7b7787c0e4b5e90e94af2172d837ebd51a6b1082fc315a56c205b875042ce0
+8: 
+9: def select(source_round,target_round):
+10:     from transformers import AutoTokenizer
+11:     verify_fixed();p=protocol();assert (source_round,target_round) in [('G0','G1'),('G1','G2')]
+12:     source=output_path(source_round,'A');scorepath=output_path(source_round,'A','V')
+13:     rows=read_jsonl(source);scores={r['candidate_id']:r for r in read_jsonl(scorepath)}
+14:     assert len(rows)==len(scores)==2400
+15:     train=p['training']['G'];picked=select_feedback(rows,scores,.5,train['seed'],train['max_examples_per_round'],quarantined_ids(),train['max_length'])
+16:     tok=AutoTokenizer.from_pretrained(p['models']['G']['path'],local_files_only=True)
+17:     if tok.pad_token_id is None:tok.pad_token=tok.eos_token
+18:     data=[];tokens=[];excluded=[]
+src/pilot/formal_train.py SHA256=086f49e3672c0e93140f580d0c098af01925020d14bcb19b2b9493a514246050
+32:     from peft import LoraConfig,get_peft_model,PeftModel
+33:     assert target in ['G1','G2']
+34:     with gpu_lock():
+35:         verify_fixed();p=protocol();settings=p['training']['G'];impl=plan()['training_implementation_choices']
+36:         directory=RUN/f'train/{target}';source=directory/'tokenized.jsonl';data=read_jsonl(source)
+37:         selected=read_jsonl(directory/'selected.jsonl');assert 1<=len(data)==len(selected)<=512
+38:         assert len({r['question_id'] for r in selected})==len(selected)
+39:         assert all(not any(k in r for k in ['gold_answer','correct','reference']) for r in selected)
+40:         base,_=model_identity('G');parent=RUN/'checkpoints/G1_SFT' if target=='G2' else None
+41:         parent_hash=model_identity('G',parent)[1] if parent else None
+42:         if parent:assert (RUN/'train/G1/report.json').exists()
+43:         descriptor={'target':target,'original_G0_fingerprint':base,'parent_adapter_fingerprint':parent_hash,
+44:             'parent_adapter':str(parent) if parent else None,'tokenized_sha256':sha(source),
+45:             'selected_sha256':sha(directory/'selected.jsonl'),'protocol_sha256':sha(PROTOCOL),
+46:             'execution_sha256':sha(PLAN),'runner_sha256':sha(ROOT/'src/pilot/formal_train.py'),
+47:             'settings':settings,'implementation_choices':impl,'truth_input':False}
+48:         ensure_run_manifest(directory/'training.manifest.json',descriptor)
+49:         final=RUN/f'checkpoints/{target}_SFT';reportpath=directory/'report.json'
+50:         if reportpath.exists():
+51:             old=json.loads(reportpath.read_text());assert model_identity('G',final)[1]==old['final_adapter_fingerprint']
+52:             assert old['save_reload_passed'];print(f'Cached completed {target}; no repeated training.',flush=True);return
+80:             oldlogs=[r for r in oldlogs if r['step']<=next_step];write_jsonl(directory/'steps.jsonl',oldlogs)
+81:         elif oldlogs:
+82:             write_jsonl(directory/f'pre_checkpoint_attempt_{time.time_ns()}.jsonl',oldlogs);write_jsonl(directory/'steps.jsonl',[]);oldlogs=[]
+83:         probe_ids=prompt_ids(tok,messages('G',inputs('B')[0]['question']))[:128]
+84:         probe=torch.tensor([probe_ids],device='cuda')
+85:         model.eval()
+86:         with torch.inference_mode():initial_probe=model(input_ids=probe,use_cache=False).logits[:,-1].float().cpu()
+87:         parent_probe_difference=None
+88:         if parent and not resume:
+89:             expected_parent=torch.load(RUN/'train/G1/probe_logits.pt',map_location='cpu',weights_only=True)
+90:             parent_probe_difference=float((expected_parent-initial_probe).abs().max())
+91:             assert torch.allclose(expected_parent,initial_probe,atol=.02,rtol=.01),'G2 must continue actual G1 adapter'
+92:             ensure_run_manifest(directory/'lineage_initialization.json',{'parent_adapter_fingerprint':parent_hash,
+93:                 'parent_probe_max_logit_difference_before_update':parent_probe_difference})
+94:         elif parent and resume:
+95:             lineage=json.loads((directory/'lineage_initialization.json').read_text())
+96:             assert lineage['parent_adapter_fingerprint']==parent_hash
+97:             parent_probe_difference=lineage['parent_probe_max_logit_difference_before_update']
+98:         model.train();model.config.use_cache=False
+99:         model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={'use_reentrant':False})
+100:         if resume:restore_rng(resume)
+101:         else:seed_all(settings['seed'])
+102:         optimizer.zero_grad(set_to_none=True);torch.cuda.reset_peak_memory_stats();torch.cuda.synchronize();start=time.perf_counter();b=loss=None
+103:         for step_index in range(next_step,len(batches)):
+104:             budget.check();indices=batches[step_index];losses=[];input_count=target_count=0;tick=time.perf_counter()
+105:             for index in indices:
+106:                 ex=data[index];assert len(ex['input_ids'])<=settings['max_length']
+107:                 assert all(t==-100 for t in ex['labels'][:ex['prefix_length']])
+108:                 b={k:t.to('cuda') for k,t in collate([ex],tok.pad_token_id).items()}
+109:                 loss=model(**b).loss;assert torch.isfinite(loss),f'Nonfinite loss at {target}:{step_index+1}'
+110:                 (loss/len(indices)).backward();losses.append(float(loss.detach()))
+111:                 input_count+=len(ex['input_ids']);target_count+=sum(t!=-100 for t in ex['labels'])
+112:             grad_sq=sum(float(param.grad.float().square().sum()) for param in trainable.values() if param.grad is not None)
+113:             assert math.isfinite(grad_sq) and grad_sq>0 and all(param.grad is None for param in frozen.values())
+114:             torch.nn.utils.clip_grad_norm_(list(trainable.values()),impl['max_gradient_norm']);optimizer.step();optimizer.zero_grad(set_to_none=True)
+115:             torch.cuda.synchronize();step=step_index+1
+130:         consumed=[cid for r in logs for cid in r['candidate_ids']]
+131:         assert len(set(consumed))==len(data) and set(consumed)=={r['candidate_id'] for r in selected}
+132:         torch.cuda.synchronize();seconds=time.perf_counter()-start;peak=torch.cuda.max_memory_allocated()
+133:         assert all(param._version==base_versions[n] for n,param in frozen.items())
+134:         changed=sum(not torch.equal(before[n],param.detach().cpu()) for n,param in trainable.items())
+135:         if next_step<len(batches):assert changed>0
+136:         model.eval();model.gradient_checkpointing_disable()
+137:         with torch.inference_mode():expected=model(input_ids=probe,use_cache=False).logits[:,-1].float().cpu()
+138:         final.parent.mkdir(exist_ok=True)
+139:         if final.exists():final.rename(final.with_name(final.name+f'_incomplete_{time.time_ns()}'))
+140:         model.save_pretrained(final);write_json(final/'training_provenance.json',descriptor)
+141:         write_json(directory/'training_ids.json',selected);torch.save(expected,directory/'probe_logits.pt')
+142:         del optimizer,b,loss,trainable,frozen,before,model;gc.collect();torch.cuda.empty_cache()
+143:         reloaded,_=load('G',final)
+144:         with torch.inference_mode():actual=reloaded(input_ids=probe,use_cache=False).logits[:,-1].float().cpu()
+145:         difference=float((expected-actual).abs().max());assert torch.allclose(expected,actual,atol=.02,rtol=.01)
+146:         final_fp,final_ah=model_identity('G',final);assert final_fp==base

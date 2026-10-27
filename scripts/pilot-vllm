@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+export PYTHONPATH="$PROJECT_DIR/src${PYTHONPATH:+:$PYTHONPATH}"
+export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 TOKENIZERS_PARALLELISM=false
+export HF_HOME="$PROJECT_DIR/.cache/huggingface"
+export VLLM_CACHE_ROOT="$PROJECT_DIR/.cache/vllm"
+export VLLM_CONFIG_ROOT="$PROJECT_DIR/.cache/vllm_config"
+export VLLM_WORKER_MULTIPROC_METHOD=spawn
+export VLLM_NO_USAGE_STATS=1 DO_NOT_TRACK=1
+export OMP_NUM_THREADS=8
+exec "$PROJECT_DIR/.venv-vllm/bin/python" -u "$@"

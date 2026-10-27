@@ -1,0 +1,7 @@
+﻿other,truth,pairs,other_accept_random_reject,other_reject_random_accept,identical_text,same_index_is_descriptive_not_paired_sampling_path
+G0,True,125,8,5,2,True
+G0,False,180,40,23,0,True
+Vmatched_SFT,True,117,4,5,14,True
+Vmatched_SFT,False,189,30,16,5,True
+Oracle_SFT,True,119,4,3,13,True
+Oracle_SFT,False,183,35,15,9,True

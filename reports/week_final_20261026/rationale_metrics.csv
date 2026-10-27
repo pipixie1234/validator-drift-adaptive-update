@@ -1,0 +1,4 @@
+﻿V,answers,decision_available,decision_correct,decision_accuracy_available,valid,invalid,unverifiable,not_provided,pending_assistant_review,rationale_evaluable,rationale_validity_rate_evaluable,decision_right_rationale_invalid,decision_and_rationale_right,decision_right_rationale_invalid_fraction_all,decision_and_rationale_right_fraction_all,human_review,selection
+V0,20,20,20,1.0,17,3,0,0,0,20,0.85,3,17,0.15,0.85,pending; assistant labels not gold,"5 hand-auditable C questions x4 G, not population prevalence"
+Vrand,20,20,9,0.45,0,0,0,20,0,0,,0,0,0.0,0.0,pending; assistant labels not gold,"5 hand-auditable C questions x4 G, not population prevalence"
+Vtarget,20,20,9,0.45,0,0,0,20,0,0,,0,0,0.0,0.0,pending; assistant labels not gold,"5 hand-auditable C questions x4 G, not population prevalence"

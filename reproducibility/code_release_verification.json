@@ -1,0 +1,7 @@
+{
+  "source": "clean checkout of staged src/tests/configs; no data/runs/weights copied",
+  "command": "PYTHONPATH=src python -m pytest tests/test_day2_protocol.py tests/test_dapo.py -q",
+  "exit_code": 0,
+  "output": "...........................................                              [100%]\n43 passed in 1.15s\n",
+  "date": "2026-10-27"
+}

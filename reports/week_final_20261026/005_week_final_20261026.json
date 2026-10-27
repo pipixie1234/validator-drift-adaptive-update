@@ -1,0 +1,215 @@
+{
+  "revision": "005_week_final_20261026",
+  "frozen_at": "2026-10-26T06:53:32.777701+00:00",
+  "authorization": "User2026-10-26: finish all original seven-day deliverables before further mechanism work; includes planned Day7 final T evaluation",
+  "prior_T_status": "No T decoding/inference before this configuration freeze; only manifest IDs and hashes checked",
+  "T_input_path": "/root/workspace/cross_round_pilot/data/dapo/formal/inputs/T_final.jsonl",
+  "T_labels_path": "/root/workspace/cross_round_pilot/data/dapo/formal/labels/T_final.jsonl",
+  "T_questions": 300,
+  "candidates_per_question": 4,
+  "checkpoints": {
+    "G0": {
+      "role": "G",
+      "base_fingerprint": "9e4b4c5cdc0568a7ddc18ac782925809f1b45edeca3b98224580e17bfb032622",
+      "adapter_fingerprint": null,
+      "adapter_path": null
+    },
+    "G1": {
+      "role": "G",
+      "base_fingerprint": "9e4b4c5cdc0568a7ddc18ac782925809f1b45edeca3b98224580e17bfb032622",
+      "adapter_fingerprint": "dfd9bf6f882a76834c9b250565eb80f44a09689d5556c9fc74fe4d5ae3fb91ca",
+      "adapter_path": "/root/workspace/cross_round_pilot/runs/formal/checkpoints/G1_SFT"
+    },
+    "G2": {
+      "role": "G",
+      "base_fingerprint": "9e4b4c5cdc0568a7ddc18ac782925809f1b45edeca3b98224580e17bfb032622",
+      "adapter_fingerprint": "e6bbb6d23a02542ff1e9d2694e1d785af674239a943ee67293845460d08d70d2",
+      "adapter_path": "/root/workspace/cross_round_pilot/runs/formal/checkpoints/G2_SFT"
+    },
+    "G3": {
+      "role": "G",
+      "base_fingerprint": "9e4b4c5cdc0568a7ddc18ac782925809f1b45edeca3b98224580e17bfb032622",
+      "adapter_fingerprint": "9d6511fe8337d6f8f44be29e7375d2aec0355c3fa5ad3bda4ebcfa597a190c81",
+      "adapter_path": "/root/workspace/cross_round_pilot/runs/g3_extension_20261024/checkpoints/G3_SFT"
+    },
+    "V0": {
+      "role": "V",
+      "base_fingerprint": "cd87ced708c07dd0c0e502cf7747fcd3b987cb4bbe9cc643d281fc9212d94c70",
+      "adapter_fingerprint": null,
+      "adapter_path": null
+    },
+    "Vrand": {
+      "role": "V",
+      "base_fingerprint": "cd87ced708c07dd0c0e502cf7747fcd3b987cb4bbe9cc643d281fc9212d94c70",
+      "adapter_fingerprint": "6654c8c77c3e0ba7c98ad8ee2fc6c0ac9d3645a411f4b73a0d4257f8bf07ff06",
+      "adapter_path": "/root/workspace/cross_round_pilot/runs/verifier_update_20261025/Vrand/adapter"
+    },
+    "Vtarget": {
+      "role": "V",
+      "base_fingerprint": "cd87ced708c07dd0c0e502cf7747fcd3b987cb4bbe9cc643d281fc9212d94c70",
+      "adapter_fingerprint": "1d8b7c6fedae89af77f748a38092bafe381c23382b5f62c90c5fc03bc0b38050",
+      "adapter_path": "/root/workspace/cross_round_pilot/runs/verifier_update_20261025/Vtarget/adapter"
+    }
+  },
+  "primary_G": [
+    "G0",
+    "G1",
+    "G2"
+  ],
+  "secondary_G": [
+    "G3"
+  ],
+  "verifiers": [
+    "V0",
+    "Vrand",
+    "Vtarget"
+  ],
+  "G_engine": {
+    "name": "vLLM",
+    "settings": {
+      "dtype": "bfloat16",
+      "lora_dtype": "bfloat16",
+      "max_model_len": 4096,
+      "tensor_parallel_size": 1,
+      "gpu_memory_utilization": 0.7,
+      "max_num_seqs": 64,
+      "max_num_batched_tokens": 4096,
+      "enable_lora": true,
+      "max_lora_rank": 16,
+      "max_loras": 1,
+      "enforce_eager": true,
+      "seed": 42,
+      "generation_config": "vllm"
+    },
+    "uniform_all_four_G": true,
+    "sampling": {
+      "n": 4,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 50,
+      "seed": "42+int(digest(question_id)[:8],16)%1000000",
+      "stop_token_ids": [
+        151645,
+        151643
+      ],
+      "max_context": 4096,
+      "max_prompt": 1024,
+      "max_new_tokens": "min(3840,4096-exact_prompt_tokens)"
+    },
+    "limit": "Same vLLM BF16 runtime for all T stages; old TF C curves are not numerically identical sampling. Original G1/G2 training artifacts retained including disclosed source defects."
+  },
+  "V_scoring": {
+    "implementation": "original Transformers full A/B conditional likelihood, BF16 base/PEFT adapter runtime",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "accept_threshold": 0.5,
+    "max_context": 8192,
+    "threshold": 0.5,
+    "ties": "accept when score>=0.5",
+    "prompts": {
+      "G_system": "Please reason step by step, and put your final answer within \\boxed{}.",
+      "G_user_suffix": "\n\nGive a complete solution. End with exactly one final answer in \\boxed{...}. Use the mathematical form requested in the question. Do not add another answer after the box.",
+      "V_system": "Judge whether the FINAL ANSWER in the candidate response correctly answers the question. Work out the answer independently. A means the final answer is correct; B means it is incorrect. Judge final-answer correctness, not the completeness of the explanation. Respond with exactly A or B."
+    }
+  },
+  "T_question_quality": "Preserve all300 and all candidates; blind textual redflags recorded before generation. No outcome-based exclusions or reference repairs; unsupported/missing/conflicting/truncated answers unknown. Any independently confirmed source failure would be whole-question, all G/V, versioned sensitivity only.",
+  "T_firewall": "Freeze all weights, prompts, thresholds and sampling before decoding T. No retraining, tuning, checkpoint choice or prefix mining after T. Fixed one trajectory and one V update budget; negative results retained.",
+  "analysis": {
+    "questions": "same300 paired across G/V",
+    "bootstrap": 10000,
+    "seed": 20261026,
+    "primary_contrasts": [
+      "Vtarget-Vrand on G2 FPR/FNR",
+      "Vrand-V0 and Vtarget-V0 on G2 FPR/FNR",
+      "V0 G2-G0 FPR/FNR"
+    ],
+    "secondary": "G3 extension, historical G0/G1 retention, BA/AUROC/FDR/coverage/unknown/length/truncation, exact-score ties and fixed-answer correctness transitions",
+    "inference": "Paired whole-question percentile95% intervals, exploratory multiple contrasts without simultaneous coverage; one training seed. Do not claim equivalence from non-significance."
+  },
+  "rationale_review": {
+    "split": "C only",
+    "answers": 20,
+    "versions": [
+      "V0",
+      "Vrand",
+      "Vtarget"
+    ],
+    "generations": 60,
+    "question_ids": [
+      "87652cb8-e3f0-4eef-872b-08f1606efdc2",
+      "beffc63a-0f60-4bda-8094-ec6eca603add",
+      "b62d6a00-8422-4836-aa09-d6db0186d28d",
+      "0c73160f-95ca-4cc6-a4c3-dd641342f0b5",
+      "96c3a3c6-22fd-4d06-9d7d-3af786201960"
+    ],
+    "sampling": "Five previously mathematically reviewed development questions x four G stages, candidate0; selected for feasible exact review, not population prevalence. Includes TP/FP/FN/TN globally; some stage/cell combinations absent.",
+    "separate_protocol": "Independent concise verification then VERDICT:A/B; not the latent reason behind original A/B-only score",
+    "generation": {
+      "engine": "same Transformers/PEFT runtime",
+      "do_sample": false,
+      "max_new_tokens": 768,
+      "max_context": 8192,
+      "batch_size": 4,
+      "max_words_requested": 180
+    },
+    "review": "Chat assistant evidence-bearing initial annotations, exact computation where feasible; human columns left pending, not human gold. No rationale or step labels used for training.",
+    "G_steps": "Preserve paragraph spans/character positions; record inspected process correctness and first witnessed error, later steps not automatically wrong; no PRM training"
+  },
+  "source_sha256": {
+    "data/dapo/formal/manifest.json": "77b842d939832d3146f9cf15ea54e0143af348a2462e1cd6f40401cb38f3648c",
+    "data/dapo/formal/inputs/T_final.jsonl": "1bdd5dcb7601c6208663eeae02855536b4f4a893c4e3c92a17d1c67d4b21bef3",
+    "data/dapo/formal/labels/T_final.jsonl": "c54257c5290a1a20f9342c671c02b7fe176c295b8cd0ae0517c5e0b5e6b95d77",
+    "configs/protocol_revisions/003_dapo_day3.json": "259d53ccdd37cd15cb0949799c7e411cfc0a781c9fdf14816e43b8c3df5ca77a",
+    "configs/protocol_revisions/004_g3_extension_20261024.json": "9198b672ece526d970a7ac22cdd8681f18f376f4cb2863b7ef69382ac3b02fc3",
+    "configs/verifier_update_20261025.json": "1c841289add8e59f1082bf08bc4efa60858e9797ec87e3541086af1569da5cab",
+    "configs/dapo_answer_v3.json": "8b3d20082d458e89735bee27eaaf4f4b8bcecece5141cad32c7a0ffb2fa46ce5",
+    "src/pilot/runtime.py": "936b9cb7881893ec8f75bd2ecc1c7da641db9930b33cb366fb08f84dbf6311d7",
+    "src/pilot/day2_protocol.py": "fbd7037a610a600f376e600003fd2319391f6e1582dde9b9dc5b1f56b57cb387",
+    "src/pilot/week_final_common.py": "a5121e5c6dd6403fb2c4b6a7294e3501510bd630cdbeeea882d27343ee9ffdac",
+    "src/pilot/week_final_generate.py": "7dd46c4fb07322c945989e9bb59558428e46b7ab968a3a21e62a65b25e3dd84f",
+    "src/pilot/week_final_run.py": "0433418f247192215dea724301430c869a00e5581df51fd7820d33df8498d176",
+    "src/pilot/week_final_reasons.py": "cb50e82d619908ad4920333928719e34ffcde4aa3e1fe3d4af1d7083df143c0a",
+    "src/pilot/verifier_update.py": "0be5adc7f305f855d600186fb30a2f232b4a2db1cf163dcc7f4c7b89b0c8bd4f",
+    "src/pilot/core.py": "d31a2562868fa7b586d8fe56afcf8fd3efe89817fb32564e714810c220a1bd5a",
+    "runs/formal/checkpoints/G1_SFT/adapter_model.safetensors": "cb5d8fee73b812ce5d21cefd0d0fc5e700f628d41b6681fa3157462be983b742",
+    "runs/formal/checkpoints/G1_SFT/adapter_config.json": "271f2ffbbb4291b4949f1256f34b3dcb3509a13f0ddbfd62bbf880584ff207b5",
+    "runs/formal/checkpoints/G2_SFT/adapter_model.safetensors": "e1f34e52174573a8edb5a9b08c785162d3f9fc7e50d7f64963bca5312b8a1629",
+    "runs/formal/checkpoints/G2_SFT/adapter_config.json": "981fe025039b4cd8ae2f9c9b3eb8bb9868f5ce2918362bc8ff4f1bdda63a41d6",
+    "runs/g3_extension_20261024/checkpoints/G3_SFT/adapter_model.safetensors": "9cff4af58458e9c07abd9070d8c40fcdaa3356dfa0f21ab42dafd45eede85bf4",
+    "runs/g3_extension_20261024/checkpoints/G3_SFT/adapter_config.json": "81d9cac89ab1eb23f97648bf2da19c396f773764f094ddffe28092e04652d356",
+    "runs/verifier_update_20261025/Vrand/adapter/adapter_model.safetensors": "9363e1767eed71272f6c2bd6dfc23cfd673fe8d9a3fc00f9792ad0a450087ba7",
+    "runs/verifier_update_20261025/Vrand/adapter/adapter_config.json": "81d7c4bc2bc5dfb5c7046aec5a02ab29ffa4e34dcd16faa7880f42b4b4e58c71",
+    "runs/verifier_update_20261025/Vtarget/adapter/adapter_model.safetensors": "d8ed49d52384136f4462819d6e1f4b5c8909d730234ba89a27fb7cec8a98486b",
+    "runs/verifier_update_20261025/Vtarget/adapter/adapter_config.json": "81d7c4bc2bc5dfb5c7046aec5a02ab29ffa4e34dcd16faa7880f42b4b4e58c71",
+    "runs/formal/G0_C.jsonl": "20d76cb915bcc7fe6c37dd4e228934f423836e6952ed077e2fcc17cc2581b844",
+    "runs/formal/labels_G0_C.jsonl": "86c78d5a8e7d87613b7c2cb1fc26839a2a4f50c23d59cc681fa8ede97fda5150",
+    "runs/formal/V0_G0_C.jsonl": "6e8521dc419c2f768ae5f2aa9165e4ae306d4148d7ad319042b2f4012039ed78",
+    "runs/formal/G1_C.jsonl": "255e3d9a223265e9e4e88dbf448c8364af305fda4b907ee212092f046206e27e",
+    "runs/formal/labels_G1_C.jsonl": "78cbc0bb53a3ae499295488721628c3133085036b0a583eaf08a72387082e5ca",
+    "runs/formal/V0_G1_C.jsonl": "a3c766e995e44362647f1895b4f653e3cb3db7a24912eb00032fe0fcc2321664",
+    "runs/formal/G2_C.jsonl": "6e857f85059bc5a343e4b2f071592d528fa49c402b6d3c4f9a2b4811ad156e4f",
+    "runs/formal/labels_G2_C.jsonl": "cfe567d7d4286657c4884676d7a48752050d4b4c3729715e19d04ac453bb6781",
+    "runs/formal/V0_G2_C.jsonl": "ce068f7151dce6ea0e21ff1f9ec6daa2ef575db2e8ba3b76702be36255b9dac5",
+    "runs/g3_extension_20261024/G3_C.jsonl": "821c6adb0da3772a5ba4af51876c57994c03b666bad7f47ac9ce23880323a6b3",
+    "runs/g3_extension_20261024/labels_G3_C.jsonl": "a503ca64b9bb6ab5b4524987f99b24cc4c6b2d58ee4b77075505c038273f5507",
+    "runs/g3_extension_20261024/V0_G3_C.jsonl": "27319bbce9c5a570801f8fff82dae7e5b43ece269358630ff19652ac35f0d66a"
+  },
+  "reason_inputs_sha256": "e9c9e8a7ccb6aade5f823a4afad3999724aa58222b6ed8eeeb1d6afcf99ff62a",
+  "new_training": false,
+  "prefix_experiments": false,
+  "future_work_excluded": [
+    "GRPO independent branch",
+    "large-scale process labels or PRM training",
+    "multi-model ability/difficulty grid",
+    "hyperparameter repair of failed V updates"
+  ],
+  "deliverables": [
+    "T G0/G1/G2(+G3) x V0/Vrand/Vtarget matrix",
+    "paired intervals and full raw caches",
+    "20C answers x3V rationale generation and assistant initial review",
+    "G step review workbook",
+    "seven-day status and final short report"
+  ]
+}

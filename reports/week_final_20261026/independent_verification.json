@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-26T12:36:16.648385+00:00",
+  "status": "passed",
+  "T_raw_questions": 300,
+  "T_valid_questions": 299,
+  "whole_question_exclusion_same_for_all": true,
+  "confusion_matrices_verified": 12,
+  "AUROC_independent_pair_comparisons": 12,
+  "paired_FPR_FNR_BA_intervals_independently_recomputed": 81,
+  "reason_reviews": 60,
+  "original_steps_offsets_verified": 114,
+  "human_gold": false,
+  "workbook_formulas_absent": true,
+  "archive_crc_and_all_file_hashes": "pass",
+  "archive_sha256": "3b5330e949b7ed90a5166c6b3a8a6148f62fe114ba5611748052ff09575cadbe",
+  "ABC_T_question_hash_family_UUID_disjointness": true,
+  "semantic_dedup_guarantee": false,
+  "PDF_pages_verified": 35,
+  "PNG_images_decoded": 6,
+  "prefix_figure_integration": {
+    "total_pages": 35,
+    "sections": 11,
+    "all_source_page_content_streams_and_page_sizes_preserved": true,
+    "original_T_pages": 6
+  },
+  "code_sha256": "1c66b64f37a2bb946e788466720d72cd9b912e4ecfbf1ea2aedcf370ac0fb641"
+}

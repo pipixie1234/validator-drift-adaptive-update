@@ -1,0 +1,5 @@
+{
+  "active_revision": "configs/protocol_revisions/003_dapo_day3.json",
+  "formal_training": "two_generator_updates_complete_V0_fixed",
+  "previous_frozen_config_preserved": "configs/formal_protocol.json"
+}

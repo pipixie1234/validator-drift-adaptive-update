@@ -1,0 +1,17 @@
+{
+  "arm": "SFT_aug",
+  "steps": 80,
+  "examples_presented": 640,
+  "unique_math_answers": 128,
+  "unique_questions": 64,
+  "input_tokens": 674314,
+  "chosen_loss_tokens": 640,
+  "rejected_tokens_used": 0,
+  "adapter_delta_L2_this_invocation": 1.35850688401513,
+  "base_unchanged": true,
+  "save_reload_passed": true,
+  "peak_memory_bytes": 9815698432,
+  "seconds_this_invocation": 245.95038498705253,
+  "adapter_fingerprint": "0eef7e1ae27aca6c2fb7ea994110f715dc27042e2bf6b2a503dd5e3c3592c5ae",
+  "at": "2026-10-26T13:31:48.554461+00:00"
+}

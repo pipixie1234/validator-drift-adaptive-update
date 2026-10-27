@@ -1,0 +1,94 @@
+{
+  "selection_plan": {
+    "study": "random_SFT_length_matched_control_v1",
+    "code_sha256": "93fb7272e4881a9fba4c68f4eb2a685ea233b8a32ebccb15d4568fa49b59b77c",
+    "seed": 20261024,
+    "question_source": "oracle_control/common_A_questions.jsonl",
+    "questions_conditioned_on_old_oracle_availability": true,
+    "candidate_eligibility": "Original G0_A; not generation-truncated; exact full training tensor <=4096. No answer-format, truth or V filter.",
+    "draw": "Uniform independent candidate per sorted question, repeated until FIRST complete tuple within token tolerance.",
+    "target_loss_tokens": 225565,
+    "relative_tolerance": 0.005,
+    "max_draws": 100000,
+    "fallback": "Use FIRST uniform draw if no budget match; explicitly report token mismatch.",
+    "conditioning_limit": "Uniform over length-admissible tuples, not unconditional uniform candidate marginals.",
+    "no_V_scores_or_labels_in_selection": true,
+    "no_repeated_examples_or_truncation": true,
+    "training_seed": 42,
+    "initialization": "Fresh original G0 plus new LoRA; no old adapters",
+    "training": {
+      "objective": "response_only_SFT",
+      "max_length": 4096,
+      "max_examples_per_round": 512,
+      "epochs": 1,
+      "micro_batch": 1,
+      "gradient_accumulation": 8,
+      "learning_rate": 0.0001,
+      "lora_r": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.05,
+      "optimizer": "AdamW",
+      "seed": 42,
+      "G1_initialization": "original G0 plus new adapter",
+      "G2_initialization": "continue the G1 adapter",
+      "sample_selection": "pilot.day3_protocol.select_feedback; whole invalid questions excluded; one random V0-accepted response per question; unknown answer labels do not filter selections; cap512 without duplicating rows",
+      "quality_reporting": "For each actual A selection, separately report correct/wrong/unknown and bounds after selection; never silently filter by truth.",
+      "truncation": "Never truncate tensors; reject over-context examples, log IDs/reasons; generation-truncated answers excluded by fixed structural rule."
+    },
+    "engineering_probe": "Compute 17 + 23.",
+    "evaluation": {
+      "questions": 96,
+      "candidates_each": 4,
+      "engine": "original Transformers BF16 SDPA",
+      "workers": 4,
+      "V0_threshold": 0.5,
+      "protocol_sha256": "259d53ccdd37cd15cb0949799c7e411cfc0a781c9fdf14816e43b8c3df5ca77a",
+      "scenarios": [
+        "C95_exclude_reference_suspect",
+        "C96_frozen_original",
+        "C96_reference1_overlay"
+      ],
+      "T_read": false,
+      "B_used": false
+    },
+    "analysis": {
+      "primary_contrasts": [
+        "Vmatched_SFT-Random_SFT",
+        "Oracle_SFT-Random_SFT",
+        "Random_SFT-G0"
+      ],
+      "primary_metric": "G_accuracy_verified; report correct/all and unknown alongside",
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 20261022,
+      "unit": "Paired whole questions; exploratory pointwise percentile95; single training seed",
+      "development_reuse_disclosed": true
+    }
+  },
+  "summary": {
+    "examples": 289,
+    "questions": 289,
+    "optimizer_steps": 37,
+    "correct": 198,
+    "wrong": 80,
+    "unknown": 11,
+    "supervised_tokens": 224951,
+    "input_tokens": 264040,
+    "target_supervised_tokens": 225565,
+    "relative_token_difference": -0.0027220535100747068,
+    "length_matched": true,
+    "random_draws": 19
+  },
+  "selected_sha256": "e90b3c394e9e1e49962b7907a3616881e450e6e520da05c87b3ed44ad4c3d050",
+  "tokenized_sha256": "2463ba8c8be3859e2d77b444605b25eb148b50de0eb60dc441301299d8ae6742",
+  "draw_trace_sha256": "828d90433ac22195bd654cfe910c4337498ca281b886cb2b0c7850f902cd69cb",
+  "original_sources_sha256": {
+    "runs/formal/G0_A.jsonl": "aabb65413008fc3e999e96c10fba9e582336541b233962f4020cd1a45cb87fb9",
+    "runs/formal/labels_G0_A.jsonl": "24fcf4c978bc3110f5ebd1146070cdadd9f2cfcecc1da27a7435e8c1ba79e226",
+    "configs/protocol_revisions/003_dapo_day3.json": "259d53ccdd37cd15cb0949799c7e411cfc0a781c9fdf14816e43b8c3df5ca77a",
+    "configs/oracle_control_20261022.json": "1dbf6d9a455bcce442c59d75ccf318d39f1109bd00dfe30d5c8c0f6d02589238",
+    "runs/oracle_control_20261022/common_A_questions.jsonl": "ef98f0c47e017fb3baf9102a741409a124f6d004febb5f9a1d02dad5a45baa19",
+    "reports/oracle_control_20261022/candidates_full.jsonl": "6e89e6e078319bb735b63b58804c2723817d3c62e4eb55b0ce60a8d1b4b47ca8"
+  },
+  "code_sha256": "93fb7272e4881a9fba4c68f4eb2a685ea233b8a32ebccb15d4568fa49b59b77c",
+  "prepared_at": "2026-10-24T07:02:54.415575+00:00"
+}

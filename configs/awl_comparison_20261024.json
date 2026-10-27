@@ -1,0 +1,583 @@
+{
+  "created_at": "2026-10-24T14:23:40.573564+00:00",
+  "purpose": "Contrast prespecified near-synonym AWL/nonAWL verb headers, holding body and format fixed",
+  "variants": [
+    {
+      "name": "original",
+      "prefix": "",
+      "group": "control",
+      "word": null,
+      "pair": null,
+      "awl_families": []
+    },
+    {
+      "name": "colon_control",
+      "prefix": ":\n",
+      "group": "control",
+      "word": null,
+      "pair": null,
+      "awl_families": []
+    },
+    {
+      "name": "neutral_control",
+      "prefix": "Response text:\n",
+      "group": "control",
+      "word": null,
+      "pair": null,
+      "awl_families": []
+    },
+    {
+      "name": "analyse",
+      "prefix": "Analyse:\n",
+      "group": "AWL",
+      "word": "analyse",
+      "pair": 0,
+      "awl_families": [
+        {
+          "headword": "analyse",
+          "sublist": 1
+        }
+      ]
+    },
+    {
+      "name": "examine",
+      "prefix": "Examine:\n",
+      "group": "nonAWL",
+      "word": "examine",
+      "pair": 0,
+      "awl_families": []
+    },
+    {
+      "name": "assess",
+      "prefix": "Assess:\n",
+      "group": "AWL",
+      "word": "assess",
+      "pair": 1,
+      "awl_families": [
+        {
+          "headword": "assess",
+          "sublist": 1
+        }
+      ]
+    },
+    {
+      "name": "check",
+      "prefix": "Check:\n",
+      "group": "nonAWL",
+      "word": "check",
+      "pair": 1,
+      "awl_families": []
+    },
+    {
+      "name": "compute",
+      "prefix": "Compute:\n",
+      "group": "AWL",
+      "word": "compute",
+      "pair": 2,
+      "awl_families": [
+        {
+          "headword": "compute",
+          "sublist": 2
+        }
+      ]
+    },
+    {
+      "name": "calculate",
+      "prefix": "Calculate:\n",
+      "group": "nonAWL",
+      "word": "calculate",
+      "pair": 2,
+      "awl_families": []
+    },
+    {
+      "name": "deduce",
+      "prefix": "Deduce:\n",
+      "group": "AWL",
+      "word": "deduce",
+      "pair": 3,
+      "awl_families": [
+        {
+          "headword": "deduce",
+          "sublist": 3
+        }
+      ]
+    },
+    {
+      "name": "reason",
+      "prefix": "Reason:\n",
+      "group": "nonAWL",
+      "word": "reason",
+      "pair": 3,
+      "awl_families": []
+    },
+    {
+      "name": "demonstrate",
+      "prefix": "Demonstrate:\n",
+      "group": "AWL",
+      "word": "demonstrate",
+      "pair": 4,
+      "awl_families": [
+        {
+          "headword": "demonstrate",
+          "sublist": 3
+        }
+      ]
+    },
+    {
+      "name": "show",
+      "prefix": "Show:\n",
+      "group": "nonAWL",
+      "word": "show",
+      "pair": 4,
+      "awl_families": []
+    },
+    {
+      "name": "establish",
+      "prefix": "Establish:\n",
+      "group": "AWL",
+      "word": "establish",
+      "pair": 5,
+      "awl_families": [
+        {
+          "headword": "establish",
+          "sublist": 1
+        }
+      ]
+    },
+    {
+      "name": "prove",
+      "prefix": "Prove:\n",
+      "group": "nonAWL",
+      "word": "prove",
+      "pair": 5,
+      "awl_families": []
+    },
+    {
+      "name": "obtain",
+      "prefix": "Obtain:\n",
+      "group": "AWL",
+      "word": "obtain",
+      "pair": 6,
+      "awl_families": [
+        {
+          "headword": "obtain",
+          "sublist": 2
+        }
+      ]
+    },
+    {
+      "name": "get",
+      "prefix": "Get:\n",
+      "group": "nonAWL",
+      "word": "get",
+      "pair": 6,
+      "awl_families": []
+    },
+    {
+      "name": "require",
+      "prefix": "Require:\n",
+      "group": "AWL",
+      "word": "require",
+      "pair": 7,
+      "awl_families": [
+        {
+          "headword": "require",
+          "sublist": 1
+        }
+      ]
+    },
+    {
+      "name": "need",
+      "prefix": "Need:\n",
+      "group": "nonAWL",
+      "word": "need",
+      "pair": 7,
+      "awl_families": []
+    },
+    {
+      "name": "identify",
+      "prefix": "Identify:\n",
+      "group": "AWL",
+      "word": "identify",
+      "pair": 8,
+      "awl_families": [
+        {
+          "headword": "identify",
+          "sublist": 1
+        }
+      ]
+    },
+    {
+      "name": "find",
+      "prefix": "Find:\n",
+      "group": "nonAWL",
+      "word": "find",
+      "pair": 8,
+      "awl_families": []
+    },
+    {
+      "name": "evaluate",
+      "prefix": "Evaluate:\n",
+      "group": "AWL",
+      "word": "evaluate",
+      "pair": 9,
+      "awl_families": [
+        {
+          "headword": "evaluate",
+          "sublist": 2
+        }
+      ]
+    },
+    {
+      "name": "judge",
+      "prefix": "Judge:\n",
+      "group": "nonAWL",
+      "word": "judge",
+      "pair": 9,
+      "awl_families": []
+    },
+    {
+      "name": "formulate",
+      "prefix": "Formulate:\n",
+      "group": "AWL",
+      "word": "formulate",
+      "pair": 10,
+      "awl_families": [
+        {
+          "headword": "formula",
+          "sublist": 1
+        }
+      ]
+    },
+    {
+      "name": "write",
+      "prefix": "Write:\n",
+      "group": "nonAWL",
+      "word": "write",
+      "pair": 10,
+      "awl_families": []
+    },
+    {
+      "name": "utilise",
+      "prefix": "Utilise:\n",
+      "group": "AWL",
+      "word": "utilise",
+      "pair": 11,
+      "awl_families": [
+        {
+          "headword": "utilise",
+          "sublist": 6
+        }
+      ]
+    },
+    {
+      "name": "use",
+      "prefix": "Use:\n",
+      "group": "nonAWL",
+      "word": "use",
+      "pair": 11,
+      "awl_families": []
+    },
+    {
+      "name": "implement",
+      "prefix": "Implement:\n",
+      "group": "AWL",
+      "word": "implement",
+      "pair": 12,
+      "awl_families": [
+        {
+          "headword": "implement",
+          "sublist": 4
+        }
+      ]
+    },
+    {
+      "name": "do",
+      "prefix": "Do:\n",
+      "group": "nonAWL",
+      "word": "do",
+      "pair": 12,
+      "awl_families": []
+    },
+    {
+      "name": "conclude",
+      "prefix": "Conclude:\n",
+      "group": "AWL",
+      "word": "conclude",
+      "pair": 13,
+      "awl_families": [
+        {
+          "headword": "conclude",
+          "sublist": 2
+        }
+      ]
+    },
+    {
+      "name": "finish",
+      "prefix": "Finish:\n",
+      "group": "nonAWL",
+      "word": "finish",
+      "pair": 13,
+      "awl_families": []
+    },
+    {
+      "name": "investigate",
+      "prefix": "Investigate:\n",
+      "group": "AWL",
+      "word": "investigate",
+      "pair": 14,
+      "awl_families": [
+        {
+          "headword": "investigate",
+          "sublist": 4
+        }
+      ]
+    },
+    {
+      "name": "study",
+      "prefix": "Study:\n",
+      "group": "nonAWL",
+      "word": "study",
+      "pair": 14,
+      "awl_families": []
+    },
+    {
+      "name": "clarify",
+      "prefix": "Clarify:\n",
+      "group": "AWL",
+      "word": "clarify",
+      "pair": 15,
+      "awl_families": [
+        {
+          "headword": "clarify",
+          "sublist": 8
+        }
+      ]
+    },
+    {
+      "name": "explain",
+      "prefix": "Explain:\n",
+      "group": "nonAWL",
+      "word": "explain",
+      "pair": 15,
+      "awl_families": []
+    },
+    {
+      "name": "commence",
+      "prefix": "Commence:\n",
+      "group": "AWL",
+      "word": "commence",
+      "pair": 16,
+      "awl_families": [
+        {
+          "headword": "commence",
+          "sublist": 9
+        }
+      ]
+    },
+    {
+      "name": "begin",
+      "prefix": "Begin:\n",
+      "group": "nonAWL",
+      "word": "begin",
+      "pair": 16,
+      "awl_families": []
+    },
+    {
+      "name": "proceed",
+      "prefix": "Proceed:\n",
+      "group": "AWL",
+      "word": "proceed",
+      "pair": 17,
+      "awl_families": [
+        {
+          "headword": "proceed",
+          "sublist": 1
+        }
+      ]
+    },
+    {
+      "name": "continue",
+      "prefix": "Continue:\n",
+      "group": "nonAWL",
+      "word": "continue",
+      "pair": 17,
+      "awl_families": []
+    },
+    {
+      "name": "assist",
+      "prefix": "Assist:\n",
+      "group": "AWL",
+      "word": "assist",
+      "pair": 18,
+      "awl_families": [
+        {
+          "headword": "assist",
+          "sublist": 2
+        }
+      ]
+    },
+    {
+      "name": "help",
+      "prefix": "Help:\n",
+      "group": "nonAWL",
+      "word": "help",
+      "pair": 18,
+      "awl_families": []
+    },
+    {
+      "name": "retain",
+      "prefix": "Retain:\n",
+      "group": "AWL",
+      "word": "retain",
+      "pair": 19,
+      "awl_families": [
+        {
+          "headword": "retain",
+          "sublist": 4
+        }
+      ]
+    },
+    {
+      "name": "keep",
+      "prefix": "Keep:\n",
+      "group": "nonAWL",
+      "word": "keep",
+      "pair": 19,
+      "awl_families": []
+    }
+  ],
+  "pairs": [
+    {
+      "AWL": "analyse",
+      "nonAWL": "examine"
+    },
+    {
+      "AWL": "assess",
+      "nonAWL": "check"
+    },
+    {
+      "AWL": "compute",
+      "nonAWL": "calculate"
+    },
+    {
+      "AWL": "deduce",
+      "nonAWL": "reason"
+    },
+    {
+      "AWL": "demonstrate",
+      "nonAWL": "show"
+    },
+    {
+      "AWL": "establish",
+      "nonAWL": "prove"
+    },
+    {
+      "AWL": "obtain",
+      "nonAWL": "get"
+    },
+    {
+      "AWL": "require",
+      "nonAWL": "need"
+    },
+    {
+      "AWL": "identify",
+      "nonAWL": "find"
+    },
+    {
+      "AWL": "evaluate",
+      "nonAWL": "judge"
+    },
+    {
+      "AWL": "formulate",
+      "nonAWL": "write"
+    },
+    {
+      "AWL": "utilise",
+      "nonAWL": "use"
+    },
+    {
+      "AWL": "implement",
+      "nonAWL": "do"
+    },
+    {
+      "AWL": "conclude",
+      "nonAWL": "finish"
+    },
+    {
+      "AWL": "investigate",
+      "nonAWL": "study"
+    },
+    {
+      "AWL": "clarify",
+      "nonAWL": "explain"
+    },
+    {
+      "AWL": "commence",
+      "nonAWL": "begin"
+    },
+    {
+      "AWL": "proceed",
+      "nonAWL": "continue"
+    },
+    {
+      "AWL": "assist",
+      "nonAWL": "help"
+    },
+    {
+      "AWL": "retain",
+      "nonAWL": "keep"
+    }
+  ],
+  "prefix_template": "{Capitalized_single_word}:\\n",
+  "samples": {
+    "A": 64,
+    "C": 48
+  },
+  "scores": 4816,
+  "source_sha256": {
+    "configs/prefix_paraphrase_20261024.json": "d7fbd7c0f6dcf0ed26446ccb2b35825c6b5195a0c50a4fc66e7548dbdb5a5063",
+    "runs/prefix_paraphrase_20261024/prefix_answers.jsonl": "4f66296e6e2aae2b69df469c3ef40d30aa41fa9bd9b06e96a5dc96a24d8fb57b",
+    "runs/prefix_paraphrase_20261024/V0_scores.jsonl": "adb8a0f46d3819b8d21a3996df2f7f7a52270c4f1c2102f213e1b05f216c7d1e",
+    "runs/awl_comparison_20261024/awl_source.html": "e7bcfe124038a34a2b55ff1fdedcc74d54224c6b85541b4dab1c2e53d90c79f0",
+    "runs/awl_comparison_20261024/awl_570_transcription.json": "c76ad5640f1bf8b83f9681d59f3fa83e5a3dceb21f8f3dba8c78a2a3220426c1",
+    "runs/awl_comparison_20261024/sources.json": "2dbe258816ef9fce8726b860f4577e442ebe06c9d2f2ed0f9bcf06ef81a59c3f",
+    "src/pilot/runtime.py": "936b9cb7881893ec8f75bd2ecc1c7da641db9930b33cb366fb08f84dbf6311d7",
+    "src/pilot/awl_comparison.py": "a84c6af091912fdfabf34e218b4fa089daa83310c39dbe7ca2384258b405c724",
+    "runs/awl_comparison_20261024/label_preservation.jsonl": "1a183d64f502f76821c3fc0621efb07596d290603f78c34d15322aa98b52183f"
+  },
+  "answers_sha256": "4f66296e6e2aae2b69df469c3ef40d30aa41fa9bd9b06e96a5dc96a24d8fb57b",
+  "membership_rule": "Lowercase exact member of 570-family transcription including derived/inflected forms; no heuristic stemming",
+  "lexical_selection": "20 manually chosen single-verb near-synonym pairs; membership checked; not a random sample of AWL; no new-score-driven changes",
+  "main_contrast": "Per answer, mean acceptance over20 AWL headers minus mean over20 nonAWL headers; 10000 whole-question bootstrap, permutation sign flips, BH across A/C",
+  "lexical_sensitivity": "Additional crossed bootstrap of questions AND lexical pairs, keeping AWL/nonAWL paired; sensitivity only, purposive vocabulary not representative",
+  "individual_pairs": "Two-sided exact McNemar across same answers, BH across20*2 pools",
+  "controls": "unchanged original, punctuation-only colon, neutral Response text; include all controls in plots",
+  "fixed_V0": {
+    "fingerprint": "cd87ced708c07dd0c0e502cf7747fcd3b987cb4bbe9cc643d281fc9212d94c70",
+    "adapter": null,
+    "threshold": 0.5,
+    "scoring": {
+      "labels": [
+        "A",
+        "B"
+      ],
+      "accept_threshold": 0.5,
+      "max_context": 8192
+    },
+    "max_context": 8192
+  },
+  "reuse": "Exact same question+response+prefix with provenance from completed previous fixed V0 experiment only. Freshly rescore every original.",
+  "limits": [
+    "AWL membership is not a monotone scale of academic tone; excludes most frequent2000 English words",
+    "Approximate synonyms may differ in nuance; morphology/word length/subword length/frequency not matched",
+    "Artificial standalone headers, selected original wrong rejections; not natural FPR or G learning mechanism",
+    "20 chosen pairs do not establish a claim about all570 families"
+  ],
+  "seed": 20261024,
+  "bootstrap": 10000,
+  "B_used": false,
+  "T_read": false,
+  "G_training": false,
+  "G_generation": false
+}

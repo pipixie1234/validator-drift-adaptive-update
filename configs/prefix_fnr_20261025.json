@@ -1,0 +1,182 @@
+{
+  "created_at": "2026-10-25T12:08:28.959018+00:00",
+  "purpose": "Measure net FNR change under the same21 prefix settings, including FN rescue and TP damage",
+  "scope": "ALL independently verified correct nontruncated G3 answers in frozen clean A598/C95; no conditioning on original V acceptance, words or future intervention scores",
+  "support": {
+    "A": {
+      "responses": 839,
+      "questions": 276,
+      "original_FN": 65,
+      "original_TP": 774
+    },
+    "C": {
+      "responses": 147,
+      "questions": 51,
+      "original_FN": 21,
+      "original_TP": 126
+    }
+  },
+  "variants": [
+    {
+      "name": "original",
+      "prefix": "",
+      "category": "control"
+    },
+    {
+      "name": "blank_control",
+      "prefix": "\n",
+      "category": "control"
+    },
+    {
+      "name": "neutral_control",
+      "prefix": "Response text:\n",
+      "category": "control"
+    },
+    {
+      "name": "to_solve_for",
+      "prefix": "To solve for\n",
+      "category": "solve_for_family"
+    },
+    {
+      "name": "we_need_to",
+      "prefix": "we need to\n",
+      "category": "we_need_reference"
+    },
+    {
+      "name": "we_can",
+      "prefix": "we can\n",
+      "category": "modality_changed"
+    },
+    {
+      "name": "we_will",
+      "prefix": "we will\n",
+      "category": "modality_changed"
+    },
+    {
+      "name": "we_have_to",
+      "prefix": "we have to\n",
+      "category": "necessity"
+    },
+    {
+      "name": "we_should",
+      "prefix": "we should\n",
+      "category": "modality_changed"
+    },
+    {
+      "name": "we_must",
+      "prefix": "we must\n",
+      "category": "necessity"
+    },
+    {
+      "name": "it_is_essential_to",
+      "prefix": "it is essential to\n",
+      "category": "necessity"
+    },
+    {
+      "name": "thought_process",
+      "prefix": "Thought process:\n",
+      "category": "reasoning_header"
+    },
+    {
+      "name": "reasoning",
+      "prefix": "Reasoning:\n",
+      "category": "reasoning_header"
+    },
+    {
+      "name": "analysis",
+      "prefix": "Analysis:\n",
+      "category": "reasoning_header"
+    },
+    {
+      "name": "original_step_by_step",
+      "prefix": "Let's solve this problem step by step.\n",
+      "category": "reasoning_header"
+    },
+    {
+      "name": "reason_step_by_step",
+      "prefix": "Let's reason step by step.\n",
+      "category": "reasoning_header"
+    },
+    {
+      "name": "solve_for_the",
+      "prefix": "solve for the\n",
+      "category": "EFP_discovered"
+    },
+    {
+      "name": "to_determine_probability",
+      "prefix": "To determine the probability\n",
+      "category": "EFP_discovered"
+    },
+    {
+      "name": "symbol_colon",
+      "prefix": ":\n",
+      "category": "punctuation"
+    },
+    {
+      "name": "symbol_period",
+      "prefix": ".\n",
+      "category": "punctuation"
+    },
+    {
+      "name": "symbol_comma",
+      "prefix": ",\n",
+      "category": "punctuation"
+    }
+  ],
+  "source_sha256": {
+    "configs/fpr_patterns_20261024.json": "3b6b866b93a7c5e323023087fc68093dd3edabcbd21f9b44fdbd2042f46d5fc3",
+    "src/pilot/runtime.py": "936b9cb7881893ec8f75bd2ecc1c7da641db9930b33cb366fb08f84dbf6311d7",
+    "src/pilot/cross_round_prefix.py": "55d5dd8c4ffbdbdb03996ea1e52c195281502a7a7a31d17bb566fbc4bd8b1936",
+    "src/pilot/prefix_fnr.py": "7596e3650a5da57f14fadd39b2236d4784dbfb680f6bf63cfc43eb19b7592696",
+    "runs/g3_extension_20261024/G2_A.jsonl": "c1268fe19ad33ebb31cb9cf6aeabff1863517d8232a23e4ae5436d69906a8733",
+    "runs/g3_extension_20261024/G2_C.jsonl": "8619c77f278ef8643b39edcb76d5cc61d2faaa8b64af8efe1cc2829c32cc18f5",
+    "runs/g3_extension_20261024/G3_A.jsonl": "5c8e9a18e46f3dfb41721756fe4ec9c83c6d01e3f3f36ccd4a56278590f7813f",
+    "runs/g3_extension_20261024/G3_C.jsonl": "821c6adb0da3772a5ba4af51876c57994c03b666bad7f47ac9ce23880323a6b3",
+    "runs/g3_extension_20261024/V0_G2_A.jsonl": "4b12005f9192a48ab7913b6dd06bbd59f835e8929f111bd5eb7cb9e67833b4f6",
+    "runs/g3_extension_20261024/V0_G2_C.jsonl": "de5d3b65344c34aa8349ec092b4d2d7bf73446cde6d5f297b0cac31d495b1498",
+    "runs/g3_extension_20261024/V0_G3_A.jsonl": "2aa7cc926dc39d9135e2d8ff55ee582038e4714b9a1be67f8fb7d8a50164fd5a",
+    "runs/g3_extension_20261024/V0_G3_C.jsonl": "27319bbce9c5a570801f8fff82dae7e5b43ece269358630ff19652ac35f0d66a",
+    "runs/g3_extension_20261024/labels_G2_A.jsonl": "22f6130217e303463a17db1f1bf75d5c5f330f4e96bf9fa138024cf60efc7806",
+    "runs/g3_extension_20261024/labels_G2_C.jsonl": "2b4347a4b91f006a4255305a231119c12997291c444df3c09baf12f855089a7d",
+    "runs/g3_extension_20261024/labels_G3_A.jsonl": "22fb5c8ddd43afe3f66f8c28b386bc967bb0e385bbe7f7f136ee305a4f6c389d",
+    "runs/g3_extension_20261024/labels_G3_C.jsonl": "a503ca64b9bb6ab5b4524987f99b24cc4c6b2d58ee4b77075505c038273f5507"
+  },
+  "input_sha256": {
+    "answers.jsonl": "87e1b9228b6be49f7de9b4b477e448403139a0909581a2178fb55c6d42f099e2",
+    "answer_context_checks.jsonl": "f8563782e8e906188783238a0651cb5ddf6afe279f54444e8ffbb05adcf214c6"
+  },
+  "fixed_V0": {
+    "fingerprint": "cd87ced708c07dd0c0e502cf7747fcd3b987cb4bbe9cc643d281fc9212d94c70",
+    "adapter": null,
+    "threshold": 0.5,
+    "scoring": {
+      "labels": [
+        "A",
+        "B"
+      ],
+      "accept_threshold": 0.5,
+      "max_context": 8192
+    },
+    "max_context": 8192
+  },
+  "primary": "FNR(prefix)-FNR(original), 18 triggers x2 pools, two-sided question-cluster influence Student-t test, BH36; paired whole-question bootstrap10000",
+  "secondary": "FNR(prefix)-FNR(neutral_control), separate BH36; exact response-level McNemar descriptive only because sibling answers correlated",
+  "transitions": "All65A/21C original FN can become TP; all774A/126C original TP can become FN. Net FN=new_FN-rescued_FN. Include both groups without balancing or duplication.",
+  "reuse": "Original controls freshly rescored for every candidate; nonoriginal scores reused only for identical full question+prefix+body prompts inside this run",
+  "comparison": "Prior G3 wrong-answer injection nA64/C48 shown separately as conditional TN->FP, not whole-pool FPR. Different question coverage and denominators; not a joint accuracy experiment.",
+  "limits": [
+    "C repeated-use development, not final test",
+    "A G training domain; descriptive G3-only intervention, not proof of training mediation",
+    "Final-answer reference labels not proof all reasoning correct",
+    "Zero observed flips or degenerate bootstrap is not population zero risk",
+    "Prefix list inherited from prior exploratory findings; report all21 settings and controls"
+  ],
+  "bootstrap": 10000,
+  "seed": 20261025,
+  "logical_scores": 20706,
+  "G_generation": false,
+  "G_training": false,
+  "V_update": false,
+  "B_used": false,
+  "T_read": false
+}

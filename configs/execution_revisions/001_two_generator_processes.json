@@ -1,0 +1,35 @@
+{
+  "revision": "001_two_generator_processes",
+  "recorded_at": "2026-10-21T09:31:39.043158+00:00",
+  "authorization": "用户：嗯，你先试试，然后我们修改成两进程的(之前已经生成的回答就不用改了)",
+  "scope": "Execution scheduling only: two independent G processes, disjoint whole questions, original per-question four-candidate sampler.",
+  "original_source_freeze_sha256": "fd613433681a797e3c672af5094f6a845873ec3e365dd710247d8789ff6ebcab",
+  "changed_files": {
+    "src/pilot/formal_pipeline.py": {
+      "previous_sha256": "f21bfc5bc2723e8ae2e671134d479e9c737c32c180712daec858b414612e110a",
+      "archived_previous_path": "runs/formal/execution_revisions/001_before_parallel/src/pilot/formal_pipeline.py",
+      "active_sha256": "ec7658bc5f0e19cc520ae8d2b759fd0daea668bf6cc6fe4e7eab4793477af9f5"
+    },
+    "src/pilot/formal_report.py": {
+      "previous_sha256": "5383c37e632e29f62ddb23ac548232ff29a785df45b55cce91685aa0a86d161f",
+      "archived_previous_path": "runs/formal/execution_revisions/001_before_parallel/src/pilot/formal_report.py",
+      "active_sha256": "a398e141b5f991d3ebdaf0d4f0b2bd60ce06ea361abcdb771b0591fe8b914f2d"
+    }
+  },
+  "added_files_sha256": {
+    "src/pilot/formal_parallel.py": "06e3921ea68e6416734366f150890dafb1e359aae9c7b992ad31c3df6485ec26",
+    "src/pilot/formal_parallel_benchmark.py": "25bb18d67129cf477d0b70e0dba69b5391153aa54bd16d9a47472c32067aa670",
+    "src/pilot/formal_revision.py": "c017b41dbb92a22eea44f346e938760623dc9d9922e1f00c3a95150c0b60a075",
+    "tests/test_formal_parallel.py": "ff544160bebc4aa9cfc1b42716b7c9bc24efd42a09f05720cfb3dab39872139b",
+    "runs/formal/parallel_benchmark/benchmarked_wrapper.py": "016ebcebacc5eb2520367719c8194ca4cf91879247d56e6b78a75b170ee85c1b"
+  },
+  "benchmark_result_path": "runs/formal/parallel_benchmark/result.json",
+  "benchmark_result_sha256": "85ea71047dc981a8f414c1316d7c2b7f7a8486b3e1481c1330b839a40746c7ce",
+  "handover_path": "runs/formal/execution_revisions/001_handover.json",
+  "handover_sha256": "824f92d4886e31d1c7c5e3c80400bc44117c4d1553a5817c9899190cfc115114",
+  "frozen_protocol_changed": false,
+  "original_generation_function_changed": false,
+  "V0_scoring_changed": false,
+  "saved_outputs_retained": true,
+  "budget": "One occupied GPU wall clock, once per coordinator; never sum overlapping worker wall times."
+}

@@ -1,0 +1,11 @@
+﻿stage,model,seconds_this_invocation,questions,candidates,new_output_tokens,weights_unchanged,at,source,logical_scores,fresh,reused,reasons
+generation,G0,369.98075607791543,300,1200,1055304,True,2026-10-26T06:59:53.090863+00:00,runs/week_final_20261026/generation/G0/complete.json,,,,
+generation,G1,783.2300405781716,300,1200,1114570,True,2026-10-26T07:13:08.134566+00:00,runs/week_final_20261026/generation/G1/complete.json,,,,
+generation,G2,718.2378855217248,300,1200,1083928,True,2026-10-26T07:26:28.131367+00:00,runs/week_final_20261026/generation/G2/complete.json,,,,
+generation,G3,757.519643144682,300,1200,1095350,True,2026-10-26T07:39:21.287797+00:00,runs/week_final_20261026/generation/G3/complete.json,,,,
+scoring,V0,738.6759459227324,,,,,,runs/week_final_20261026/scoring/V0/compute.json,4800,4667,133,
+scoring,Vrand,1095.935535358265,,,,,,runs/week_final_20261026/scoring/Vrand/compute.json,4800,4667,133,
+scoring,Vtarget,1096.2755748275667,,,,,,runs/week_final_20261026/scoring/Vtarget/compute.json,4800,4667,133,
+rationales,V0,81.13948169723153,,,,,,runs/week_final_20261026/rationales/V0_compute.json,,,,20
+rationales,Vrand,7.498014759272337,,,,,,runs/week_final_20261026/rationales/Vrand_compute.json,,,,20
+rationales,Vtarget,7.01497944816947,,,,,,runs/week_final_20261026/rationales/Vtarget_compute.json,,,,20

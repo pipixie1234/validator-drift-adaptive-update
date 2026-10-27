@@ -1,0 +1,17 @@
+{
+  "arm": "DPO_clean",
+  "steps": 80,
+  "examples_presented": 640,
+  "unique_math_answers": 128,
+  "unique_questions": 64,
+  "input_tokens": 672650,
+  "chosen_loss_tokens": 640,
+  "rejected_tokens_used": 640,
+  "adapter_delta_L2_this_invocation": 0.8806112105400183,
+  "base_unchanged": true,
+  "save_reload_passed": true,
+  "peak_memory_bytes": 9813411328,
+  "seconds_this_invocation": 244.2919277001638,
+  "adapter_fingerprint": "e5c1e632843d03b283c3fc6dcef7327351f713e4626f03b4dfbdd51cc400b78b",
+  "at": "2026-10-26T13:35:58.304459+00:00"
+}

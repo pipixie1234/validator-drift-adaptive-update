@@ -1,0 +1,653 @@
+﻿split,question_id,candidate_id,variant,original_accepted,injected_accepted,direction,original_score,injected_score,correct_final_answer,prefix,gold_answer
+A,dapo:train:066bb2de-2e40-48d6-bb2c-655655c49306,dapo:train:066bb2de-2e40-48d6-bb2c-655655c49306:extension004:G3:3,neutral_control,True,False,TP_to_FN,0.9046505093574524,0.3208213150501251,11,"Response text:
+",11
+A,dapo:train:10668c6b-0239-4e91-b035-1b98da867ce6,dapo:train:10668c6b-0239-4e91-b035-1b98da867ce6:extension004:G3:2,symbol_period,False,True,FN_to_TP,0.010986949317157269,0.562176525592804,31,".
+",31
+A,dapo:train:107227f7-0514-4286-96eb-21e4fc058495,dapo:train:107227f7-0514-4286-96eb-21e4fc058495:extension004:G3:0,thought_process,True,False,TP_to_FN,0.8807970285415649,0.4073334336280823,1,"Thought process:
+",1
+A,dapo:train:107227f7-0514-4286-96eb-21e4fc058495,dapo:train:107227f7-0514-4286-96eb-21e4fc058495:extension004:G3:0,analysis,True,False,TP_to_FN,0.8807970285415649,0.4073334336280823,1,"Analysis:
+",1
+A,dapo:train:107227f7-0514-4286-96eb-21e4fc058495,dapo:train:107227f7-0514-4286-96eb-21e4fc058495:extension004:G3:0,original_step_by_step,True,False,TP_to_FN,0.8807970285415649,0.13296423852443695,1,"Let's solve this problem step by step.
+",1
+A,dapo:train:107227f7-0514-4286-96eb-21e4fc058495,dapo:train:107227f7-0514-4286-96eb-21e4fc058495:extension004:G3:0,to_determine_probability,True,False,TP_to_FN,0.8807970285415649,0.34864503145217896,1,"To determine the probability
+",1
+A,dapo:train:122a8b33-c28f-44ec-ac2c-9a3e2bbd7352,dapo:train:122a8b33-c28f-44ec-ac2c-9a3e2bbd7352:extension004:G3:1,analysis,True,False,TP_to_FN,0.9820137619972229,0.43782350420951843,5,"Analysis:
+",5
+A,dapo:train:122a8b33-c28f-44ec-ac2c-9a3e2bbd7352,dapo:train:122a8b33-c28f-44ec-ac2c-9a3e2bbd7352:extension004:G3:1,to_determine_probability,True,False,TP_to_FN,0.9820137619972229,0.3208213150501251,5,"To determine the probability
+",5
+A,dapo:train:1ad77253-a70d-45e9-a5c9-a971fc0dfa09,dapo:train:1ad77253-a70d-45e9-a5c9-a971fc0dfa09:extension004:G3:2,to_determine_probability,True,False,TP_to_FN,0.9968273043632507,0.04742587357759476,5,"To determine the probability
+",5
+A,dapo:train:27414fdf-a087-4305-90ca-7c3c88c1c8fc,dapo:train:27414fdf-a087-4305-90ca-7c3c88c1c8fc:extension004:G3:0,blank_control,True,False,TP_to_FN,0.6791787147521973,0.4073334336280823,99,"
+",99
+A,dapo:train:27414fdf-a087-4305-90ca-7c3c88c1c8fc,dapo:train:27414fdf-a087-4305-90ca-7c3c88c1c8fc:extension004:G3:0,analysis,True,False,TP_to_FN,0.6791787147521973,0.3486451506614685,99,"Analysis:
+",99
+A,dapo:train:27414fdf-a087-4305-90ca-7c3c88c1c8fc,dapo:train:27414fdf-a087-4305-90ca-7c3c88c1c8fc:extension004:G3:3,we_can,False,True,FN_to_TP,0.022977370768785477,0.622459352016449,99,"we can
+",99
+A,dapo:train:27414fdf-a087-4305-90ca-7c3c88c1c8fc,dapo:train:27414fdf-a087-4305-90ca-7c3c88c1c8fc:extension004:G3:3,we_should,False,True,FN_to_TP,0.022977370768785477,0.562176525592804,99,"we should
+",99
+A,dapo:train:27414fdf-a087-4305-90ca-7c3c88c1c8fc,dapo:train:27414fdf-a087-4305-90ca-7c3c88c1c8fc:extension004:G3:3,we_must,False,True,FN_to_TP,0.022977370768785477,0.7057850360870361,99,"we must
+",99
+A,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16:extension004:G3:1,blank_control,True,False,TP_to_FN,0.531209409236908,0.4073334336280823,3,"
+",3
+A,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16:extension004:G3:1,neutral_control,True,False,TP_to_FN,0.531209409236908,0.4073334336280823,3,"Response text:
+",3
+A,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16:extension004:G3:1,we_need_to,True,False,TP_to_FN,0.531209409236908,0.4687906503677368,3,"we need to
+",3
+A,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16:extension004:G3:1,we_will,True,False,TP_to_FN,0.531209409236908,0.43782350420951843,3,"we will
+",3
+A,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16:extension004:G3:1,thought_process,True,False,TP_to_FN,0.531209409236908,0.22270014882087708,3,"Thought process:
+",3
+A,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16:extension004:G3:1,reasoning,True,False,TP_to_FN,0.531209409236908,0.3208213150501251,3,"Reasoning:
+",3
+A,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16:extension004:G3:1,analysis,True,False,TP_to_FN,0.531209409236908,0.10669060051441193,3,"Analysis:
+",3
+A,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16:extension004:G3:1,original_step_by_step,True,False,TP_to_FN,0.531209409236908,0.16451644897460938,3,"Let's solve this problem step by step.
+",3
+A,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16:extension004:G3:1,reason_step_by_step,True,False,TP_to_FN,0.531209409236908,0.18242551386356354,3,"Let's reason step by step.
+",3
+A,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16:extension004:G3:1,to_determine_probability,True,False,TP_to_FN,0.531209409236908,0.010986938141286373,3,"To determine the probability
+",3
+A,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16,dapo:train:32ce661d-c3ca-461e-a69a-7a62c03e3c16:extension004:G3:1,symbol_colon,True,False,TP_to_FN,0.531209409236908,0.3486451506614685,3,":
+",3
+A,dapo:train:42e51739-2c27-460b-93df-a29d9740ecea,dapo:train:42e51739-2c27-460b-93df-a29d9740ecea:extension004:G3:1,neutral_control,True,False,TP_to_FN,0.8354835510253906,0.43782350420951843,8,"Response text:
+",8
+A,dapo:train:42e51739-2c27-460b-93df-a29d9740ecea,dapo:train:42e51739-2c27-460b-93df-a29d9740ecea:extension004:G3:1,analysis,True,False,TP_to_FN,0.8354835510253906,0.4073334336280823,8,"Analysis:
+",8
+A,dapo:train:42e51739-2c27-460b-93df-a29d9740ecea,dapo:train:42e51739-2c27-460b-93df-a29d9740ecea:extension004:G3:1,original_step_by_step,True,False,TP_to_FN,0.8354835510253906,0.04742587357759476,8,"Let's solve this problem step by step.
+",8
+A,dapo:train:42e51739-2c27-460b-93df-a29d9740ecea,dapo:train:42e51739-2c27-460b-93df-a29d9740ecea:extension004:G3:1,reason_step_by_step,True,False,TP_to_FN,0.8354835510253906,0.3775406777858734,8,"Let's reason step by step.
+",8
+A,dapo:train:42e51739-2c27-460b-93df-a29d9740ecea,dapo:train:42e51739-2c27-460b-93df-a29d9740ecea:extension004:G3:1,solve_for_the,True,False,TP_to_FN,0.8354835510253906,0.43782350420951843,8,"solve for the
+",8
+A,dapo:train:4733ccd7-8091-4d81-953c-7d73c2609ea8,dapo:train:4733ccd7-8091-4d81-953c-7d73c2609ea8:extension004:G3:2,thought_process,True,False,TP_to_FN,0.9999039173126221,0.08509904146194458,952,"Thought process:
+",952
+A,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6:extension004:G3:2,to_solve_for,False,True,FN_to_TP,0.11920291930437088,0.6791787147521973,60,"To solve for
+",60
+A,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6:extension004:G3:2,we_need_to,False,True,FN_to_TP,0.11920291930437088,0.562176525592804,60,"we need to
+",60
+A,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6:extension004:G3:2,we_can,False,True,FN_to_TP,0.11920291930437088,0.9465966820716858,60,"we can
+",60
+A,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6:extension004:G3:2,we_will,False,True,FN_to_TP,0.11920291930437088,0.7057850360870361,60,"we will
+",60
+A,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6:extension004:G3:2,we_have_to,False,True,FN_to_TP,0.11920291930437088,0.970687747001648,60,"we have to
+",60
+A,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6:extension004:G3:2,we_should,False,True,FN_to_TP,0.11920291930437088,0.8807970285415649,60,"we should
+",60
+A,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6:extension004:G3:2,we_must,False,True,FN_to_TP,0.11920291930437088,0.9399133324623108,60,"we must
+",60
+A,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6:extension004:G3:2,it_is_essential_to,False,True,FN_to_TP,0.11920291930437088,0.9989677667617798,60,"it is essential to
+",60
+A,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6:extension004:G3:2,solve_for_the,False,True,FN_to_TP,0.11920291930437088,0.7057850360870361,60,"solve for the
+",60
+A,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6:extension004:G3:2,to_determine_probability,False,True,FN_to_TP,0.11920291930437088,0.9046505093574524,60,"To determine the probability
+",60
+A,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6:extension004:G3:2,symbol_period,False,True,FN_to_TP,0.11920291930437088,0.8670357465744019,60,".
+",60
+A,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6,dapo:train:478d2735-8d5a-4ad1-b13e-b5d1e63174d6:extension004:G3:2,symbol_comma,False,True,FN_to_TP,0.11920291930437088,0.998498797416687,60,",
+",60
+A,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95:extension004:G3:1,we_can,False,True,FN_to_TP,0.16451644897460938,0.9982993006706238,9,"we can
+",9
+A,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95:extension004:G3:1,it_is_essential_to,False,True,FN_to_TP,0.16451644897460938,0.7772998809814453,9,"it is essential to
+",9
+A,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95:extension004:G3:1,to_determine_probability,False,True,FN_to_TP,0.16451644897460938,0.531209409236908,9,"To determine the probability
+",9
+A,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95:extension004:G3:1,symbol_comma,False,True,FN_to_TP,0.16451644897460938,0.7549149990081787,9,",
+",9
+A,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95:extension004:G3:2,we_can,False,True,FN_to_TP,0.022977370768785477,0.9999971389770508,9,"we can
+",9
+A,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95:extension004:G3:2,we_have_to,False,True,FN_to_TP,0.022977370768785477,0.622459352016449,9,"we have to
+",9
+A,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95:extension004:G3:2,we_must,False,True,FN_to_TP,0.022977370768785477,0.8670357465744019,9,"we must
+",9
+A,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95:extension004:G3:2,it_is_essential_to,False,True,FN_to_TP,0.022977370768785477,0.9994471669197083,9,"it is essential to
+",9
+A,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95,dapo:train:4b0a7507-5b53-428d-922c-c1b7c2b3bc95:extension004:G3:2,symbol_comma,False,True,FN_to_TP,0.022977370768785477,0.562176525592804,9,",
+",9
+A,dapo:train:5421a8b9-3505-4d3f-bd38-66d82a49f3a5,dapo:train:5421a8b9-3505-4d3f-bd38-66d82a49f3a5:extension004:G3:1,analysis,True,False,TP_to_FN,0.9924227595329285,0.3486451506614685,518,"Analysis:
+",518
+A,dapo:train:65fe07ab-8115-427f-89bd-2b470982bfd7,dapo:train:65fe07ab-8115-427f-89bd-2b470982bfd7:extension004:G3:0,neutral_control,True,False,TP_to_FN,0.9924227595329285,0.24508501589298248,133,"Response text:
+",133
+A,dapo:train:65fe07ab-8115-427f-89bd-2b470982bfd7,dapo:train:65fe07ab-8115-427f-89bd-2b470982bfd7:extension004:G3:0,to_determine_probability,True,False,TP_to_FN,0.9924227595329285,0.13296423852443695,133,"To determine the probability
+",133
+A,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd:extension004:G3:1,we_can,False,True,FN_to_TP,0.09534946084022522,0.8670357465744019,80,"we can
+",80
+A,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd:extension004:G3:1,we_will,False,True,FN_to_TP,0.09534946084022522,0.5926666855812073,80,"we will
+",80
+A,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd:extension004:G3:1,we_have_to,False,True,FN_to_TP,0.09534946084022522,0.7310585379600525,80,"we have to
+",80
+A,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd:extension004:G3:1,we_should,False,True,FN_to_TP,0.09534946084022522,0.9149009585380554,80,"we should
+",80
+A,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd:extension004:G3:1,we_must,False,True,FN_to_TP,0.09534946084022522,0.731058657169342,80,"we must
+",80
+A,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd:extension004:G3:1,it_is_essential_to,False,True,FN_to_TP,0.09534946084022522,0.9324532747268677,80,"it is essential to
+",80
+A,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd:extension004:G3:1,reasoning,False,True,FN_to_TP,0.09534946084022522,0.8175744414329529,80,"Reasoning:
+",80
+A,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd:extension004:G3:1,to_determine_probability,False,True,FN_to_TP,0.09534946084022522,0.9324532747268677,80,"To determine the probability
+",80
+A,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd:extension004:G3:1,symbol_period,False,True,FN_to_TP,0.09534946084022522,0.8175744414329529,80,".
+",80
+A,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd:extension004:G3:1,symbol_comma,False,True,FN_to_TP,0.09534946084022522,0.9465966820716858,80,",
+",80
+A,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd,dapo:train:66932207-ccbc-4fed-b006-a80f7f3c1fbd:extension004:G3:3,to_determine_probability,True,False,TP_to_FN,0.9999995231628418,0.18242551386356354,80,"To determine the probability
+",80
+A,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c:extension004:G3:2,neutral_control,False,True,FN_to_TP,0.06008664518594742,0.9046505093574524,70,"Response text:
+",70
+A,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c:extension004:G3:2,to_solve_for,False,True,FN_to_TP,0.06008664518594742,0.7981867790222168,70,"To solve for
+",70
+A,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c:extension004:G3:2,we_need_to,False,True,FN_to_TP,0.06008664518594742,0.9046505093574524,70,"we need to
+",70
+A,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c:extension004:G3:2,we_can,False,True,FN_to_TP,0.06008664518594742,0.6513549089431763,70,"we can
+",70
+A,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c:extension004:G3:2,we_will,False,True,FN_to_TP,0.06008664518594742,0.8807970285415649,70,"we will
+",70
+A,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c:extension004:G3:2,we_have_to,False,True,FN_to_TP,0.06008664518594742,0.8933094143867493,70,"we have to
+",70
+A,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c:extension004:G3:2,we_must,False,True,FN_to_TP,0.06008664518594742,0.957912266254425,70,"we must
+",70
+A,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c:extension004:G3:2,it_is_essential_to,False,True,FN_to_TP,0.06008664518594742,0.851952850818634,70,"it is essential to
+",70
+A,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c:extension004:G3:2,reasoning,False,True,FN_to_TP,0.06008664518594742,0.8807970285415649,70,"Reasoning:
+",70
+A,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c:extension004:G3:2,analysis,False,True,FN_to_TP,0.06008664518594742,0.531209409236908,70,"Analysis:
+",70
+A,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c:extension004:G3:2,to_determine_probability,False,True,FN_to_TP,0.06008664518594742,0.9669140577316284,70,"To determine the probability
+",70
+A,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c:extension004:G3:2,symbol_period,False,True,FN_to_TP,0.06008664518594742,0.9875683188438416,70,".
+",70
+A,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c,dapo:train:6dbdda3c-93a4-40d0-a5c7-d4f833218c3c:extension004:G3:2,symbol_comma,False,True,FN_to_TP,0.06008664518594742,0.9971990585327148,70,",
+",70
+A,dapo:train:725efb9d-a9e7-4af3-a9b4-cea3ab319aa1,dapo:train:725efb9d-a9e7-4af3-a9b4-cea3ab319aa1:extension004:G3:1,thought_process,True,False,TP_to_FN,0.970687747001648,0.08509904146194458,14,"Thought process:
+",14
+A,dapo:train:725efb9d-a9e7-4af3-a9b4-cea3ab319aa1,dapo:train:725efb9d-a9e7-4af3-a9b4-cea3ab319aa1:extension004:G3:1,analysis,True,False,TP_to_FN,0.970687747001648,0.06754669547080994,14,"Analysis:
+",14
+A,dapo:train:725efb9d-a9e7-4af3-a9b4-cea3ab319aa1,dapo:train:725efb9d-a9e7-4af3-a9b4-cea3ab319aa1:extension004:G3:1,reason_step_by_step,True,False,TP_to_FN,0.970687747001648,0.0534033328294754,14,"Let's reason step by step.
+",14
+A,dapo:train:725efb9d-a9e7-4af3-a9b4-cea3ab319aa1,dapo:train:725efb9d-a9e7-4af3-a9b4-cea3ab319aa1:extension004:G3:1,to_determine_probability,True,False,TP_to_FN,0.970687747001648,0.008577484637498856,14,"To determine the probability
+",14
+A,dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363,dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363:extension004:G3:2,neutral_control,True,False,TP_to_FN,0.531209409236908,0.007577244658023119,1005,"Response text:
+",1005
+A,dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363,dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363:extension004:G3:2,thought_process,True,False,TP_to_FN,0.531209409236908,0.008577481843531132,1005,"Thought process:
+",1005
+A,dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363,dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363:extension004:G3:2,reasoning,True,False,TP_to_FN,0.531209409236908,0.02595735713839531,1005,"Reasoning:
+",1005
+A,dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363,dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363:extension004:G3:2,analysis,True,False,TP_to_FN,0.531209409236908,0.017986217513680458,1005,"Analysis:
+",1005
+A,dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363,dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363:extension004:G3:2,original_step_by_step,True,False,TP_to_FN,0.531209409236908,0.02595735713839531,1005,"Let's solve this problem step by step.
+",1005
+A,dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363,dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363:extension004:G3:2,reason_step_by_step,True,False,TP_to_FN,0.531209409236908,0.009708481840789318,1005,"Let's reason step by step.
+",1005
+A,dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363,dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363:extension004:G3:2,to_determine_probability,True,False,TP_to_FN,0.531209409236908,8.481103577651083e-05,1005,"To determine the probability
+",1005
+A,dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363,dapo:train:72cf7ec2-9089-4be6-b4c0-2c4244efc363:extension004:G3:2,symbol_colon,True,False,TP_to_FN,0.531209409236908,0.3208213150501251,1005,":
+",1005
+A,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2:extension004:G3:0,reason_step_by_step,True,False,TP_to_FN,0.9992903470993042,0.4687906503677368,1,"Let's reason step by step.
+",1
+A,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2:extension004:G3:1,reason_step_by_step,True,False,TP_to_FN,0.9992903470993042,0.4687906503677368,1,"Let's reason step by step.
+",1
+A,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2:extension004:G3:2,we_need_to,False,True,FN_to_TP,0.00048785717808641493,0.6791787147521973,1,"we need to
+",1
+A,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2:extension004:G3:2,we_can,False,True,FN_to_TP,0.00048785717808641493,0.998498797416687,1,"we can
+",1
+A,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2:extension004:G3:2,we_will,False,True,FN_to_TP,0.00048785717808641493,0.9890130758285522,1,"we will
+",1
+A,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2:extension004:G3:2,we_should,False,True,FN_to_TP,0.00048785717808641493,0.970687747001648,1,"we should
+",1
+A,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2:extension004:G3:2,we_must,False,True,FN_to_TP,0.00048785717808641493,0.9947799444198608,1,"we must
+",1
+A,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2:extension004:G3:2,it_is_essential_to,False,True,FN_to_TP,0.00048785717808641493,0.9796676635742188,1,"it is essential to
+",1
+A,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2:extension004:G3:2,symbol_comma,False,True,FN_to_TP,0.00048785717808641493,0.8354835510253906,1,",
+",1
+A,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2,dapo:train:798ca4a2-0473-4764-8d4b-93f33fa540d2:extension004:G3:3,reason_step_by_step,True,False,TP_to_FN,0.9992903470993042,0.4687906503677368,1,"Let's reason step by step.
+",1
+A,dapo:train:8298f4ae-d0c2-4a51-b7bc-76f1ef16dd7b,dapo:train:8298f4ae-d0c2-4a51-b7bc-76f1ef16dd7b:extension004:G3:2,reason_step_by_step,True,False,TP_to_FN,0.7310585379600525,0.11920291930437088,00,"Let's reason step by step.
+",0
+A,dapo:train:8298f4ae-d0c2-4a51-b7bc-76f1ef16dd7b,dapo:train:8298f4ae-d0c2-4a51-b7bc-76f1ef16dd7b:extension004:G3:3,thought_process,True,False,TP_to_FN,0.7981867790222168,0.29421496391296387,00,"Thought process:
+",0
+A,dapo:train:8298f4ae-d0c2-4a51-b7bc-76f1ef16dd7b,dapo:train:8298f4ae-d0c2-4a51-b7bc-76f1ef16dd7b:extension004:G3:3,analysis,True,False,TP_to_FN,0.7981867790222168,0.18242551386356354,00,"Analysis:
+",0
+A,dapo:train:8298f4ae-d0c2-4a51-b7bc-76f1ef16dd7b,dapo:train:8298f4ae-d0c2-4a51-b7bc-76f1ef16dd7b:extension004:G3:3,symbol_colon,True,False,TP_to_FN,0.7981867790222168,0.4687906503677368,00,":
+",0
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:1,original_step_by_step,True,False,TP_to_FN,0.9525741338729858,0.04742587357759476,942,"Let's solve this problem step by step.
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:2,neutral_control,True,False,TP_to_FN,0.977022647857666,0.14804720878601074,942,"Response text:
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:2,thought_process,True,False,TP_to_FN,0.977022647857666,0.0010322310263291001,942,"Thought process:
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:2,reasoning,True,False,TP_to_FN,0.977022647857666,0.06008664518594742,942,"Reasoning:
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:2,analysis,True,False,TP_to_FN,0.977022647857666,0.06008664518594742,942,"Analysis:
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:2,original_step_by_step,True,False,TP_to_FN,0.977022647857666,0.00020342697098385543,942,"Let's solve this problem step by step.
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:3,to_solve_for,False,True,FN_to_TP,0.01243165135383606,0.9996646642684937,942,"To solve for
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:3,we_need_to,False,True,FN_to_TP,0.01243165135383606,0.9999971389770508,942,"we need to
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:3,we_can,False,True,FN_to_TP,0.01243165135383606,0.999995231628418,942,"we can
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:3,we_will,False,True,FN_to_TP,0.01243165135383606,0.9999966621398926,942,"we will
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:3,we_have_to,False,True,FN_to_TP,0.01243165135383606,0.9999852180480957,942,"we have to
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:3,we_should,False,True,FN_to_TP,0.01243165135383606,0.9999946355819702,942,"we should
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:3,we_must,False,True,FN_to_TP,0.01243165135383606,0.9999984502792358,942,"we must
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:3,it_is_essential_to,False,True,FN_to_TP,0.01243165135383606,0.9999687671661377,942,"it is essential to
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:3,solve_for_the,False,True,FN_to_TP,0.01243165135383606,0.9999339580535889,942,"solve for the
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:3,to_determine_probability,False,True,FN_to_TP,0.01243165135383606,0.9940890073776245,942,"To determine the probability
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:3,symbol_colon,False,True,FN_to_TP,0.01243165135383606,0.562176525592804,942,":
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:3,symbol_period,False,True,FN_to_TP,0.01243165135383606,0.9996199607849121,942,".
+",942
+A,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796,dapo:train:8928998d-0896-4024-bf5d-31944b7bf796:extension004:G3:3,symbol_comma,False,True,FN_to_TP,0.01243165135383606,0.977022647857666,942,",
+",942
+A,dapo:train:8be58c2a-5107-421b-bdd5-933addb9ce69,dapo:train:8be58c2a-5107-421b-bdd5-933addb9ce69:extension004:G3:1,to_determine_probability,True,False,TP_to_FN,0.9964063763618469,0.00015843621804378927,24,"To determine the probability
+",24
+A,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15:extension004:G3:2,to_solve_for,False,True,FN_to_TP,0.029312245547771454,0.999373733997345,-484,"To solve for
+",-484
+A,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15:extension004:G3:2,we_need_to,False,True,FN_to_TP,0.029312245547771454,0.9999645948410034,-484,"we need to
+",-484
+A,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15:extension004:G3:2,we_can,False,True,FN_to_TP,0.029312245547771454,0.9999988079071045,-484,"we can
+",-484
+A,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15:extension004:G3:2,we_will,False,True,FN_to_TP,0.029312245547771454,0.9999885559082031,-484,"we will
+",-484
+A,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15:extension004:G3:2,we_have_to,False,True,FN_to_TP,0.029312245547771454,0.9971990585327148,-484,"we have to
+",-484
+A,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15:extension004:G3:2,we_should,False,True,FN_to_TP,0.029312245547771454,0.9999971389770508,-484,"we should
+",-484
+A,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15:extension004:G3:2,we_must,False,True,FN_to_TP,0.029312245547771454,0.9999963045120239,-484,"we must
+",-484
+A,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15:extension004:G3:2,it_is_essential_to,False,True,FN_to_TP,0.029312245547771454,0.9999910593032837,-484,"it is essential to
+",-484
+A,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15:extension004:G3:2,solve_for_the,False,True,FN_to_TP,0.029312245547771454,0.9999785423278809,-484,"solve for the
+",-484
+A,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15:extension004:G3:2,to_determine_probability,False,True,FN_to_TP,0.029312245547771454,0.999373733997345,-484,"To determine the probability
+",-484
+A,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15:extension004:G3:2,symbol_period,False,True,FN_to_TP,0.029312245547771454,0.9990890026092529,-484,".
+",-484
+A,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15,dapo:train:8d5c1779-5d97-4a3c-b851-4e6b8e8fbc15:extension004:G3:2,symbol_comma,False,True,FN_to_TP,0.029312245547771454,0.9890130758285522,-484,",
+",-484
+A,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22:extension004:G3:0,we_can,False,True,FN_to_TP,0.0008040855755098164,0.9046505093574524,45,"we can
+",45
+A,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22:extension004:G3:0,we_will,False,True,FN_to_TP,0.0008040855755098164,0.562176525592804,45,"we will
+",45
+A,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22:extension004:G3:0,we_should,False,True,FN_to_TP,0.0008040855755098164,0.7057850360870361,45,"we should
+",45
+A,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22:extension004:G3:0,we_must,False,True,FN_to_TP,0.0008040855755098164,0.977022647857666,45,"we must
+",45
+A,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22:extension004:G3:0,it_is_essential_to,False,True,FN_to_TP,0.0008040855755098164,0.9840936064720154,45,"it is essential to
+",45
+A,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22:extension004:G3:2,thought_process,True,False,TP_to_FN,0.9988304972648621,0.004609574563801289,45,"Thought process:
+",45
+A,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22:extension004:G3:2,reasoning,True,False,TP_to_FN,0.9988304972648621,0.3208213150501251,45,"Reasoning:
+",45
+A,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22:extension004:G3:2,analysis,True,False,TP_to_FN,0.9988304972648621,0.2018132209777832,45,"Analysis:
+",45
+A,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22,dapo:train:92f3194f-80c9-462f-ab1a-737d82a2fa22:extension004:G3:2,original_step_by_step,True,False,TP_to_FN,0.9988304972648621,0.3775406777858734,45,"Let's solve this problem step by step.
+",45
+A,dapo:train:96f058d9-2c30-4770-ae00-50d5475165f9,dapo:train:96f058d9-2c30-4770-ae00-50d5475165f9:extension004:G3:3,symbol_comma,False,True,FN_to_TP,0.04742587357759476,0.6791787147521973,3,",
+",3
+A,dapo:train:977358b4-a619-4614-9a72-b2c57ec7cd4e,dapo:train:977358b4-a619-4614-9a72-b2c57ec7cd4e:extension004:G3:1,to_determine_probability,True,False,TP_to_FN,0.9241418242454529,0.008577484637498856,81,"To determine the probability
+",81
+A,dapo:train:99891145-e042-4932-8813-d568d39aa24b,dapo:train:99891145-e042-4932-8813-d568d39aa24b:extension004:G3:0,to_solve_for,False,True,FN_to_TP,0.18242551386356354,0.7057850360870361,551,"To solve for
+",551
+A,dapo:train:99891145-e042-4932-8813-d568d39aa24b,dapo:train:99891145-e042-4932-8813-d568d39aa24b:extension004:G3:0,we_should,False,True,FN_to_TP,0.18242551386356354,0.6791784763336182,551,"we should
+",551
+A,dapo:train:99891145-e042-4932-8813-d568d39aa24b,dapo:train:99891145-e042-4932-8813-d568d39aa24b:extension004:G3:0,we_must,False,True,FN_to_TP,0.18242551386356354,0.8175744414329529,551,"we must
+",551
+A,dapo:train:99891145-e042-4932-8813-d568d39aa24b,dapo:train:99891145-e042-4932-8813-d568d39aa24b:extension004:G3:0,it_is_essential_to,False,True,FN_to_TP,0.18242551386356354,0.7981867790222168,551,"it is essential to
+",551
+A,dapo:train:99891145-e042-4932-8813-d568d39aa24b,dapo:train:99891145-e042-4932-8813-d568d39aa24b:extension004:G3:0,symbol_period,False,True,FN_to_TP,0.18242551386356354,0.9465966820716858,551,".
+",551
+A,dapo:train:99891145-e042-4932-8813-d568d39aa24b,dapo:train:99891145-e042-4932-8813-d568d39aa24b:extension004:G3:0,symbol_comma,False,True,FN_to_TP,0.18242551386356354,0.9933071732521057,551,",
+",551
+A,dapo:train:abd436b4-e1de-44ac-8072-ab9114c10802,dapo:train:abd436b4-e1de-44ac-8072-ab9114c10802:extension004:G3:0,to_determine_probability,False,True,FN_to_TP,0.03308597952127457,0.6791787147521973,2,"To determine the probability
+",2
+A,dapo:train:af06cdf7-1149-4b5b-8d07-3d458a6e315c,dapo:train:af06cdf7-1149-4b5b-8d07-3d458a6e315c:extension004:G3:0,neutral_control,True,False,TP_to_FN,0.7772998809814453,0.10669057071208954,17,"Response text:
+",17
+A,dapo:train:af06cdf7-1149-4b5b-8d07-3d458a6e315c,dapo:train:af06cdf7-1149-4b5b-8d07-3d458a6e315c:extension004:G3:0,analysis,True,False,TP_to_FN,0.7772998809814453,0.3486451506614685,17,"Analysis:
+",17
+A,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b:extension004:G3:1,blank_control,False,True,FN_to_TP,0.43782350420951843,0.9149009585380554,34,"
+",34
+A,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b:extension004:G3:1,to_solve_for,False,True,FN_to_TP,0.43782350420951843,0.7549149990081787,34,"To solve for
+",34
+A,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b:extension004:G3:1,we_need_to,False,True,FN_to_TP,0.43782350420951843,0.9149009585380554,34,"we need to
+",34
+A,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b:extension004:G3:1,we_have_to,False,True,FN_to_TP,0.43782350420951843,0.9324532747268677,34,"we have to
+",34
+A,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b:extension004:G3:1,we_should,False,True,FN_to_TP,0.43782350420951843,0.622459352016449,34,"we should
+",34
+A,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b:extension004:G3:1,we_must,False,True,FN_to_TP,0.43782350420951843,0.7057851552963257,34,"we must
+",34
+A,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b:extension004:G3:1,it_is_essential_to,False,True,FN_to_TP,0.43782350420951843,0.7772998809814453,34,"it is essential to
+",34
+A,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b:extension004:G3:1,thought_process,False,True,FN_to_TP,0.43782350420951843,0.7981867790222168,34,"Thought process:
+",34
+A,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b:extension004:G3:1,reasoning,False,True,FN_to_TP,0.43782350420951843,0.9046505093574524,34,"Reasoning:
+",34
+A,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b:extension004:G3:1,analysis,False,True,FN_to_TP,0.43782350420951843,0.5,34,"Analysis:
+",34
+A,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b:extension004:G3:1,symbol_colon,False,True,FN_to_TP,0.43782350420951843,0.9465966820716858,34,":
+",34
+A,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b:extension004:G3:1,symbol_period,False,True,FN_to_TP,0.43782350420951843,0.970687747001648,34,".
+",34
+A,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b,dapo:train:b8c7ff11-be42-4429-92a5-cc67766cfa6b:extension004:G3:1,symbol_comma,False,True,FN_to_TP,0.43782350420951843,0.9991958737373352,34,",
+",34
+A,dapo:train:bc71ab57-ec74-4c89-b0ef-2216739d56cc,dapo:train:bc71ab57-ec74-4c89-b0ef-2216739d56cc:extension004:G3:3,neutral_control,True,False,TP_to_FN,0.7549149990081787,0.14804713428020477,31,"Response text:
+",31
+A,dapo:train:cf866c42-0a46-4139-9da9-bf6db3ec5ce1,dapo:train:cf866c42-0a46-4139-9da9-bf6db3ec5ce1:extension004:G3:3,neutral_control,True,False,TP_to_FN,0.7981867790222168,0.11920291930437088,8,"Response text:
+",8
+A,dapo:train:cf866c42-0a46-4139-9da9-bf6db3ec5ce1,dapo:train:cf866c42-0a46-4139-9da9-bf6db3ec5ce1:extension004:G3:3,thought_process,True,False,TP_to_FN,0.7981867790222168,0.005911068990826607,8,"Thought process:
+",8
+A,dapo:train:cf866c42-0a46-4139-9da9-bf6db3ec5ce1,dapo:train:cf866c42-0a46-4139-9da9-bf6db3ec5ce1:extension004:G3:3,reasoning,True,False,TP_to_FN,0.7981867790222168,0.022977376356720924,8,"Reasoning:
+",8
+A,dapo:train:cf866c42-0a46-4139-9da9-bf6db3ec5ce1,dapo:train:cf866c42-0a46-4139-9da9-bf6db3ec5ce1:extension004:G3:3,analysis,True,False,TP_to_FN,0.7981867790222168,0.037326883524656296,8,"Analysis:
+",8
+A,dapo:train:cf866c42-0a46-4139-9da9-bf6db3ec5ce1,dapo:train:cf866c42-0a46-4139-9da9-bf6db3ec5ce1:extension004:G3:3,original_step_by_step,True,False,TP_to_FN,0.7981867790222168,0.16451644897460938,8,"Let's solve this problem step by step.
+",8
+A,dapo:train:cf866c42-0a46-4139-9da9-bf6db3ec5ce1,dapo:train:cf866c42-0a46-4139-9da9-bf6db3ec5ce1:extension004:G3:3,reason_step_by_step,True,False,TP_to_FN,0.7981867790222168,0.005220123566687107,8,"Let's reason step by step.
+",8
+A,dapo:train:cf866c42-0a46-4139-9da9-bf6db3ec5ce1,dapo:train:cf866c42-0a46-4139-9da9-bf6db3ec5ce1:extension004:G3:3,symbol_colon,True,False,TP_to_FN,0.7981867790222168,0.3208213150501251,8,":
+",8
+A,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0:extension004:G3:1,to_solve_for,False,True,FN_to_TP,0.43782350420951843,0.9525741338729858,795,"To solve for
+",795
+A,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0:extension004:G3:1,we_need_to,False,True,FN_to_TP,0.43782350420951843,0.9995121955871582,795,"we need to
+",795
+A,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0:extension004:G3:1,we_can,False,True,FN_to_TP,0.43782350420951843,0.9998910427093506,795,"we can
+",795
+A,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0:extension004:G3:1,we_will,False,True,FN_to_TP,0.43782350420951843,0.9991958737373352,795,"we will
+",795
+A,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0:extension004:G3:1,we_have_to,False,True,FN_to_TP,0.43782350420951843,0.9988304972648621,795,"we have to
+",795
+A,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0:extension004:G3:1,we_should,False,True,FN_to_TP,0.43782350420951843,0.9994471669197083,795,"we should
+",795
+A,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0:extension004:G3:1,we_must,False,True,FN_to_TP,0.43782350420951843,0.9998910427093506,795,"we must
+",795
+A,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0:extension004:G3:1,it_is_essential_to,False,True,FN_to_TP,0.43782350420951843,0.9996646642684937,795,"it is essential to
+",795
+A,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0:extension004:G3:1,reason_step_by_step,False,True,FN_to_TP,0.43782350420951843,0.562176525592804,795,"Let's reason step by step.
+",795
+A,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0:extension004:G3:1,solve_for_the,False,True,FN_to_TP,0.43782350420951843,0.970687747001648,795,"solve for the
+",795
+A,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0:extension004:G3:1,to_determine_probability,False,True,FN_to_TP,0.43782350420951843,0.9989677667617798,795,"To determine the probability
+",795
+A,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0:extension004:G3:1,symbol_period,False,True,FN_to_TP,0.43782350420951843,0.9324532747268677,795,".
+",795
+A,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0,dapo:train:d6c9bda6-8174-4dc9-a820-8e5dba32c7e0:extension004:G3:1,symbol_comma,False,True,FN_to_TP,0.43782350420951843,0.9820137619972229,795,",
+",795
+A,dapo:train:dfbc29ba-d7bc-4ce6-975d-95563bca73f6,dapo:train:dfbc29ba-d7bc-4ce6-975d-95563bca73f6:extension004:G3:2,we_must,False,True,FN_to_TP,0.0010322310263291001,0.5,5,"we must
+",5
+A,dapo:train:e1579fbc-c150-43ad-97ca-0b61b6e3d619,dapo:train:e1579fbc-c150-43ad-97ca-0b61b6e3d619:extension004:G3:1,thought_process,True,False,TP_to_FN,0.9989677667617798,0.02297735959291458,15,"Thought process:
+",15
+A,dapo:train:e1579fbc-c150-43ad-97ca-0b61b6e3d619,dapo:train:e1579fbc-c150-43ad-97ca-0b61b6e3d619:extension004:G3:1,reasoning,True,False,TP_to_FN,0.9989677667617798,0.43782350420951843,15,"Reasoning:
+",15
+A,dapo:train:e6611a97-6fb3-467d-9eed-cab30a7ac570,dapo:train:e6611a97-6fb3-467d-9eed-cab30a7ac570:extension004:G3:1,to_determine_probability,True,False,TP_to_FN,0.5926666259765625,0.004609572701156139,0,"To determine the probability
+",0
+A,dapo:train:e6611a97-6fb3-467d-9eed-cab30a7ac570,dapo:train:e6611a97-6fb3-467d-9eed-cab30a7ac570:extension004:G3:2,to_determine_probability,True,False,TP_to_FN,0.999841570854187,0.3486451506614685,0,"To determine the probability
+",0
+A,dapo:train:e6b0a027-dd67-41d6-9217-3e6591fd5413,dapo:train:e6b0a027-dd67-41d6-9217-3e6591fd5413:extension004:G3:1,reason_step_by_step,True,False,TP_to_FN,0.9241417050361633,0.3208213150501251,2,"Let's reason step by step.
+",2
+A,dapo:train:e6b0a027-dd67-41d6-9217-3e6591fd5413,dapo:train:e6b0a027-dd67-41d6-9217-3e6591fd5413:extension004:G3:1,to_determine_probability,True,False,TP_to_FN,0.9241417050361633,0.07585817575454712,2,"To determine the probability
+",2
+A,dapo:train:e9743858-2787-4f20-89b8-a7ff28d1d540,dapo:train:e9743858-2787-4f20-89b8-a7ff28d1d540:extension004:G3:0,to_determine_probability,True,False,TP_to_FN,0.9241418242454529,0.18242551386356354,4,"To determine the probability
+",4
+A,dapo:train:e9743858-2787-4f20-89b8-a7ff28d1d540,dapo:train:e9743858-2787-4f20-89b8-a7ff28d1d540:extension004:G3:1,to_determine_probability,True,False,TP_to_FN,0.9241418242454529,0.18242551386356354,4,"To determine the probability
+",4
+A,dapo:train:e9743858-2787-4f20-89b8-a7ff28d1d540,dapo:train:e9743858-2787-4f20-89b8-a7ff28d1d540:extension004:G3:2,to_determine_probability,True,False,TP_to_FN,0.9241418242454529,0.18242551386356354,4,"To determine the probability
+",4
+A,dapo:train:e9743858-2787-4f20-89b8-a7ff28d1d540,dapo:train:e9743858-2787-4f20-89b8-a7ff28d1d540:extension004:G3:3,to_determine_probability,True,False,TP_to_FN,0.9241418242454529,0.18242551386356354,4,"To determine the probability
+",4
+A,dapo:train:f2296955-1adc-4778-8f9a-37b2364387ce,dapo:train:f2296955-1adc-4778-8f9a-37b2364387ce:extension004:G3:0,symbol_comma,False,True,FN_to_TP,0.029312245547771454,0.5,6,",
+",6
+A,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7:extension004:G3:0,we_need_to,False,True,FN_to_TP,0.13296423852443695,0.7549149990081787,8,"we need to
+",8
+A,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7:extension004:G3:0,we_can,False,True,FN_to_TP,0.13296423852443695,0.9046505093574524,8,"we can
+",8
+A,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7:extension004:G3:0,we_will,False,True,FN_to_TP,0.13296423852443695,0.562176525592804,8,"we will
+",8
+A,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7:extension004:G3:0,we_should,False,True,FN_to_TP,0.13296423852443695,0.8354836106300354,8,"we should
+",8
+A,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7:extension004:G3:0,we_must,False,True,FN_to_TP,0.13296423852443695,0.7981867790222168,8,"we must
+",8
+A,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7:extension004:G3:0,it_is_essential_to,False,True,FN_to_TP,0.13296423852443695,0.7057850360870361,8,"it is essential to
+",8
+A,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7:extension004:G3:0,solve_for_the,False,True,FN_to_TP,0.13296423852443695,0.5,8,"solve for the
+",8
+A,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7:extension004:G3:0,symbol_period,False,True,FN_to_TP,0.13296423852443695,0.562176525592804,8,".
+",8
+A,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7,dapo:train:ff36df27-2fcd-40d8-9710-2f7a4ad98ad7:extension004:G3:0,symbol_comma,False,True,FN_to_TP,0.13296423852443695,0.562176525592804,8,",
+",8
+C,dapo:train:2812169e-52c0-41eb-9f2b-4e4f2d91ff04,dapo:train:2812169e-52c0-41eb-9f2b-4e4f2d91ff04:extension004:G3:1,to_determine_probability,True,False,TP_to_FN,0.9996199607849121,0.10669054836034775,18,"To determine the probability
+",18
+C,dapo:train:791c794d-8e98-4b32-88ec-44b1cf856cd9,dapo:train:791c794d-8e98-4b32-88ec-44b1cf856cd9:extension004:G3:3,to_determine_probability,True,False,TP_to_FN,0.9982993006706238,0.005911068990826607,5,"To determine the probability
+",5
+C,dapo:train:81725fa9-8cc4-400d-a47c-cd510e339823,dapo:train:81725fa9-8cc4-400d-a47c-cd510e339823:extension004:G3:3,we_can,False,True,FN_to_TP,0.01243165135383606,0.9840936064720154,54,"we can
+",54
+C,dapo:train:81725fa9-8cc4-400d-a47c-cd510e339823,dapo:train:81725fa9-8cc4-400d-a47c-cd510e339823:extension004:G3:3,we_will,False,True,FN_to_TP,0.01243165135383606,0.622459352016449,54,"we will
+",54
+C,dapo:train:81725fa9-8cc4-400d-a47c-cd510e339823,dapo:train:81725fa9-8cc4-400d-a47c-cd510e339823:extension004:G3:3,we_should,False,True,FN_to_TP,0.01243165135383606,0.9399133324623108,54,"we should
+",54
+C,dapo:train:81725fa9-8cc4-400d-a47c-cd510e339823,dapo:train:81725fa9-8cc4-400d-a47c-cd510e339823:extension004:G3:3,we_must,False,True,FN_to_TP,0.01243165135383606,0.9324533939361572,54,"we must
+",54
+C,dapo:train:81725fa9-8cc4-400d-a47c-cd510e339823,dapo:train:81725fa9-8cc4-400d-a47c-cd510e339823:extension004:G3:3,it_is_essential_to,False,True,FN_to_TP,0.01243165135383606,0.9999833106994629,54,"it is essential to
+",54
+C,dapo:train:81725fa9-8cc4-400d-a47c-cd510e339823,dapo:train:81725fa9-8cc4-400d-a47c-cd510e339823:extension004:G3:3,symbol_period,False,True,FN_to_TP,0.01243165135383606,0.9324532747268677,54,".
+",54
+C,dapo:train:81725fa9-8cc4-400d-a47c-cd510e339823,dapo:train:81725fa9-8cc4-400d-a47c-cd510e339823:extension004:G3:3,symbol_comma,False,True,FN_to_TP,0.01243165135383606,0.9959298968315125,54,",
+",54
+C,dapo:train:87652cb8-e3f0-4eef-872b-08f1606efdc2,dapo:train:87652cb8-e3f0-4eef-872b-08f1606efdc2:extension004:G3:2,to_determine_probability,True,False,TP_to_FN,0.9399133324623108,0.042087726294994354,11,"To determine the probability
+",11
+C,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7:extension004:G3:0,neutral_control,True,False,TP_to_FN,0.8807970285415649,0.2689414322376251,960,"Response text:
+",960
+C,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7:extension004:G3:0,thought_process,True,False,TP_to_FN,0.8807970285415649,0.06754669547080994,960,"Thought process:
+",960
+C,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7:extension004:G3:0,reasoning,True,False,TP_to_FN,0.8807970285415649,0.22270014882087708,960,"Reasoning:
+",960
+C,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7:extension004:G3:0,analysis,True,False,TP_to_FN,0.8807970285415649,0.4073334336280823,960,"Analysis:
+",960
+C,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7:extension004:G3:0,original_step_by_step,True,False,TP_to_FN,0.8807970285415649,0.09534946084022522,960,"Let's solve this problem step by step.
+",960
+C,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7:extension004:G3:0,reason_step_by_step,True,False,TP_to_FN,0.8807970285415649,0.2018132209777832,960,"Let's reason step by step.
+",960
+C,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7:extension004:G3:2,we_need_to,False,True,FN_to_TP,0.10669060051441193,0.9241418242454529,960,"we need to
+",960
+C,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7:extension004:G3:2,we_can,False,True,FN_to_TP,0.10669060051441193,0.9669140577316284,960,"we can
+",960
+C,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7:extension004:G3:2,we_will,False,True,FN_to_TP,0.10669060051441193,0.970687747001648,960,"we will
+",960
+C,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7:extension004:G3:2,we_have_to,False,True,FN_to_TP,0.10669060051441193,0.8354835510253906,960,"we have to
+",960
+C,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7:extension004:G3:2,we_should,False,True,FN_to_TP,0.10669060051441193,0.9740425944328308,960,"we should
+",960
+C,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7:extension004:G3:2,we_must,False,True,FN_to_TP,0.10669060051441193,0.9796676635742188,960,"we must
+",960
+C,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7:extension004:G3:2,it_is_essential_to,False,True,FN_to_TP,0.10669060051441193,0.9241418242454529,960,"it is essential to
+",960
+C,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7:extension004:G3:2,symbol_period,False,True,FN_to_TP,0.10669060051441193,0.8354836106300354,960,".
+",960
+C,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7,dapo:train:8d4a49c3-2e3c-4abc-bd52-150ba902e0c7:extension004:G3:2,symbol_comma,False,True,FN_to_TP,0.10669060051441193,0.9796676635742188,960,",
+",960
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:0,we_can,False,True,FN_to_TP,0.004070138093084097,0.9924227595329285,118,"we can
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:0,we_must,False,True,FN_to_TP,0.004070138093084097,0.8807970285415649,118,"we must
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:0,symbol_comma,False,True,FN_to_TP,0.004070138093084097,0.8354835510253906,118,",
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:1,neutral_control,False,True,FN_to_TP,0.06008664518594742,0.5,118,"Response text:
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:1,we_can,False,True,FN_to_TP,0.06008664518594742,0.5,118,"we can
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:1,it_is_essential_to,False,True,FN_to_TP,0.06008664518594742,0.8175743818283081,118,"it is essential to
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:1,symbol_period,False,True,FN_to_TP,0.06008664518594742,0.8670357465744019,118,".
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:1,symbol_comma,False,True,FN_to_TP,0.06008664518594742,0.9971990585327148,118,",
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:2,to_solve_for,True,False,TP_to_FN,0.9626730680465698,0.3775404393672943,118,"To solve for
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:2,original_step_by_step,True,False,TP_to_FN,0.9626730680465698,0.014063626527786255,118,"Let's solve this problem step by step.
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:2,reason_step_by_step,True,False,TP_to_FN,0.9626730680465698,0.16451644897460938,118,"Let's reason step by step.
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:2,to_determine_probability,True,False,TP_to_FN,0.9626730680465698,0.22270014882087708,118,"To determine the probability
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:3,neutral_control,False,True,FN_to_TP,0.4687906503677368,0.7549149990081787,118,"Response text:
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:3,we_need_to,False,True,FN_to_TP,0.4687906503677368,0.531209409236908,118,"we need to
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:3,we_can,False,True,FN_to_TP,0.4687906503677368,0.7057850360870361,118,"we can
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:3,we_will,False,True,FN_to_TP,0.4687906503677368,0.5926666259765625,118,"we will
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:3,we_have_to,False,True,FN_to_TP,0.4687906503677368,0.7549149990081787,118,"we have to
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:3,we_should,False,True,FN_to_TP,0.4687906503677368,0.622459352016449,118,"we should
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:3,we_must,False,True,FN_to_TP,0.4687906503677368,0.7310585379600525,118,"we must
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:3,it_is_essential_to,False,True,FN_to_TP,0.4687906503677368,0.9465966820716858,118,"it is essential to
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:3,reasoning,False,True,FN_to_TP,0.4687906503677368,0.5926666259765625,118,"Reasoning:
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:3,to_determine_probability,False,True,FN_to_TP,0.4687906503677368,0.562176525592804,118,"To determine the probability
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:3,symbol_period,False,True,FN_to_TP,0.4687906503677368,0.9875683188438416,118,".
+",118
+C,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960,dapo:train:96c3a3c6-22fd-4d06-9d7d-3af786201960:extension004:G3:3,symbol_comma,False,True,FN_to_TP,0.4687906503677368,0.9959298968315125,118,",
+",118
+C,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735:extension004:G3:1,to_solve_for,False,True,FN_to_TP,0.34864503145217896,0.9875683188438416,112,"To solve for
+",112
+C,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735:extension004:G3:1,we_need_to,False,True,FN_to_TP,0.34864503145217896,0.851952850818634,112,"we need to
+",112
+C,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735:extension004:G3:1,we_can,False,True,FN_to_TP,0.34864503145217896,0.9978172779083252,112,"we can
+",112
+C,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735:extension004:G3:1,we_will,False,True,FN_to_TP,0.34864503145217896,0.9046505093574524,112,"we will
+",112
+C,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735:extension004:G3:1,we_have_to,False,True,FN_to_TP,0.34864503145217896,0.9626730680465698,112,"we have to
+",112
+C,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735:extension004:G3:1,we_should,False,True,FN_to_TP,0.34864503145217896,0.9964063763618469,112,"we should
+",112
+C,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735:extension004:G3:1,we_must,False,True,FN_to_TP,0.34864503145217896,0.9990890026092529,112,"we must
+",112
+C,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735:extension004:G3:1,it_is_essential_to,False,True,FN_to_TP,0.34864503145217896,0.998498797416687,112,"it is essential to
+",112
+C,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735:extension004:G3:1,solve_for_the,False,True,FN_to_TP,0.34864503145217896,0.9669140577316284,112,"solve for the
+",112
+C,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735:extension004:G3:1,to_determine_probability,False,True,FN_to_TP,0.34864503145217896,0.9978172779083252,112,"To determine the probability
+",112
+C,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735:extension004:G3:1,symbol_period,False,True,FN_to_TP,0.34864503145217896,0.9840936064720154,112,".
+",112
+C,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735,dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735:extension004:G3:1,symbol_comma,False,True,FN_to_TP,0.34864503145217896,0.9968273043632507,112,",
+",112
+C,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43:extension004:G3:2,we_need_to,False,True,FN_to_TP,0.005220125894993544,0.9399133324623108,12,"we need to
+",12
+C,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43:extension004:G3:2,we_will,False,True,FN_to_TP,0.005220125894993544,0.9324532747268677,12,"we will
+",12
+C,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43:extension004:G3:2,we_have_to,False,True,FN_to_TP,0.005220125894993544,0.9978172779083252,12,"we have to
+",12
+C,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43:extension004:G3:2,we_should,False,True,FN_to_TP,0.005220125894993544,0.7057850360870361,12,"we should
+",12
+C,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43:extension004:G3:2,we_must,False,True,FN_to_TP,0.005220125894993544,0.9991958737373352,12,"we must
+",12
+C,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43:extension004:G3:2,it_is_essential_to,False,True,FN_to_TP,0.005220125894993544,0.9999833106994629,12,"it is essential to
+",12
+C,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43:extension004:G3:2,thought_process,False,True,FN_to_TP,0.005220125894993544,0.622459352016449,12,"Thought process:
+",12
+C,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43:extension004:G3:2,reasoning,False,True,FN_to_TP,0.005220125894993544,0.5,12,"Reasoning:
+",12
+C,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43:extension004:G3:2,solve_for_the,False,True,FN_to_TP,0.005220125894993544,0.851952850818634,12,"solve for the
+",12
+C,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43,dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43:extension004:G3:2,symbol_comma,False,True,FN_to_TP,0.005220125894993544,0.9989677667617798,12,",
+",12
+C,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:0,to_solve_for,False,True,FN_to_TP,0.10669054836034775,0.7772998809814453,8989,"To solve for
+",8989
+C,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:0,reasoning,False,True,FN_to_TP,0.10669054836034775,0.5,8989,"Reasoning:
+",8989
+C,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:0,original_step_by_step,False,True,FN_to_TP,0.10669054836034775,0.5926666259765625,8989,"Let's solve this problem step by step.
+",8989
+C,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:2,neutral_control,True,False,TP_to_FN,0.9046505093574524,0.13296423852443695,8989,"Response text:
+",8989
+C,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:2,to_solve_for,True,False,TP_to_FN,0.9046505093574524,0.43782350420951843,8989,"To solve for
+",8989
+C,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:2,we_can,True,False,TP_to_FN,0.9046505093574524,0.0534033440053463,8989,"we can
+",8989
+C,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:2,we_will,True,False,TP_to_FN,0.9046505093574524,0.18242551386356354,8989,"we will
+",8989
+C,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:2,we_should,True,False,TP_to_FN,0.9046505093574524,0.11920290440320969,8989,"we should
+",8989
+C,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:2,we_must,True,False,TP_to_FN,0.9046505093574524,0.13296428322792053,8989,"we must
+",8989
+C,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:2,it_is_essential_to,True,False,TP_to_FN,0.9046505093574524,0.06008664518594742,8989,"it is essential to
+",8989
+C,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:2,thought_process,True,False,TP_to_FN,0.9046505093574524,0.4687906503677368,8989,"Thought process:
+",8989
+C,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:2,original_step_by_step,True,False,TP_to_FN,0.9046505093574524,0.2689414322376251,8989,"Let's solve this problem step by step.
+",8989
+C,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:2,reason_step_by_step,True,False,TP_to_FN,0.9046505093574524,0.16451644897460938,8989,"Let's reason step by step.
+",8989
+C,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:2,solve_for_the,True,False,TP_to_FN,0.9046505093574524,0.16451644897460938,8989,"solve for the
+",8989
+C,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:2,to_determine_probability,True,False,TP_to_FN,0.9046505093574524,0.0028009270317852497,8989,"To determine the probability
+",8989
+C,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d,dapo:train:b62d6a00-8422-4836-aa09-d6db0186d28d:extension004:G3:2,symbol_colon,True,False,TP_to_FN,0.9046505093574524,0.43782350420951843,8989,":
+",8989
+C,dapo:train:beffc63a-0f60-4bda-8094-ec6eca603add,dapo:train:beffc63a-0f60-4bda-8094-ec6eca603add:extension004:G3:2,we_can,False,True,FN_to_TP,0.004070138093084097,0.9991958737373352,3,"we can
+",3
+C,dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc,dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc:extension004:G3:0,we_need_to,False,True,FN_to_TP,0.0031726830638945103,0.6513549089431763,7,"we need to
+",7
+C,dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc,dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc:extension004:G3:0,we_can,False,True,FN_to_TP,0.0031726830638945103,0.9525741338729858,7,"we can
+",7
+C,dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc,dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc:extension004:G3:0,we_will,False,True,FN_to_TP,0.0031726830638945103,0.8807970285415649,7,"we will
+",7
+C,dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc,dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc:extension004:G3:0,we_have_to,False,True,FN_to_TP,0.0031726830638945103,0.562176525592804,7,"we have to
+",7
+C,dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc,dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc:extension004:G3:0,we_should,False,True,FN_to_TP,0.0031726830638945103,0.9525741338729858,7,"we should
+",7
+C,dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc,dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc:extension004:G3:0,we_must,False,True,FN_to_TP,0.0031726830638945103,0.9890130758285522,7,"we must
+",7
+C,dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc,dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc:extension004:G3:0,it_is_essential_to,False,True,FN_to_TP,0.0031726830638945103,0.8807970285415649,7,"it is essential to
+",7
+C,dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc,dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc:extension004:G3:0,symbol_comma,False,True,FN_to_TP,0.0031726830638945103,0.5,7,",
+",7
+C,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a:extension004:G3:0,neutral_control,False,True,FN_to_TP,0.2018132209777832,0.5,135,"Response text:
+",135
+C,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a:extension004:G3:0,to_solve_for,False,True,FN_to_TP,0.2018132209777832,0.9994471669197083,135,"To solve for
+",135
+C,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a:extension004:G3:0,we_can,False,True,FN_to_TP,0.2018132209777832,0.9241418242454529,135,"we can
+",135
+C,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a:extension004:G3:0,we_will,False,True,FN_to_TP,0.2018132209777832,0.531209409236908,135,"we will
+",135
+C,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a:extension004:G3:0,we_should,False,True,FN_to_TP,0.2018132209777832,0.9241418242454529,135,"we should
+",135
+C,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a:extension004:G3:0,we_must,False,True,FN_to_TP,0.2018132209777832,0.8519527316093445,135,"we must
+",135
+C,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a:extension004:G3:0,it_is_essential_to,False,True,FN_to_TP,0.2018132209777832,0.999987006187439,135,"it is essential to
+",135
+C,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a:extension004:G3:0,reasoning,False,True,FN_to_TP,0.2018132209777832,0.6791787147521973,135,"Reasoning:
+",135
+C,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a:extension004:G3:0,solve_for_the,False,True,FN_to_TP,0.2018132209777832,0.6513549089431763,135,"solve for the
+",135
+C,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a:extension004:G3:0,to_determine_probability,False,True,FN_to_TP,0.2018132209777832,0.9999963045120239,135,"To determine the probability
+",135
+C,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a:extension004:G3:0,symbol_period,False,True,FN_to_TP,0.2018132209777832,0.9796676635742188,135,".
+",135
+C,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a:extension004:G3:0,symbol_comma,False,True,FN_to_TP,0.2018132209777832,0.9902915358543396,135,",
+",135
+C,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a,dapo:train:c711c3ba-f21d-40f5-9004-e36cd98a249a:extension004:G3:3,original_step_by_step,True,False,TP_to_FN,0.9982993006706238,0.4687906503677368,135,"Let's solve this problem step by step.
+",135
+C,dapo:train:d1bf5946-f41b-491b-b239-6d2e77769e4a,dapo:train:d1bf5946-f41b-491b-b239-6d2e77769e4a:extension004:G3:0,to_determine_probability,True,False,TP_to_FN,0.9996646642684937,0.0031726830638945103,7,"To determine the probability
+",7
+C,dapo:train:ed2546ff-5223-4494-bca3-ce1cbc648798,dapo:train:ed2546ff-5223-4494-bca3-ce1cbc648798:extension004:G3:0,we_can,False,True,FN_to_TP,0.00023050671734381467,0.957912266254425,2,"we can
+",2
+C,dapo:train:ed2546ff-5223-4494-bca3-ce1cbc648798,dapo:train:ed2546ff-5223-4494-bca3-ce1cbc648798:extension004:G3:0,we_will,False,True,FN_to_TP,0.00023050671734381467,0.8807970285415649,2,"we will
+",2
+C,dapo:train:ed2546ff-5223-4494-bca3-ce1cbc648798,dapo:train:ed2546ff-5223-4494-bca3-ce1cbc648798:extension004:G3:0,we_must,False,True,FN_to_TP,0.00023050671734381467,0.7772998809814453,2,"we must
+",2
+C,dapo:train:ed2546ff-5223-4494-bca3-ce1cbc648798,dapo:train:ed2546ff-5223-4494-bca3-ce1cbc648798:extension004:G3:0,it_is_essential_to,False,True,FN_to_TP,0.00023050671734381467,0.9241418242454529,2,"it is essential to
+",2

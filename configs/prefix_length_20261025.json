@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-10-25T07:57:56.151426+00:00",
+  "kind": "Post-hoc exploratory analysis of existing cached scores; no new V or G inference",
+  "source_sha256": {
+    "configs/prefix_paraphrase_20261024.json": "d7fbd7c0f6dcf0ed26446ccb2b35825c6b5195a0c50a4fc66e7548dbdb5a5063",
+    "runs/prefix_paraphrase_20261024/V0_scores.jsonl": "adb8a0f46d3819b8d21a3996df2f7f7a52270c4f1c2102f213e1b05f216c7d1e",
+    "runs/prefix_paraphrase_20261024/prefix_answers.jsonl": "4f66296e6e2aae2b69df469c3ef40d30aa41fa9bd9b06e96a5dc96a24d8fb57b",
+    "configs/awl_comparison_20261024.json": "919cb647a88573333349aa8a01a643a7369e94fe093d47408476de3b5bf96980",
+    "runs/awl_comparison_20261024/V0_scores.jsonl": "ed06b0d745683738ebc353a8bcce7b0e2d4f1eeb0c34fc6c5e905a3a5439452d",
+    "runs/awl_comparison_20261024/answers.jsonl": "4f66296e6e2aae2b69df469c3ef40d30aa41fa9bd9b06e96a5dc96a24d8fb57b",
+    "src/pilot/prefix_length_analysis.py": "789b6a9442beda84b8e9504a4fc426c61d3e2ff4ed19dbf658c60b5bb68970c6"
+  },
+  "main_view": "38 verbal prefixes: exclude3 controls and5 repeated surface-format treatments from old46",
+  "sensitivity_views": [
+    "all43 noncontrol prefixes",
+    "31 excluding reasoning headers as well",
+    "40 AWL/nonAWL single-word verb headers with identical colon/newline"
+  ],
+  "length_metrics": [
+    "words",
+    "characters",
+    "prefix_tokens",
+    "prompt_token_delta"
+  ],
+  "characters_definition": "len(prefix.strip()); includes punctuation and internal whitespace, excludes edge whitespace",
+  "prefix_tokens_definition": "Original V0 tokenizer.encode(exact prefix,add_special_tokens=False), including final newline",
+  "prompt_token_delta": "Median actual full-V-prompt length increment from already cached scores; min/max exported",
+  "outcomes": [
+    "Original TN -> FP flip rate",
+    "Mean accept/reject log-odds change vs original"
+  ],
+  "association": "Spearman descriptive ranks; OLS rate slope, with/without frozen original category fixed effects",
+  "uncertainty": "10000 paired whole-question bootstrap; extra crossed resampling of prefixes within category with fixed category counts. No hypothesis p-values or confirmatory significance claim.",
+  "vocabulary_limit": "Purposively chosen prefixes, not random language samples; crossed intervals are sensitivity checks, not population guarantees",
+  "B_used": false,
+  "T_read": false,
+  "GPU_used": false,
+  "V_update": false,
+  "seed": 20261025
+}

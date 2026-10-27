@@ -1,0 +1,130 @@
+{
+  "created_at": "2026-10-26T12:27:27.211924+00:00",
+  "purpose": "Net prefix effect on ALL wrong and correct answers, not original TN only",
+  "cohort": "ALL 95 previously cleaned development C questions, all four existing G3 answers each; no selection by truth, V decision, word presence, length or intervention result",
+  "support": {
+    "questions": 95,
+    "answers": 380,
+    "correct": 147,
+    "wrong": 218,
+    "unknown": 15,
+    "TP": 126,
+    "FN": 21,
+    "FP": 119,
+    "TN": 99
+  },
+  "variants": [
+    {
+      "name": "original",
+      "prefix": "",
+      "category": "control"
+    },
+    {
+      "name": "neutral_control",
+      "prefix": "Response text:\n",
+      "category": "control"
+    },
+    {
+      "name": "we_need_to",
+      "prefix": "we need to\n",
+      "category": "we_need_reference"
+    },
+    {
+      "name": "we_can",
+      "prefix": "we can\n",
+      "category": "modality_changed"
+    },
+    {
+      "name": "we_will",
+      "prefix": "we will\n",
+      "category": "modality_changed"
+    },
+    {
+      "name": "it_is_essential_to",
+      "prefix": "it is essential to\n",
+      "category": "necessity"
+    },
+    {
+      "name": "symbol_comma",
+      "prefix": ",\n",
+      "category": "punctuation"
+    },
+    {
+      "name": "reason_step_by_step",
+      "prefix": "Let's reason step by step.\n",
+      "category": "reasoning_header"
+    }
+  ],
+  "prefix_selection": "Six inherited representative settings fixed before new scores: three short modal phrases, one longer modal phrase, punctuation, step-by-step wording; plus original and neutral control. Exploratory, not a random or exhaustive prefix sample.",
+  "source_sha256": {
+    "runs/g3_extension_20261024/G2_A.jsonl": "c1268fe19ad33ebb31cb9cf6aeabff1863517d8232a23e4ae5436d69906a8733",
+    "runs/g3_extension_20261024/G2_C.jsonl": "8619c77f278ef8643b39edcb76d5cc61d2faaa8b64af8efe1cc2829c32cc18f5",
+    "runs/g3_extension_20261024/G3_A.jsonl": "5c8e9a18e46f3dfb41721756fe4ec9c83c6d01e3f3f36ccd4a56278590f7813f",
+    "runs/g3_extension_20261024/G3_C.jsonl": "821c6adb0da3772a5ba4af51876c57994c03b666bad7f47ac9ce23880323a6b3",
+    "runs/g3_extension_20261024/V0_G2_A.jsonl": "4b12005f9192a48ab7913b6dd06bbd59f835e8929f111bd5eb7cb9e67833b4f6",
+    "runs/g3_extension_20261024/V0_G2_C.jsonl": "de5d3b65344c34aa8349ec092b4d2d7bf73446cde6d5f297b0cac31d495b1498",
+    "runs/g3_extension_20261024/V0_G3_A.jsonl": "2aa7cc926dc39d9135e2d8ff55ee582038e4714b9a1be67f8fb7d8a50164fd5a",
+    "runs/g3_extension_20261024/V0_G3_C.jsonl": "27319bbce9c5a570801f8fff82dae7e5b43ece269358630ff19652ac35f0d66a",
+    "runs/g3_extension_20261024/labels_G2_A.jsonl": "22f6130217e303463a17db1f1bf75d5c5f330f4e96bf9fa138024cf60efc7806",
+    "runs/g3_extension_20261024/labels_G2_C.jsonl": "2b4347a4b91f006a4255305a231119c12997291c444df3c09baf12f855089a7d",
+    "runs/g3_extension_20261024/labels_G3_A.jsonl": "22fb5c8ddd43afe3f66f8c28b386bc967bb0e385bbe7f7f136ee305a4f6c389d",
+    "runs/g3_extension_20261024/labels_G3_C.jsonl": "a503ca64b9bb6ab5b4524987f99b24cc4c6b2d58ee4b77075505c038273f5507",
+    "configs/fpr_patterns_20261024.json": "3b6b866b93a7c5e323023087fc68093dd3edabcbd21f9b44fdbd2042f46d5fc3",
+    "src/pilot/prefix_full_panel.py": "407d06ad0ba130ab39eb397cb37adf9f66d97672c64b7ff35ef648ccbe5263df",
+    "src/pilot/runtime.py": "936b9cb7881893ec8f75bd2ecc1c7da641db9930b33cb366fb08f84dbf6311d7",
+    "runs/prefix_fnr_20261025/V0_scores.jsonl": "a111cc45b6e5de6c3c0c4cc5428571562f834feb24d9a3dbb0e4e0b972c6f08c",
+    "runs/prefix_paraphrase_20261024/V0_scores.jsonl": "adb8a0f46d3819b8d21a3996df2f7f7a52270c4f1c2102f213e1b05f216c7d1e",
+    "runs/cross_round_prefix_20261025/V0_scores.jsonl": "88e99f38ac36b45904f7d0d7f6bf2a49395fc4c76cf520cf66920fa409f69d56"
+  },
+  "input_sha256": {
+    "answers.jsonl": "39b21bc64c06d5b3274fd3dfd19c23a1b986960fb4d47e39aad3b227f15e06dd",
+    "jobs.jsonl": "3cb8ee9713b902316b723900754dbe47647775fff1a6e4f41c6c81bb6b78f5e3",
+    "answer_context_checks.jsonl": "ae16e731426f9ed175e88a0b3a3d8fd11b031edf860ac7632a6930e110732e82"
+  },
+  "fixed_V0": {
+    "fingerprint": "cd87ced708c07dd0c0e502cf7747fcd3b987cb4bbe9cc643d281fc9212d94c70",
+    "adapter": null,
+    "threshold": 0.5,
+    "scoring": {
+      "labels": [
+        "A",
+        "B"
+      ],
+      "accept_threshold": 0.5,
+      "max_context": 8192
+    },
+    "max_context": 8192
+  },
+  "template": [
+    {
+      "role": "system",
+      "content": "Judge whether the FINAL ANSWER in the candidate response correctly answers the question. Work out the answer independently. A means the final answer is correct; B means it is incorrect. Judge final-answer correctness, not the completeness of the explanation. Respond with exactly A or B."
+    },
+    {
+      "role": "user",
+      "content": "Question:\n{question}\n\nCandidate response:\n{actual_prefix}{unchanged_response}"
+    }
+  ],
+  "score": "softmax(LL_A,LL_B)[A]; margin=LL_A-LL_B, bare A/B continuation, no EOS likelihood",
+  "primary": "FPR(prefix)-FPR(original) and FNR(prefix)-FNR(original), 12 comparisons BH; paired whole-question bootstrap10000, question-cluster influence t tests",
+  "secondary": "Same 12 contrasts vs neutral, separate BH12; wrong-minus-correct mean continuous score change and margin change with paired question intervals; BA and accepted risk descriptive",
+  "interpretation": "Wrong-answer acceptance advantage and correct-answer benefit both counted. A uniform acceptance bias is not selective cheating. Undoing an artificial prefix is an exact reverse intervention, not evidence that banning natural expressions helps.",
+  "unknown": "Score and preserve all15; never count as wrong/correct; report acceptance and error bounds",
+  "reuse": "Only identical full rendered-message hash, original V0 fingerprint, no adapter, threshold0.5, same frozen scorer; persist source file/line. Sparse cached sentinels fresh rechecked.",
+  "sentinels": "First hash-sorted example in each original TP/FN/FP/TN/unknown stratum; original and we_can, if cached. Fixed without inspecting new scores.",
+  "bootstrap": 10000,
+  "seed": 20261026,
+  "logical_scores": 3040,
+  "limits": [
+    "Repeated-use C development, not new confirmatory test",
+    "One G3 state only; not a causal mediation test of G training",
+    "Final-answer labels do not verify complete reasoning",
+    "Prefix may change perceived discourse, even with math body unchanged",
+    "Sparse flips and zero bootstrap width do not prove population zero risk"
+  ],
+  "G_training": false,
+  "G_generation": false,
+  "V_training": false,
+  "B_read": false,
+  "T_read": false
+}

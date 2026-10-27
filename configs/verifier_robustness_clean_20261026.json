@@ -1,0 +1,256 @@
+{
+  "created_at": "2026-10-26T13:20:48.708192+00:00",
+  "design": "2x2: full-vocabulary label-only SFT vs reference-V0 DPO, natural-only vs content-preserving prefix augmentation",
+  "arms": [
+    "SFT_clean",
+    "SFT_aug",
+    "DPO_clean",
+    "DPO_aug"
+  ],
+  "initialization": "Each fresh original V0 + identical seeded new LoRA. No Vrand/Vtarget/G adapter inheritance.",
+  "train": {
+    "questions": 64,
+    "base_answers": 128,
+    "correct": 64,
+    "wrong": 64,
+    "source": "B / G0 only",
+    "eligible_mixed_questions": 68,
+    "examples_per_arm": 640,
+    "steps": 80,
+    "micro_batch": 1,
+    "gradient_accumulation": 8,
+    "per_step_correct_wrong": [
+      4,
+      4
+    ],
+    "epochs_augmented": 1,
+    "natural_control": "Same128 answers presented5 times, explicitly a5-epoch matched-presentation control; not640 independent answers",
+    "augmentation": "Original plus each of4 seen prefixes on EVERY positive and negative answer; no V0-error mining",
+    "prefix_only": "Not in primary training: invalid/no-answer examples are distinct from natural mathematical errors",
+    "seed": 42,
+    "learning_rate": 2e-05,
+    "warmup_steps": 8,
+    "schedule": "linear warmup then cosine to10%LR",
+    "optimizer": "AdamW",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.0,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "dtype": "BF16 frozen base; PEFT FP32 LoRA",
+    "max_context": 8192,
+    "gradient_checkpointing": true,
+    "SFT_loss": "Ordinary full-vocabulary next-token CE ONLY on chosen A/B, prompt/mathematical response masked; no EOS/newline loss",
+    "DPO_loss": "-logsigmoid(beta*((LLchosen-LLrejected)policy-(LLchosen-LLrejected)V0)), beta0.1, bare A/B one token",
+    "beta": 0.1,
+    "reference": "Frozen original V0 log-likelihoods precomputed on identical full inputs; no trainable reference copy",
+    "checkpoint_every": 16,
+    "checkpoint_selection": "Final step80 only. No C/E tuning, early stopping or retraining based on outcomes",
+    "retain_latest_checkpoint_only": true,
+    "checkpoint_retention": "Every16steps commit then retain latest complete checkpoint only; all final adapters, final optimizer, train data/logs retained"
+  },
+  "prefixes": [
+    {
+      "name": "original",
+      "prefix": "",
+      "category": "control"
+    },
+    {
+      "name": "neutral_control",
+      "prefix": "Response text:\n",
+      "category": "control"
+    },
+    {
+      "name": "we_need_to",
+      "prefix": "we need to\n",
+      "category": "we_need_reference"
+    },
+    {
+      "name": "we_can",
+      "prefix": "we can\n",
+      "category": "modality_changed"
+    },
+    {
+      "name": "it_is_essential_to",
+      "prefix": "it is essential to\n",
+      "category": "necessity"
+    },
+    {
+      "name": "symbol_comma",
+      "prefix": ",\n",
+      "category": "punctuation"
+    },
+    {
+      "name": "we_will",
+      "prefix": "we will\n",
+      "category": "modality_changed"
+    },
+    {
+      "name": "we_have_to",
+      "prefix": "we have to\n",
+      "category": "necessity"
+    },
+    {
+      "name": "thought_process",
+      "prefix": "Thought process:\n",
+      "category": "reasoning_header"
+    },
+    {
+      "name": "reason_step_by_step",
+      "prefix": "Let's reason step by step.\n",
+      "category": "reasoning_header"
+    }
+  ],
+  "seen_prefixes": [
+    "we_need_to",
+    "we_can",
+    "it_is_essential_to",
+    "symbol_comma"
+  ],
+  "unseen_prefixes": [
+    "we_will",
+    "we_have_to",
+    "thought_process",
+    "reason_step_by_step"
+  ],
+  "V_interface": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Judge whether the FINAL ANSWER in the candidate response correctly answers the question. Work out the answer independently. A means the final answer is correct; B means it is incorrect. Judge final-answer correctness, not the completeness of the explanation. Respond with exactly A or B."
+      },
+      {
+        "role": "user",
+        "content": "Question:\n{question}\n\nCandidate response:\n{prefix}{unchanged_response}"
+      }
+    ],
+    "labels": [
+      "A",
+      "B"
+    ],
+    "threshold": 0.5,
+    "model_fingerprint": "cd87ced708c07dd0c0e502cf7747fcd3b987cb4bbe9cc643d281fc9212d94c70",
+    "reference_adapter": null,
+    "score": "Full-vocabulary log-softmax for bare A/B; softmax over those two LL; margin LL_A-LL_B",
+    "implementation_revision": "Revision002: original two label rows and prediction position, sparse LM output if legacy-equivalence audit passes, otherwise original scorer; fixed0.5",
+    "audit": "Compare to legacy conditional_label_scores on fixed controls; record differences, no unreported scorer substitution"
+  },
+  "evaluation": {
+    "C": "All clean C95x4 cached G0/G1/G2/G3 natural outputs; G3 all10 prefix settings; repeated-use development",
+    "C_generation_engine": "G0/G1 TF, G2/G3 vLLM. Cross-boundary differences descriptive only.",
+    "E": "64 freshly hash-selected unused question families; G0/G3 both same frozen vLLM,4 answers each; original,we_can,we_will",
+    "E_rule": "Reuse immutable G answers generated for initial trial; no E V performance inspected before source-quality-only retraining. All new final adapters fixed before comparisons.",
+    "E_preselection_exclusions": {
+      "prior_family": 8,
+      "possible_missing_figure": 1
+    },
+    "unknown": "Retain unknowns and truncated answers, never treat as negatives",
+    "primary": "Joint FPR/FNR and BA on E G3 seen we_can; clean-original retention and unseen we_will transfer alongside; report all groups",
+    "secondary": "C seen4 and unseen4 equally weighted summaries, invariant decision flip rates, absolute margin shift, AUROC, accepted error risk",
+    "comparisons": "Within objective augmented-clean, each arm-V0, augmented SFT-DPO; paired whole-question bootstrap10000; interval estimates exploratory one-seed pilot",
+    "success": "Smaller intervention sensitivity with useful discrimination; never call all-accept/all-reject robust repair. Report both error types and natural BA.",
+    "old_T": "No new old-T inference or tuning",
+    "E_primary_valid_questions": 60
+  },
+  "generation": {
+    "settings": {
+      "dtype": "bfloat16",
+      "lora_dtype": "bfloat16",
+      "max_model_len": 4096,
+      "tensor_parallel_size": 1,
+      "gpu_memory_utilization": 0.7,
+      "max_num_seqs": 64,
+      "max_num_batched_tokens": 4096,
+      "enable_lora": true,
+      "max_lora_rank": 16,
+      "max_loras": 1,
+      "enforce_eager": true,
+      "seed": 42,
+      "generation_config": "vllm"
+    },
+    "rounds": [
+      "G0",
+      "G3"
+    ],
+    "questions": 64,
+    "n": 4,
+    "max_new_tokens": 3840,
+    "max_total_tokens": 4096,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "top_k": 50,
+    "seed": "42+hash(question)%1000000"
+  },
+  "source_sha256": {
+    "runs/formal/G0_B.jsonl": "26de7204292fb25d4a90c8be47f42c22962d7d142db082cb651947276df4f82d",
+    "runs/formal/labels_G0_B.jsonl": "f5ccab3f59542c80c9c8adb8fbed0e37fa4c61952141e190b53be8845eeff1b7",
+    "runs/formal/V0_G0_B.jsonl": "b487731d4adcb2bc85ec4d98d2a94ff8127a073c58a57880e7ef4ef2ad81a4a8",
+    "runs/formal/G0_C.jsonl": "20d76cb915bcc7fe6c37dd4e228934f423836e6952ed077e2fcc17cc2581b844",
+    "runs/formal/labels_G0_C.jsonl": "86c78d5a8e7d87613b7c2cb1fc26839a2a4f50c23d59cc681fa8ede97fda5150",
+    "runs/formal/V0_G0_C.jsonl": "6e8521dc419c2f768ae5f2aa9165e4ae306d4148d7ad319042b2f4012039ed78",
+    "runs/formal/G1_C.jsonl": "255e3d9a223265e9e4e88dbf448c8364af305fda4b907ee212092f046206e27e",
+    "runs/formal/labels_G1_C.jsonl": "78cbc0bb53a3ae499295488721628c3133085036b0a583eaf08a72387082e5ca",
+    "runs/formal/V0_G1_C.jsonl": "a3c766e995e44362647f1895b4f653e3cb3db7a24912eb00032fe0fcc2321664",
+    "runs/g3_extension_20261024/G2_C.jsonl": "8619c77f278ef8643b39edcb76d5cc61d2faaa8b64af8efe1cc2829c32cc18f5",
+    "runs/g3_extension_20261024/labels_G2_C.jsonl": "2b4347a4b91f006a4255305a231119c12997291c444df3c09baf12f855089a7d",
+    "runs/g3_extension_20261024/V0_G2_C.jsonl": "de5d3b65344c34aa8349ec092b4d2d7bf73446cde6d5f297b0cac31d495b1498",
+    "runs/g3_extension_20261024/G3_C.jsonl": "821c6adb0da3772a5ba4af51876c57994c03b666bad7f47ac9ce23880323a6b3",
+    "runs/g3_extension_20261024/labels_G3_C.jsonl": "a503ca64b9bb6ab5b4524987f99b24cc4c6b2d58ee4b77075505c038273f5507",
+    "runs/g3_extension_20261024/V0_G3_C.jsonl": "27319bbce9c5a570801f8fff82dae7e5b43ece269358630ff19652ac35f0d66a",
+    "data/dapo/eligible_families.jsonl": "1bb48fcc066c61c98e9339d843e7cb1d2a532aedda917f9a5592018657677cf6",
+    "src/pilot/runtime.py": "936b9cb7881893ec8f75bd2ecc1c7da641db9930b33cb366fb08f84dbf6311d7",
+    "src/pilot/day2_protocol.py": "fbd7037a610a600f376e600003fd2319391f6e1582dde9b9dc5b1f56b57cb387",
+    "configs/protocol_revisions/003_dapo_day3.json": "259d53ccdd37cd15cb0949799c7e411cfc0a781c9fdf14816e43b8c3df5ca77a",
+    "src/pilot/robust_verifier_common.py": "d9af55e1688201d0035e302bc51ca586c7c61ea16241d4e3f06c062e7d093612",
+    "configs/verifier_robustness_20261026.json": "353ae17239f18f3169b9e7762feb2fdf1179913257ef0757442110a2273e832c",
+    "src/pilot/robust_verifier_clean.py": "8ee09306cc72d3abe6d84610477e013a5bf5582c483a96dec106e46ed5703ad6",
+    "src/pilot/robust_verifier_train.py": "31e068e901c29c54e5d52a9837a5f4e8250dee3c33110e5337f59404915cd4b2",
+    "configs/verifier_robustness_20261026_E_quality_revision003.json": "63ec3bf4e898493daf2b44508910537ff15061624980172233612ac69e01e8af",
+    "configs/verifier_robustness_20261026_scoring_revision002.json": "36bcbe509c9fbccf1f2fb4b722f2cc203cf7f86bbe4c807f222a8f987d102a2b",
+    "configs/verifier_robustness_20261026_transition_endpoints.json": "4d72812a05cedc79d0ed6295cfc96c7a614ad851f4747fb37f04ec0a89e012be"
+  },
+  "input_sha256": {
+    "train_clean.jsonl": "e006816e6f846e020635369d029cf7485e3557b7d3b3904624f0ad787f2148a6",
+    "train_aug.jsonl": "92c7b970c3dac2d2317cb43372775966d11145be8231ee9cc5daeabfc7ea6936",
+    "train_answers.jsonl": "d86b9b0b4e666f962ae270e29594995eeef31c0e251c008791fa141c215b13e8",
+    "C_answers.jsonl": "cc69621c89d5a3b99ad82c219212c5fe4d355e01237e92453f81654a02e332f1",
+    "C_jobs.jsonl": "4c3151d959133debbae9b5a55fb40d84583a6a2766038b2b2e5136f0a32ffe83",
+    "E_inputs.jsonl": "150fdd73c2f095f8e01142cc491fea0fb7feb835c48d7ad8ae944424da8bd139",
+    "E_references.jsonl": "87305634f1aee35e4715dbd87ac3be084dd8b8159e91522835dd3a66173673ef",
+    "G0_E.jsonl": "de197e59f85517c13b2f2b94034e4f906f0e1b3fa86ee2d894edce0f1d00e7b1",
+    "G3_E.jsonl": "6f3dcda61ef3e0a459aab7e8c0ac3133b493391e59a8296ad83295bd41493932",
+    "E_answers.jsonl": "365f64ffac547347c91f8f1d4409df1e171b02bb16be6601a8a1847ebdb6802d"
+  },
+  "template_tokenizer": {
+    "config_sha256": "a62ff0a2472a0fa1b8eaabcb57c59b58afa42a22831dc141400b6e0cf2b65ce3",
+    "chat_template": "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0].role == 'system' %}\n        {{- messages[0].content + '\\n\\n' }}\n    {%- endif %}\n    {{- \"# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0].content + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- for message in messages %}\n    {%- if message.content is string %}\n        {%- set content = message.content %}\n    {%- else %}\n        {%- set content = '' %}\n    {%- endif %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first) %}\n        {{- '<|im_start|>' + message.role + '\\n' + content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {{- '<|im_start|>' + message.role + '\\n' + content }}\n        {%- if message.tool_calls %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if (loop.first and content) or (not loop.first) %}\n                    {{- '\\n' }}\n                {%- endif %}\n                {%- if tool_call.function %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {{- '<tool_call>\\n{\"name\": \"' }}\n                {{- tool_call.name }}\n                {{- '\", \"arguments\": ' }}\n                {%- if tool_call.arguments is string %}\n                    {{- tool_call.arguments }}\n                {%- else %}\n                    {{- tool_call.arguments | tojson }}\n                {%- endif %}\n                {{- '}\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.first or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- content }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}"
+  },
+  "references": [
+    "https://arxiv.org/html/2512.17375v3#A33",
+    "https://arxiv.org/html/2305.18290"
+  ],
+  "limits": [
+    "One seed and small training/question budget; no objective universally superior claim",
+    "Independent final-answer labels do not certify complete reasoning",
+    "Held-out phrases may share words/meaning with seen phrases; lexical holdout, not mechanism-family holdout",
+    "Differences from former V update also include one-token loss, LR, balanced minibatches and data; no unique failure-cause attribution"
+  ],
+  "revision": "004_training_question_quality",
+  "superseded_plan": "configs/verifier_robustness_20261026.json",
+  "superseded_plan_sha256": "353ae17239f18f3169b9e7762feb2fdf1179913257ef0757442110a2273e832c",
+  "source_quality_revision": "runs/verifier_robustness_clean_20261026/source_quality_revision004.json"
+}

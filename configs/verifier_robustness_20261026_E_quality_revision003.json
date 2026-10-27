@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-10-26T13:13:44.249988+00:00",
+  "base_plan_sha256": "353ae17239f18f3169b9e7762feb2fdf1179913257ef0757442110a2273e832c",
+  "raw_E_input_sha256": "150fdd73c2f095f8e01142cc491fea0fb7feb835c48d7ad8ae944424da8bd139",
+  "timing": "Question-text-only audit; before looking at any V outcome or gold reference for these questions. All4 trained adapters already frozen.",
+  "whole_question_quarantine": [
+    {
+      "question_id": "dapo:train:3a6cf923-bbb4-42fb-a31e-52a7fddbc95e",
+      "reason": "missing_geometric_side_constraints",
+      "evidence": "No side-of-line/strip restrictions. Both R=24 with centers C=(0,24), C1=(12sqrt6,9), C2=(16sqrt6,32), a:y=0,b:y=48; and R=(-9+3sqrt73)/2 with C=(0,R),C1=(0,-9),C2=(8sqrtR,2R-16),a:y=0,b:y=2R satisfy all stated tangencies.",
+      "question_sha256": "daac654e3b45291a9b8f3d188bcd3647dca1fbb740eda646ecf6f608e644936f"
+    },
+    {
+      "question_id": "dapo:train:69074642-9da5-4f3b-b1e2-35178d4196aa",
+      "reason": "undefined_product_index_and_target",
+      "evidence": "Both products bind i but terms use free n; literal statement does not define the products. No silent i/n or formula rewrite to manufacture rational target.",
+      "question_sha256": "36918835580ce7ccdbd4591e9de6bfeeaff432506f6f80af377168b54b4dca4b"
+    },
+    {
+      "question_id": "dapo:train:6487d117-7012-40d5-bbb2-320bcd726ad7",
+      "reason": "missing_point_locations",
+      "evidence": "AF=2FE and CD=2DE do not specify F on segment AE or D on segment CE. Multiple positions satisfy distance ratios and yield different areas.",
+      "question_sha256": "a3007559a1afa5b8da7896c1dbefe64cb4e1cb56012bd0265a2e82309dffd8ed"
+    },
+    {
+      "question_id": "dapo:train:c1f8d6f8-cce1-4369-ad0b-abf98105e70b",
+      "reason": "symbolic_answer_forced_to_unspecified_number",
+      "evidence": "f(-x)=(x-1)/(x+1) remains symbolic. Request k+m cannot give a fixed integer without x or a defined numeric encoding.",
+      "question_sha256": "7d116260bbd43437eefd33464be3eac7d9d7da6dd27eddfaf90c12dd719e094a"
+    }
+  ],
+  "primary_E_questions": 60,
+  "raw_E_questions": 64,
+  "policy": "Keep ALL raw generated answers and V scores. Exclude ALL candidates, BOTH G stages, ALL prefix versions and ALL verifiers for these questions from primary E analysis. No replacement, no filtering by model correctness or V outcome. Remaining unresolved answers stay unknown."
+}

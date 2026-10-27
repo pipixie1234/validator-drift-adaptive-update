@@ -1,0 +1,9 @@
+# Preserve exact bytes: experiment manifests hash source and CSV inputs.
+* -text
+*.py diff=python
+*.csv whitespace=cr-at-eol
+*.png binary
+*.jpg binary
+*.pdf binary
+*.pptx binary
+*.xlsx binary

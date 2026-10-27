@@ -1,0 +1,7 @@
+﻿feedback_update,scenario,selected,correct,wrong,unknown,verified_error_rate
+G0->G1,original_A600,500,223,259,18,0.5373443983402489
+G0->G1,exclude_missing_image,499,223,258,18,0.5363825363825364
+G0->G1,exclude_image_and_suspect_reference,498,223,257,18,0.5354166666666667
+G1->G2,original_A600,501,229,259,13,0.5307377049180327
+G1->G2,exclude_missing_image,500,229,258,13,0.5297741273100616
+G1->G2,exclude_image_and_suspect_reference,499,229,257,13,0.5288065843621399

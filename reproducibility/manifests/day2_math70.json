@@ -1,0 +1,3210 @@
+{
+  "seed": 42,
+  "revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+  "sampling_before_generation": true,
+  "answer_based_filtering": false,
+  "strata": [
+    {
+      "type": "Algebra",
+      "level": "Level 1",
+      "eligible_count": 176,
+      "selected_ids": [
+        "math:train:algebra:1374",
+        "math:train:algebra:374"
+      ]
+    },
+    {
+      "type": "Algebra",
+      "level": "Level 2",
+      "eligible_count": 332,
+      "selected_ids": [
+        "math:train:algebra:1132",
+        "math:train:algebra:488"
+      ]
+    },
+    {
+      "type": "Algebra",
+      "level": "Level 3",
+      "eligible_count": 384,
+      "selected_ids": [
+        "math:train:algebra:414",
+        "math:train:algebra:642"
+      ]
+    },
+    {
+      "type": "Algebra",
+      "level": "Level 4",
+      "eligible_count": 387,
+      "selected_ids": [
+        "math:train:algebra:279",
+        "math:train:algebra:223"
+      ]
+    },
+    {
+      "type": "Algebra",
+      "level": "Level 5",
+      "eligible_count": 409,
+      "selected_ids": [
+        "math:train:algebra:386",
+        "math:train:algebra:373"
+      ]
+    },
+    {
+      "type": "Counting & Probability",
+      "level": "Level 1",
+      "eligible_count": 50,
+      "selected_ids": [
+        "math:train:counting_and_probability:297",
+        "math:train:counting_and_probability:507"
+      ]
+    },
+    {
+      "type": "Counting & Probability",
+      "level": "Level 2",
+      "eligible_count": 106,
+      "selected_ids": [
+        "math:train:counting_and_probability:5",
+        "math:train:counting_and_probability:152"
+      ]
+    },
+    {
+      "type": "Counting & Probability",
+      "level": "Level 3",
+      "eligible_count": 147,
+      "selected_ids": [
+        "math:train:counting_and_probability:324",
+        "math:train:counting_and_probability:145"
+      ]
+    },
+    {
+      "type": "Counting & Probability",
+      "level": "Level 4",
+      "eligible_count": 153,
+      "selected_ids": [
+        "math:train:counting_and_probability:8",
+        "math:train:counting_and_probability:101"
+      ]
+    },
+    {
+      "type": "Counting & Probability",
+      "level": "Level 5",
+      "eligible_count": 257,
+      "selected_ids": [
+        "math:train:counting_and_probability:21",
+        "math:train:counting_and_probability:637"
+      ]
+    },
+    {
+      "type": "Geometry",
+      "level": "Level 1",
+      "eligible_count": 23,
+      "selected_ids": [
+        "math:train:geometry:214",
+        "math:train:geometry:334"
+      ]
+    },
+    {
+      "type": "Geometry",
+      "level": "Level 2",
+      "eligible_count": 51,
+      "selected_ids": [
+        "math:train:geometry:869",
+        "math:train:geometry:818"
+      ]
+    },
+    {
+      "type": "Geometry",
+      "level": "Level 3",
+      "eligible_count": 71,
+      "selected_ids": [
+        "math:train:geometry:804",
+        "math:train:geometry:228"
+      ]
+    },
+    {
+      "type": "Geometry",
+      "level": "Level 4",
+      "eligible_count": 106,
+      "selected_ids": [
+        "math:train:geometry:785",
+        "math:train:geometry:103"
+      ]
+    },
+    {
+      "type": "Geometry",
+      "level": "Level 5",
+      "eligible_count": 293,
+      "selected_ids": [
+        "math:train:geometry:441",
+        "math:train:geometry:427"
+      ]
+    },
+    {
+      "type": "Intermediate Algebra",
+      "level": "Level 1",
+      "eligible_count": 53,
+      "selected_ids": [
+        "math:train:intermediate_algebra:84",
+        "math:train:intermediate_algebra:960"
+      ]
+    },
+    {
+      "type": "Intermediate Algebra",
+      "level": "Level 2",
+      "eligible_count": 164,
+      "selected_ids": [
+        "math:train:intermediate_algebra:1120",
+        "math:train:intermediate_algebra:1047"
+      ]
+    },
+    {
+      "type": "Intermediate Algebra",
+      "level": "Level 3",
+      "eligible_count": 289,
+      "selected_ids": [
+        "math:train:intermediate_algebra:348",
+        "math:train:intermediate_algebra:443"
+      ]
+    },
+    {
+      "type": "Intermediate Algebra",
+      "level": "Level 4",
+      "eligible_count": 332,
+      "selected_ids": [
+        "math:train:intermediate_algebra:569",
+        "math:train:intermediate_algebra:315"
+      ]
+    },
+    {
+      "type": "Intermediate Algebra",
+      "level": "Level 5",
+      "eligible_count": 417,
+      "selected_ids": [
+        "math:train:intermediate_algebra:1228",
+        "math:train:intermediate_algebra:515"
+      ]
+    },
+    {
+      "type": "Number Theory",
+      "level": "Level 1",
+      "eligible_count": 47,
+      "selected_ids": [
+        "math:train:number_theory:470",
+        "math:train:number_theory:376"
+      ]
+    },
+    {
+      "type": "Number Theory",
+      "level": "Level 2",
+      "eligible_count": 131,
+      "selected_ids": [
+        "math:train:number_theory:645",
+        "math:train:number_theory:120"
+      ]
+    },
+    {
+      "type": "Number Theory",
+      "level": "Level 3",
+      "eligible_count": 191,
+      "selected_ids": [
+        "math:train:number_theory:782",
+        "math:train:number_theory:859"
+      ]
+    },
+    {
+      "type": "Number Theory",
+      "level": "Level 4",
+      "eligible_count": 185,
+      "selected_ids": [
+        "math:train:number_theory:830",
+        "math:train:number_theory:463"
+      ]
+    },
+    {
+      "type": "Number Theory",
+      "level": "Level 5",
+      "eligible_count": 313,
+      "selected_ids": [
+        "math:train:number_theory:549",
+        "math:train:number_theory:604"
+      ]
+    },
+    {
+      "type": "Prealgebra",
+      "level": "Level 1",
+      "eligible_count": 113,
+      "selected_ids": [
+        "math:train:prealgebra:408",
+        "math:train:prealgebra:590"
+      ]
+    },
+    {
+      "type": "Prealgebra",
+      "level": "Level 2",
+      "eligible_count": 290,
+      "selected_ids": [
+        "math:train:prealgebra:383",
+        "math:train:prealgebra:1074"
+      ]
+    },
+    {
+      "type": "Prealgebra",
+      "level": "Level 3",
+      "eligible_count": 220,
+      "selected_ids": [
+        "math:train:prealgebra:779",
+        "math:train:prealgebra:850"
+      ]
+    },
+    {
+      "type": "Prealgebra",
+      "level": "Level 4",
+      "eligible_count": 216,
+      "selected_ids": [
+        "math:train:prealgebra:754",
+        "math:train:prealgebra:0"
+      ]
+    },
+    {
+      "type": "Prealgebra",
+      "level": "Level 5",
+      "eligible_count": 189,
+      "selected_ids": [
+        "math:train:prealgebra:447",
+        "math:train:prealgebra:912"
+      ]
+    },
+    {
+      "type": "Precalculus",
+      "level": "Level 1",
+      "eligible_count": 60,
+      "selected_ids": [
+        "math:train:precalculus:257",
+        "math:train:precalculus:164"
+      ]
+    },
+    {
+      "type": "Precalculus",
+      "level": "Level 2",
+      "eligible_count": 160,
+      "selected_ids": [
+        "math:train:precalculus:390",
+        "math:train:precalculus:252"
+      ]
+    },
+    {
+      "type": "Precalculus",
+      "level": "Level 3",
+      "eligible_count": 153,
+      "selected_ids": [
+        "math:train:precalculus:728",
+        "math:train:precalculus:135"
+      ]
+    },
+    {
+      "type": "Precalculus",
+      "level": "Level 4",
+      "eligible_count": 161,
+      "selected_ids": [
+        "math:train:precalculus:66",
+        "math:train:precalculus:676"
+      ]
+    },
+    {
+      "type": "Precalculus",
+      "level": "Level 5",
+      "eligible_count": 161,
+      "selected_ids": [
+        "math:train:precalculus:59",
+        "math:train:precalculus:313"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "question_id": "math:train:algebra:8",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:51",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:62",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:74",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:79",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:118",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:191",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:258",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:355",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:359",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:400",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:413",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:419",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:434",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:484",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:544",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:549",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:629",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:638",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:649",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:675",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:687",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:705",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:780",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:795",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:815",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:835",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:927",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:940",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:959",
+      "reason": "duplicate_or_protected"
+    },
+    {
+      "question_id": "math:train:algebra:960",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1008",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1017",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1028",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1040",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1050",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1151",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1162",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1188",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1212",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1247",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1256",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1296",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1305",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1306",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1322",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1324",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1339",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1364",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1409",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1430",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1513",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1631",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1658",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1674",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:algebra:1703",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:2",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:14",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:17",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:18",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:19",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:20",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:26",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:29",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:35",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:39",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:41",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:42",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:54",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:65",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:66",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:69",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:79",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:92",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:113",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:126",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:138",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:177",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:204",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:247",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:260",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:288",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:306",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:309",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:319",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:335",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:393",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:395",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:432",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:453",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:462",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:475",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:509",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:535",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:538",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:553",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:556",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:558",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:565",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:602",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:603",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:628",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:638",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:640",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:647",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:652",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:681",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:685",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:698",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:714",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:722",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:725",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:727",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:counting_and_probability:756",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:1",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:2",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:4",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:6",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:9",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:12",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:14",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:17",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:18",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:21",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:23",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:25",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:26",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:28",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:29",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:30",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:34",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:43",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:45",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:47",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:49",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:52",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:53",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:54",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:57",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:58",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:60",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:62",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:64",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:65",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:66",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:70",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:72",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:75",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:76",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:77",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:78",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:90",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:92",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:93",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:94",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:96",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:97",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:98",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:100",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:101",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:105",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:109",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:111",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:112",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:117",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:118",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:120",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:122",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:123",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:125",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:129",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:130",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:132",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:133",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:135",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:136",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:138",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:139",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:140",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:141",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:143",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:146",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:149",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:153",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:154",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:155",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:162",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:163",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:166",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:169",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:170",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:171",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:172",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:173",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:174",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:175",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:181",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:182",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:183",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:185",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:188",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:189",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:191",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:192",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:198",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:199",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:202",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:203",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:204",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:205",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:206",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:207",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:209",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:212",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:213",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:217",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:218",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:219",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:221",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:224",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:226",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:230",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:232",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:234",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:235",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:236",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:238",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:239",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:241",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:243",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:244",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:248",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:253",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:254",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:256",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:257",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:258",
+      "reason": "unknown_difficulty"
+    },
+    {
+      "question_id": "math:train:geometry:260",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:262",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:263",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:265",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:266",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:271",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:280",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:281",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:283",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:285",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:288",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:290",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:295",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:297",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:299",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:300",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:301",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:304",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:309",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:311",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:312",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:316",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:317",
+      "reason": "unknown_difficulty"
+    },
+    {
+      "question_id": "math:train:geometry:319",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:321",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:324",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:327",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:330",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:332",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:335",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:337",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:338",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:339",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:341",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:348",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:352",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:353",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:354",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:355",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:357",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:358",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:359",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:361",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:365",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:367",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:372",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:373",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:385",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:387",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:388",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:391",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:392",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:393",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:394",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:402",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:403",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:404",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:405",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:406",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:407",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:412",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:415",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:416",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:418",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:419",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:436",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:445",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:449",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:456",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:471",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:478",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:489",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:490",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:500",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:503",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:507",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:509",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:516",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:519",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:522",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:528",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:543",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:545",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:564",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:566",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:569",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:583",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:584",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:588",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:589",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:590",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:592",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:596",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:598",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:603",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:605",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:607",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:610",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:613",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:615",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:616",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:618",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:619",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:626",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:627",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:636",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:640",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:643",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:645",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:646",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:647",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:653",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:655",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:660",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:661",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:663",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:664",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:668",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:670",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:674",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:677",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:680",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:682",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:685",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:686",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:687",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:688",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:689",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:694",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:696",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:697",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:701",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:707",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:708",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:709",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:713",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:714",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:716",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:722",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:724",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:728",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:731",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:732",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:738",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:739",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:742",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:744",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:746",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:747",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:749",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:756",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:758",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:763",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:764",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:765",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:766",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:767",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:771",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:773",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:775",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:777",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:778",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:780",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:781",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:782",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:788",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:790",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:792",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:796",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:799",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:800",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:801",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:802",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:806",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:807",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:808",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:809",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:810",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:811",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:812",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:813",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:814",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:815",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:821",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:823",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:826",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:827",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:828",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:829",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:834",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:836",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:838",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:842",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:844",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:846",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:847",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:849",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:850",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:855",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:860",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:864",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:865",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:geometry:867",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:39",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:54",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:65",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:99",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:179",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:206",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:263",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:280",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:284",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:380",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:407",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:416",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:421",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:437",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:439",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:455",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:484",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:486",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:494",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:521",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:572",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:610",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:619",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:703",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:708",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:745",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:755",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:756",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:804",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:822",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:1073",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:1079",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:1114",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:1122",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:1127",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:1131",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:1156",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:1166",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:1182",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:intermediate_algebra:1253",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:number_theory:193",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:number_theory:408",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:2",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:7",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:9",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:11",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:17",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:30",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:31",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:37",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:40",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:43",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:45",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:54",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:63",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:64",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:79",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:85",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:88",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:100",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:107",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:110",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:113",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:122",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:129",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:130",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:152",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:156",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:159",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:174",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:176",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:179",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:191",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:216",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:229",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:237",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:241",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:247",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:263",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:291",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:293",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:297",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:300",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:302",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:304",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:305",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:316",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:317",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:320",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:325",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:328",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:337",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:344",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:345",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:348",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:353",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:354",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:358",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:366",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:368",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:371",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:372",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:380",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:381",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:409",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:419",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:421",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:426",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:433",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:439",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:458",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:469",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:477",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:488",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:500",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:514",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:522",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:531",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:542",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:549",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:563",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:569",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:580",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:582",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:583",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:586",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:593",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:598",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:608",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:615",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:627",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:629",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:632",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:634",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:644",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:652",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:674",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:681",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:684",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:704",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:714",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:715",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:729",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:732",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:735",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:740",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:743",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:744",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:748",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:761",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:768",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:769",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:775",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:783",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:786",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:789",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:791",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:796",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:803",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:804",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:805",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:822",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:829",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:830",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:832",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:839",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:842",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:845",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:846",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:849",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:856",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:864",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:870",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:871",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:874",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:879",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:887",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:889",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:890",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:892",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:897",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:916",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:920",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:923",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:925",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:932",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:939",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:941",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:950",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:951",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:960",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:969",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:975",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:982",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:991",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1022",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1035",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1038",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1047",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1066",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1067",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1069",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1072",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1073",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1081",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1087",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1093",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1100",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1104",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1110",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1115",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1139",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1141",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1151",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1154",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1156",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1159",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1193",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:prealgebra:1195",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:32",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:43",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:46",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:56",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:74",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:78",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:90",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:106",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:117",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:133",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:144",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:153",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:177",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:201",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:214",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:216",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:219",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:222",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:241",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:246",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:267",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:335",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:343",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:350",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:352",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:360",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:365",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:378",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:379",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:381",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:401",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:408",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:414",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:441",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:445",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:494",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:496",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:515",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:534",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:571",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:581",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:584",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:608",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:611",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:645",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:656",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:661",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:674",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:678",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:692",
+      "reason": "diagram_required"
+    },
+    {
+      "question_id": "math:train:precalculus:723",
+      "reason": "diagram_required"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/root/workspace/cross_round_pilot/data/raw/math_train/algebra/train-00000-of-00001.parquet",
+      "url": "https://hf-mirror.com/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/train-00000-of-00001.parquet",
+      "sha256": "73347f5b55869f21ff094361025dbd12d291e971aa4d72142eacee10438e449f",
+      "source_path": "algebra/train-00000-of-00001.parquet"
+    },
+    {
+      "path": "/root/workspace/cross_round_pilot/data/raw/math_train/counting_and_probability/train-00000-of-00001.parquet",
+      "url": "https://hf-mirror.com/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/train-00000-of-00001.parquet",
+      "sha256": "d37ae017930df41678edee50dcde18c17fb06afaff9eb505c1b95f1002bfcb31",
+      "source_path": "counting_and_probability/train-00000-of-00001.parquet"
+    },
+    {
+      "path": "/root/workspace/cross_round_pilot/data/raw/math_train/geometry/train-00000-of-00001.parquet",
+      "url": "https://hf-mirror.com/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/geometry/train-00000-of-00001.parquet",
+      "sha256": "9dbf5e5b55499e696e0ba72da9d85d4f0be3acbf7eaa6cb014b0fc78bb63784f",
+      "source_path": "geometry/train-00000-of-00001.parquet"
+    },
+    {
+      "path": "/root/workspace/cross_round_pilot/data/raw/math_train/intermediate_algebra/train-00000-of-00001.parquet",
+      "url": "https://hf-mirror.com/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/train-00000-of-00001.parquet",
+      "sha256": "0c87f3798ebdfb915b1f9b6fc13c1a8d064c3cb91631ccbe85b83ed5d71150f6",
+      "source_path": "intermediate_algebra/train-00000-of-00001.parquet"
+    },
+    {
+      "path": "/root/workspace/cross_round_pilot/data/raw/math_train/number_theory/train-00000-of-00001.parquet",
+      "url": "https://hf-mirror.com/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/number_theory/train-00000-of-00001.parquet",
+      "sha256": "81c08649149b39811f2d1d7ddf5dfccf6c4c8044a2e169cfb24db09160c941f4",
+      "source_path": "number_theory/train-00000-of-00001.parquet"
+    },
+    {
+      "path": "/root/workspace/cross_round_pilot/data/raw/math_train/prealgebra/train-00000-of-00001.parquet",
+      "url": "https://hf-mirror.com/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/train-00000-of-00001.parquet",
+      "sha256": "765b526fb5c0b8385cb7be2c16bf4f6f28cf71f2bc15c826abfbb5fa7f8616cc",
+      "source_path": "prealgebra/train-00000-of-00001.parquet"
+    },
+    {
+      "path": "/root/workspace/cross_round_pilot/data/raw/math_train/precalculus/train-00000-of-00001.parquet",
+      "url": "https://hf-mirror.com/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/train-00000-of-00001.parquet",
+      "sha256": "28bb1ff95525c8d32521509bef91de76339659f5467a381e6e8deea204538f0e",
+      "source_path": "precalculus/train-00000-of-00001.parquet"
+    }
+  ],
+  "test_downloaded": false
+}

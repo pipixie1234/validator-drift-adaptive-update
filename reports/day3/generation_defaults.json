@@ -1,0 +1,37 @@
+{
+  "models": {
+    "G": {
+      "path": "/root/workspace/Qwen2.5-Math-1.5B-Instruct/generation_config.json",
+      "sha256": "6cdbb935125f725b568855b396e182b00c9c736fdfab1ef3970087f4ee5cac3f",
+      "defaults": {
+        "bos_token_id": 151643,
+        "pad_token_id": 151643,
+        "do_sample": false,
+        "eos_token_id": [
+          151645,
+          151643
+        ],
+        "transformers_version": "4.37.0"
+      }
+    },
+    "V": {
+      "path": "/root/workspace/Qwen3-4B-Instruct-2507/generation_config.json",
+      "sha256": "835fffe355c9438e7a25be099b3fccaa98350b83451f9fd2d99512e74f1ade48",
+      "defaults": {
+        "bos_token_id": 151643,
+        "do_sample": true,
+        "eos_token_id": [
+          151645,
+          151643
+        ],
+        "pad_token_id": 151643,
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.8,
+        "transformers_version": "4.51.0"
+      }
+    }
+  },
+  "overrides": "Formal explicit sampling overrides model defaults; EOS/BOS/PAD and other inherited defaults retained from these files.",
+  "check_before_future_runs": "Verify these hashes and artifact_audit implementation hashes before formal inference/training."
+}

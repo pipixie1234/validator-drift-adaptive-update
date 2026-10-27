@@ -1,0 +1,47 @@
+{
+  "execution_id": "DAPO_fixedV0_SFT_G0_G1_G2_v1",
+  "protocol_file": "configs/protocol_revisions/003_dapo_day3.json",
+  "protocol_sha256": "259d53ccdd37cd15cb0949799c7e411cfc0a781c9fdf14816e43b8c3df5ca77a",
+  "seed": 42,
+  "global_gpu_work_cap_hours": 40,
+  "prior_work_reserve_hours": 2,
+  "prior_reserve_note": "Conservative reserve for saved day1/day2/day3 work plus incomplete interrupted computations; formal stages separately ledgered. Not rental billing.",
+  "stage_order": [
+    "G0_B",
+    "G0_C",
+    "G0_A",
+    "select_G1",
+    "train_G1_SFT",
+    "G1_B",
+    "G1_C",
+    "G1_A",
+    "select_G2",
+    "train_G2_SFT",
+    "G2_B",
+    "G2_C",
+    "final_report"
+  ],
+  "fixed_verifier": "V0 original base only; no adapter, frozen prompts/scoring code/threshold0.5",
+  "training_implementation_choices": {
+    "optimizer": "AdamW",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "weight_decay": 0.01,
+    "max_gradient_norm": 1.0,
+    "data_order": "seed42 shuffle once per one-epoch round",
+    "final_partial_accumulation": "divide loss by actual number of microbatches in final group",
+    "optimizer_between_rounds": "reinitialize moments; continue G1 adapter weights for G2",
+    "checkpoint_interval_optimizer_steps": 16
+  },
+  "allowed_splits": [
+    "A",
+    "B",
+    "C"
+  ],
+  "T_policy": "hash-only integrity checks; no decoding or evaluation",
+  "source_quality_policy": "Known question quarantine fixed fromDay3; no independent answer-based filtering. Unknown labels stay unknown.",
+  "status_reporting": "Atomic progress/state JSON, durable log and incrementally refreshed reports. No shutdown or external messages."
+}

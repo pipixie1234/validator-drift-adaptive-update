@@ -1,0 +1,306 @@
+{
+  "created_at": "2026-10-25T09:14:07.929616+00:00",
+  "purpose": "Compare fixed-V0 prefix flip rates on outputs from G0/G1/G2/G3",
+  "support": {
+    "A": {
+      "common_questions": 97,
+      "selected_questions": 64,
+      "eligible_questions": {
+        "G0": 187,
+        "G1": 162,
+        "G2": 165,
+        "G3": 142
+      },
+      "question_ids": [
+        "dapo:train:ebcaff72-48f0-45ed-bde6-16d99cf23d0e",
+        "dapo:train:940e9238-fb71-4049-a50a-555db4ca577c",
+        "dapo:train:2c0c93de-2e94-4fbe-bba3-78be48cf7aba",
+        "dapo:train:7fbd00bd-48b7-4abe-a47d-ba0adb3272ad",
+        "dapo:train:93a80858-5f78-46bd-a394-8ece296f4e19",
+        "dapo:train:a890fb0c-c81f-4379-8635-9f16fe62011b",
+        "dapo:train:4cd4065c-3620-4527-aca1-60c99969511e",
+        "dapo:train:cc061ebd-b390-496e-b96c-1f30773424f7",
+        "dapo:train:8a6c560e-1e3e-4531-ae9f-54fe21897f3b",
+        "dapo:train:07ca1961-6be6-4eda-b503-a219e3333c42",
+        "dapo:train:29806b03-feb0-4233-90cf-297ce2feda67",
+        "dapo:train:7b2484ba-94d5-45d5-a589-cdc75661fede",
+        "dapo:train:d0a2f330-db2f-43b3-a87e-e335cec14329",
+        "dapo:train:7027acd8-2457-45be-a46e-920caafa9241",
+        "dapo:train:19b84c25-ccca-4f22-8f42-c27ebd2414e1",
+        "dapo:train:93b0f085-13b2-4195-9460-74c4825cfabe",
+        "dapo:train:5421a8b9-3505-4d3f-bd38-66d82a49f3a5",
+        "dapo:train:a87e3e9e-a4a6-4b66-9034-b4deaa1b35a4",
+        "dapo:train:cbdd11df-5fb4-4aed-a715-cb6871d17f53",
+        "dapo:train:d8229c23-16f6-4e6d-a949-73567feef919",
+        "dapo:train:8bda092a-6e40-49eb-ab4e-7b9ce1d17353",
+        "dapo:train:04b59d01-0ef5-41cc-938e-3105ce23713a",
+        "dapo:train:1d0efdab-3709-4c01-954e-f841c32bbbc2",
+        "dapo:train:04ca8b9f-cbc0-40ab-a837-651a91f890f8",
+        "dapo:train:289e25ff-210d-4281-890f-89c6d005a1bd",
+        "dapo:train:a5faf0d1-638e-43a7-b723-59c260266f6a",
+        "dapo:train:09dee994-e7e1-4f99-b7e8-3c202d380c95",
+        "dapo:train:fa0527a0-1d7f-4ba1-a0dc-f6e4d7365645",
+        "dapo:train:e4c65c5f-87c1-4c44-9006-47979ce8df46",
+        "dapo:train:3a7d0178-b1a6-44b1-b9a4-885092baf273",
+        "dapo:train:8ac321a0-666a-4c46-a563-fb204ff2339c",
+        "dapo:train:8a5f1eb2-1f82-486a-8785-ceca493903aa",
+        "dapo:train:f7fd6f11-aa1e-4a11-8e21-4cf267b57a03",
+        "dapo:train:725efb9d-a9e7-4af3-a9b4-cea3ab319aa1",
+        "dapo:train:b0bcdaa7-1c5b-4970-899b-d3e6e74e0ee0",
+        "dapo:train:f2c4a0cd-beb3-479e-bf90-e555d3ea1671",
+        "dapo:train:33490cb3-5df6-4837-b40f-912337b71133",
+        "dapo:train:c766d5ef-1ffb-4f31-98ce-fe4e6086c37b",
+        "dapo:train:e1579fbc-c150-43ad-97ca-0b61b6e3d619",
+        "dapo:train:f92e748b-1c67-42b0-a658-b6565e366583",
+        "dapo:train:287dd05a-7544-4790-8c75-5eba46f4057f",
+        "dapo:train:dd3a0a9b-3875-4999-bb4e-e7895955328c",
+        "dapo:train:a7c3941b-3aae-4afa-9e74-3d6587972c64",
+        "dapo:train:332a5705-c39a-4f32-88c8-91d33d1880f1",
+        "dapo:train:c2a8fb0a-b17b-4a1f-8e8b-028160a956cc",
+        "dapo:train:eb833f5b-d1c1-45f3-84d5-c1d86c0d7504",
+        "dapo:train:b0a86bab-015f-4d98-b5d1-1ba9254270b4",
+        "dapo:train:efefbf9e-2bc4-46c0-bab9-fcbb465a6123",
+        "dapo:train:98514e7d-d566-4ad5-bd36-2db863128ce8",
+        "dapo:train:032e4fd2-2ef7-4b84-88de-e0b5128bb762",
+        "dapo:train:dfbc29ba-d7bc-4ce6-975d-95563bca73f6",
+        "dapo:train:bb1a5976-30c3-4d54-bc7f-788c0fce6c52",
+        "dapo:train:122a8b33-c28f-44ec-ac2c-9a3e2bbd7352",
+        "dapo:train:ec38ebe7-d117-42c1-946a-da7eca2b3209",
+        "dapo:train:c9c30a93-0f4f-46c6-b1de-1828e6f2e447",
+        "dapo:train:dc83199f-67e1-4739-a7c2-28a88c8191a8",
+        "dapo:train:7399e915-9ffb-4e5c-aafb-4bc0fece5750",
+        "dapo:train:a5fe4b6a-804f-4111-83a5-5577e77c723e",
+        "dapo:train:d798c388-45d3-49e3-a186-4b4b1082bafe",
+        "dapo:train:cdbc6217-2a5a-4618-9556-bf50662f6fcf",
+        "dapo:train:944895fb-dc2c-4719-87b0-d99440e719c8",
+        "dapo:train:7eefa8aa-efd6-4793-8cc4-516206dd3790",
+        "dapo:train:e4a9e622-5317-4378-8d7d-a78b5699d158",
+        "dapo:train:6491e543-c0fc-4871-950b-4b5a1653649a"
+      ]
+    },
+    "C": {
+      "common_questions": 29,
+      "selected_questions": 29,
+      "eligible_questions": {
+        "G0": 45,
+        "G1": 48,
+        "G2": 46,
+        "G3": 52
+      },
+      "question_ids": [
+        "dapo:train:beffc63a-0f60-4bda-8094-ec6eca603add",
+        "dapo:train:9464b7a7-8cb0-40db-81f1-6f0132192311",
+        "dapo:train:fa6b1eb7-b2b2-4eb2-8e37-32f3142b210f",
+        "dapo:train:c0b0ebef-74c1-4242-b633-951258174827",
+        "dapo:train:f6f97b6f-e2c4-46f8-9892-4dc50d2a8594",
+        "dapo:train:6c7550ba-1ad2-4e5e-bb08-e3d0eb43bd0d",
+        "dapo:train:f4e2893e-b6e9-4165-924b-77a1cc8ca3ad",
+        "dapo:train:27fcd60b-f7c9-4a30-adf1-6b27a40ec142",
+        "dapo:train:3907ea22-5965-43f5-87bb-887418725860",
+        "dapo:train:57bcd581-7cbf-4d8e-b54d-a64d5162d806",
+        "dapo:train:adee7ecc-008d-4b41-b095-f65c1f7e4d43",
+        "dapo:train:428e428c-0b71-4bc7-adcf-81a66cbbe5a5",
+        "dapo:train:01109e3e-d9e4-4af6-8ce1-221a7b9b37ad",
+        "dapo:train:c3a67386-142b-4c41-b58e-1030480f6abc",
+        "dapo:train:30b2816d-f11f-4cba-9285-37efcaecd6f6",
+        "dapo:train:1b3309c1-ed72-4632-98a5-f7bf4cf993d3",
+        "dapo:train:11fdca2f-4c19-478e-8865-24e4bf001c00",
+        "dapo:train:7952579d-de7a-455c-b334-86da1c0b6c6f",
+        "dapo:train:9c96a325-6836-451b-9fc6-e1ac84d3d735",
+        "dapo:train:880e1d8a-f7b8-4a43-aabe-bf33c20cbef5",
+        "dapo:train:e42acb3f-9aff-42fc-953e-c392e13d1c89",
+        "dapo:train:9a35d742-097e-43c6-9993-7b5b05f97211",
+        "dapo:train:0c73160f-95ca-4cc6-a4c3-dd641342f0b5",
+        "dapo:train:a57c7be5-07ff-48ef-b11c-576b968ba3e4",
+        "dapo:train:f3f1b494-6801-42da-8601-9c368cce4412",
+        "dapo:train:31ff0d99-0e6c-4129-a4b1-dc1ab20dc658",
+        "dapo:train:1b18887a-8661-48fd-b0b3-88303c02cd2c",
+        "dapo:train:315e8320-4bc4-4583-9747-9108cd805e18",
+        "dapo:train:53a39761-5d7b-4429-8ed8-8115cbde185c"
+      ]
+    }
+  },
+  "variants": [
+    {
+      "name": "original",
+      "prefix": "",
+      "category": "control"
+    },
+    {
+      "name": "blank_control",
+      "prefix": "\n",
+      "category": "control"
+    },
+    {
+      "name": "neutral_control",
+      "prefix": "Response text:\n",
+      "category": "control"
+    },
+    {
+      "name": "to_solve_for",
+      "prefix": "To solve for\n",
+      "category": "solve_for_family"
+    },
+    {
+      "name": "we_need_to",
+      "prefix": "we need to\n",
+      "category": "we_need_reference"
+    },
+    {
+      "name": "we_can",
+      "prefix": "we can\n",
+      "category": "modality_changed"
+    },
+    {
+      "name": "we_will",
+      "prefix": "we will\n",
+      "category": "modality_changed"
+    },
+    {
+      "name": "we_have_to",
+      "prefix": "we have to\n",
+      "category": "necessity"
+    },
+    {
+      "name": "we_should",
+      "prefix": "we should\n",
+      "category": "modality_changed"
+    },
+    {
+      "name": "we_must",
+      "prefix": "we must\n",
+      "category": "necessity"
+    },
+    {
+      "name": "it_is_essential_to",
+      "prefix": "it is essential to\n",
+      "category": "necessity"
+    },
+    {
+      "name": "thought_process",
+      "prefix": "Thought process:\n",
+      "category": "reasoning_header"
+    },
+    {
+      "name": "reasoning",
+      "prefix": "Reasoning:\n",
+      "category": "reasoning_header"
+    },
+    {
+      "name": "analysis",
+      "prefix": "Analysis:\n",
+      "category": "reasoning_header"
+    },
+    {
+      "name": "original_step_by_step",
+      "prefix": "Let's solve this problem step by step.\n",
+      "category": "reasoning_header"
+    },
+    {
+      "name": "reason_step_by_step",
+      "prefix": "Let's reason step by step.\n",
+      "category": "reasoning_header"
+    },
+    {
+      "name": "solve_for_the",
+      "prefix": "solve for the\n",
+      "category": "EFP_discovered"
+    },
+    {
+      "name": "to_determine_probability",
+      "prefix": "To determine the probability\n",
+      "category": "EFP_discovered"
+    },
+    {
+      "name": "symbol_colon",
+      "prefix": ":\n",
+      "category": "punctuation"
+    },
+    {
+      "name": "symbol_period",
+      "prefix": ".\n",
+      "category": "punctuation"
+    },
+    {
+      "name": "symbol_comma",
+      "prefix": ",\n",
+      "category": "punctuation"
+    }
+  ],
+  "source_sha256": {
+    "configs/fpr_patterns_20261024.json": "3b6b866b93a7c5e323023087fc68093dd3edabcbd21f9b44fdbd2042f46d5fc3",
+    "configs/prefix_paraphrase_20261024.json": "d7fbd7c0f6dcf0ed26446ccb2b35825c6b5195a0c50a4fc66e7548dbdb5a5063",
+    "runs/fpr_patterns_20261024/EFP_intervention_frozen.json": "34d878825d19b9ed0eb2e8b6396fb94b58e2095f73ace66831a89925c03521ec",
+    "runs/prefix_paraphrase_20261024/V0_scores.jsonl": "adb8a0f46d3819b8d21a3996df2f7f7a52270c4f1c2102f213e1b05f216c7d1e",
+    "runs/fpr_patterns_20261024/EFP_V0_scores.jsonl": "d7af21539b7c933ad077ad96c5a2e2620c0604936a198619ecc3d478d3c7b97f",
+    "runs/formal/G0_A.jsonl": "aabb65413008fc3e999e96c10fba9e582336541b233962f4020cd1a45cb87fb9",
+    "runs/formal/V0_G0_A.jsonl": "12113b32e4d862cddf2839339676c52b4e6189ac7e1c5b1a0e1da194545a7601",
+    "runs/formal/labels_G0_A.jsonl": "24fcf4c978bc3110f5ebd1146070cdadd9f2cfcecc1da27a7435e8c1ba79e226",
+    "runs/formal/G0_C.jsonl": "20d76cb915bcc7fe6c37dd4e228934f423836e6952ed077e2fcc17cc2581b844",
+    "runs/formal/V0_G0_C.jsonl": "6e8521dc419c2f768ae5f2aa9165e4ae306d4148d7ad319042b2f4012039ed78",
+    "runs/formal/labels_G0_C.jsonl": "86c78d5a8e7d87613b7c2cb1fc26839a2a4f50c23d59cc681fa8ede97fda5150",
+    "runs/formal/G1_A.jsonl": "cbab8fff90ff1b275bf90ea3030d1e31dfbb1208402a6eee4693cca725429dc9",
+    "runs/formal/V0_G1_A.jsonl": "4470ac6ed6c4bf589d2a7525b614280b5661dc7b4689a59ffca5e8a7ca518607",
+    "runs/formal/labels_G1_A.jsonl": "1b4300bee20d122436da11884ed09a03dd368ac03f95efe5d8e8e6fbe884dea1",
+    "runs/formal/G1_C.jsonl": "255e3d9a223265e9e4e88dbf448c8364af305fda4b907ee212092f046206e27e",
+    "runs/formal/V0_G1_C.jsonl": "a3c766e995e44362647f1895b4f653e3cb3db7a24912eb00032fe0fcc2321664",
+    "runs/formal/labels_G1_C.jsonl": "78cbc0bb53a3ae499295488721628c3133085036b0a583eaf08a72387082e5ca",
+    "runs/g3_extension_20261024/G2_A.jsonl": "c1268fe19ad33ebb31cb9cf6aeabff1863517d8232a23e4ae5436d69906a8733",
+    "runs/g3_extension_20261024/G2_C.jsonl": "8619c77f278ef8643b39edcb76d5cc61d2faaa8b64af8efe1cc2829c32cc18f5",
+    "runs/g3_extension_20261024/G3_A.jsonl": "5c8e9a18e46f3dfb41721756fe4ec9c83c6d01e3f3f36ccd4a56278590f7813f",
+    "runs/g3_extension_20261024/G3_C.jsonl": "821c6adb0da3772a5ba4af51876c57994c03b666bad7f47ac9ce23880323a6b3",
+    "runs/g3_extension_20261024/V0_G2_A.jsonl": "4b12005f9192a48ab7913b6dd06bbd59f835e8929f111bd5eb7cb9e67833b4f6",
+    "runs/g3_extension_20261024/V0_G2_C.jsonl": "de5d3b65344c34aa8349ec092b4d2d7bf73446cde6d5f297b0cac31d495b1498",
+    "runs/g3_extension_20261024/V0_G3_A.jsonl": "2aa7cc926dc39d9135e2d8ff55ee582038e4714b9a1be67f8fb7d8a50164fd5a",
+    "runs/g3_extension_20261024/V0_G3_C.jsonl": "27319bbce9c5a570801f8fff82dae7e5b43ece269358630ff19652ac35f0d66a",
+    "runs/g3_extension_20261024/labels_G2_A.jsonl": "22f6130217e303463a17db1f1bf75d5c5f330f4e96bf9fa138024cf60efc7806",
+    "runs/g3_extension_20261024/labels_G2_C.jsonl": "2b4347a4b91f006a4255305a231119c12997291c444df3c09baf12f855089a7d",
+    "runs/g3_extension_20261024/labels_G3_A.jsonl": "22fb5c8ddd43afe3f66f8c28b386bc967bb0e385bbe7f7f136ee305a4f6c389d",
+    "runs/g3_extension_20261024/labels_G3_C.jsonl": "a503ca64b9bb6ab5b4524987f99b24cc4c6b2d58ee4b77075505c038273f5507",
+    "src/pilot/cross_round_prefix.py": "55d5dd8c4ffbdbdb03996ea1e52c195281502a7a7a31d17bb566fbc4bd8b1936",
+    "src/pilot/runtime.py": "936b9cb7881893ec8f75bd2ecc1c7da641db9930b33cb366fb08f84dbf6311d7"
+  },
+  "input_sha256": {
+    "answers.jsonl": "75c68a27ffdc6b9d8fdcdf1cc30929b2ac95cf6be6a9d55298fffb76688d31e1",
+    "answer_context_checks.jsonl": "0887af0c9cde62e2bfa05068ba0784d329df02e2c25b834ff79bc842600e16a6"
+  },
+  "selection": "Intersection of questions with >=1 verified wrong, originally V0-rejected, nontruncated answer in ALL4 stages; one hash-selected answer per question per stage. A only previous confirmation half. Fixed question hash capA64/C48; no score-margin tuning.",
+  "engine_boundary": "G0/G1 original Transformers, G2/G3 vLLM; four-stage curve descriptive across G1->G2 boundary. Primary within-engine G2->G3; secondary within-engine G0->G1.",
+  "prefix_scope": "All original12 EFP settings plus9 discussed verbal/synonym/header variants;21 total including3 controls; no new mined prefixes",
+  "fixed_V0": {
+    "fingerprint": "cd87ced708c07dd0c0e502cf7747fcd3b987cb4bbe9cc643d281fc9212d94c70",
+    "adapter": null,
+    "threshold": 0.5,
+    "max_context": 8192,
+    "scoring": {
+      "labels": [
+        "A",
+        "B"
+      ],
+      "accept_threshold": 0.5,
+      "max_context": 8192
+    }
+  },
+  "metrics": "Conditional TN->FP flip rate; NOT full-pool FPR. Same questions across stages, different initially rejected wrong answers.",
+  "contrasts": "G3-G2 primary and G1-G0 secondary; paired whole-question bootstrap and two-sided exact McNemar, BH across18 triggers*2pools separately per round contrast. G3-G0 descriptive engine-confounded only.",
+  "interaction": "(trigger-neutral)_after minus (trigger-neutral)_before; paired bootstrap descriptive",
+  "baseline_checks": "Every chosen original freshly rescored and matched to historical score and rejection; label and full context verified for all variants",
+  "reuse": "Only exact prefix/body/question full-prompt matches with original V0 fingerprints/runtime; no original-control reuse",
+  "limits": [
+    "Conditioning on TN in all stages selects a common rejected-error subpopulation, not all model errors",
+    "Error content, final wrong answer and original rejection confidence can still differ within the same question",
+    "C repeatedly used development, not untouched final test",
+    "21 prefixes fixed but chosen from prior exploratory findings; not a fresh confirmatory prefix discovery"
+  ],
+  "bootstrap": 10000,
+  "seed": 20261025,
+  "counts": {
+    "answers": 372,
+    "logical_scores": 7812
+  },
+  "B_used": false,
+  "T_read": false,
+  "G_generation": false,
+  "G_training": false,
+  "V_update": false
+}

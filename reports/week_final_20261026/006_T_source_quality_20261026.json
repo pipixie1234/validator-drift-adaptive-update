@@ -1,0 +1,75 @@
+{
+  "revision": "006_T_source_quality_20261026",
+  "at": "2026-10-26T06:56:25.292914+00:00",
+  "base_final_protocol_sha256": "65ec2a196111b71921972ba42f226e51a346da3ad405bff897bb6dc49b06bb2e",
+  "T_input_sha256": "1bdd5dcb7601c6208663eeae02855536b4f4a893c4e3c92a17d1c67d4b21bef3",
+  "blind_flags_sha256": "016301af0726b84fc35ae1d95f3ee9e6fda8fe513909867099444f8da80d0a78",
+  "scope": "Question-text-only assessment before T references or verifier scores decoded/seen. No G outputs were inspected for this assessment.",
+  "whole_question_quarantine": [
+    {
+      "question_id": "dapo:train:51e8e601-c8ad-45de-8765-709b6a317f23",
+      "reason": "Missing essential partition diagram; target perimeter not determined by text",
+      "literal_evidence": "The rectangle in the figure has dimensions $16 \\times 20$ and is divided into $10$ smaller equal rectangles. What is the perimeter of each of the $10$ smaller rectangles?",
+      "counterexamples": [
+        {
+          "outer": [
+            16,
+            20
+          ],
+          "tile": [
+            16,
+            2
+          ],
+          "grid": [
+            1,
+            10
+          ],
+          "tile_perimeter": 36
+        },
+        {
+          "outer": [
+            16,
+            20
+          ],
+          "tile": [
+            8,
+            4
+          ],
+          "grid": [
+            2,
+            5
+          ],
+          "tile_perimeter": 24
+        }
+      ]
+    }
+  ],
+  "other_flag_reviews": [
+    {
+      "question_id": "dapo:train:7fbc4d3e-c72c-4f1f-9b33-98fc7fc6a849",
+      "status": "eligible_no_essential_missing_data_identified",
+      "evidence": "All four equilateral triangles and their translations and common-region area are specified in text; no missing essential diagram data identified."
+    },
+    {
+      "question_id": "dapo:train:11ac5b63-cdca-4a14-a655-d5aca10842eb",
+      "status": "eligible_no_essential_missing_data_identified",
+      "evidence": "Unit square, fold C to AD and CprimeD=1/3 determine geometry in text; with A(0,0),E(1/2,0),Cprime(0,2/3), perimeter2. Diagram not essential."
+    },
+    {
+      "question_id": "dapo:train:a055098b-d4aa-4dd6-b509-29e9b3c6adbe",
+      "status": "eligible_no_essential_missing_data_identified",
+      "evidence": "Three sides, altitude, and both angle bisectors explicitly specified; geometry determined without figure."
+    },
+    {
+      "question_id": "dapo:train:068e0bc0-ff7b-4fcc-b970-54b43f274aae",
+      "status": "eligible_no_essential_missing_data_identified",
+      "evidence": "Median and E/F side placements and AE=2AF explicitly specified; geometry condition available in text."
+    }
+  ],
+  "primary_questions": 299,
+  "archival_questions": 300,
+  "apply_identically_to": "all four G stages, all three V versions, all candidates",
+  "no_raw_outputs_or_old_labels_deleted": true,
+  "model_sampling_threshold_or_training_changed": false,
+  "protocol_note": "Applies original user instruction to separate invalid questions from unverifiable answers. One source-only quarantine supplements005, not outcome-based test selection. Raw300 results retained as archival sensitivity."
+}

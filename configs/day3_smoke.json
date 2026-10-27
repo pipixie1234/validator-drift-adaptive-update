@@ -1,0 +1,34 @@
+{
+  "seed": 42,
+  "purpose": "day3 engineering smoke only; adapters never become G1/G2/Vrand/Vtarget",
+  "research_plan": "/root/workspace/一周前置实验方案_20261020.md",
+  "research_plan_sha256": "7e12931dfa606f966d2c3d663f3d5061d6e90780c063d2ab013aaf559288cc80",
+  "max_length": {
+    "G": 4096,
+    "V": 8192
+  },
+  "micro_batch": 1,
+  "gradient_accumulation": 8,
+  "optimizer_steps": 2,
+  "examples_per_role": 16,
+  "r": 16,
+  "alpha": 32,
+  "dropout": 0.05,
+  "learning_rate": 0.0001,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "G_selection": "Frozen feedback rule on primary C: whole-question quarantine, no truncated or over-context responses; one random V0-accepted response per question, include longest and15 shuffled others; no gold input.",
+  "V_selection": "Development only;8 natural independently labelled correct+8 wrong, one longest fitting example per label plus7 seeded-shuffled examples with distinct questions within each label; interleave A/B; no source-unresolved or unknown labels.",
+  "train_target": "G response-only; V A/B-only plus template EOS; prompt/padding masked",
+  "no_tensor_truncation": true,
+  "formal_training_started": false,
+  "length_stress": "Before optimizer steps, run one additional loss/backward-only probe on longest completed supplementary valid-question response (V requires a supported independent label); no optimizer step for this probe, gradients cleared. Supplements remain separate from main C and actual16-example smoke selection.",
+  "formal_G_output_budget": "min(3840,4096-exact_prompt_tokens)"
+}

@@ -1,0 +1,3 @@
+﻿split,questions,lexical_pairs,AWL_mean_flip_rate,nonAWL_mean_flip_rate,delta_AWL_minus_nonAWL,question_CI_low,question_CI_high,crossed_CI_low,crossed_CI_high,p_question_signflip,increased_questions,decreased_questions,equal_questions,AWL_higher_lexical_pairs,AWL_lower_lexical_pairs,equal_lexical_pairs,q_BH_2_pools
+A,64,20,0.02109375,0.028125,-0.00703125,-0.014843750000000001,0.0,-0.028125,0.009375,0.11458854114588542,1,7,56,5,6,9,0.22917708229177083
+C,48,20,0.028125,0.035416666666666666,-0.007291666666666667,-0.016666666666666666,0.0020833333333333333,-0.035416666666666666,0.015625,0.251974802519748,1,8,39,5,6,9,0.251974802519748

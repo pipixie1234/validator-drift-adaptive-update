@@ -1,0 +1,5 @@
+﻿stage,responses,questions,correct,wrong,unknown,truncated
+G2_candidates,2392,598,856,1360,176,40
+V0_accepted,1502,511,764,682,56,4
+actual_G3_SFT,511,511,226,266,19,0
+G3_outputs,2392,598,839,1397,156,27
