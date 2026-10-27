@@ -1,9 +1,11 @@
-# 划分清单
+# Split and Selection Manifests
 
-这里保存原数据划分及选择清单的副本；原始路径和SHA256仍以冻结配置为准。数据正文、参考答案文件和运行缓存未放入代码仓库。
+This directory contains copies of the original data split and selection manifests. Frozen configurations retain the authoritative original paths and SHA256 hashes. Dataset contents, reference-answer files, and run caches are stored on the experiment server rather than in this code repository.
 
-- `day1_gsm8k_splits.json` ← `data/manifests/splits.json`
-- `day2_math70.json` ← `data/day2/manifests/math70.json`
-- `day2_selection_locked.json` ← `data/day2/manifests/selection_locked.json`
-- `dapo_selection_locked.json` ← `data/dapo/manifests/selection_locked.json`
-- `dapo_formal_splits.json` ← `data/dapo/formal/manifest.json`
+| Published copy | Original server path |
+|---|---|
+| `day1_gsm8k_splits.json` | `data/manifests/splits.json` |
+| `day2_math70.json` | `data/day2/manifests/math70.json` |
+| `day2_selection_locked.json` | `data/day2/manifests/selection_locked.json` |
+| `dapo_selection_locked.json` | `data/dapo/manifests/selection_locked.json` |
+| `dapo_formal_splits.json` | `data/dapo/formal/manifest.json` |

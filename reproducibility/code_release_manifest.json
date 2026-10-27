@@ -4,7 +4,7 @@
   "scope": "Source, frozen protocols, split manifests and summary reports; model weights, environments, datasets, full runs and ZIP bundles retained locally",
   "manifest_self_excluded": true,
   "file_count_excluding_manifest": 694,
-  "bytes_excluding_manifest": 32584861,
+  "bytes_excluding_manifest": 32587549,
   "files": {
     ".gitattributes": {
       "bytes": 192,
@@ -15,8 +15,8 @@
       "sha256": "3d6ff06dc3f6048a4d3d20a36d3427e7ff68edcf672544dd64fdcbc87ad3c9e4"
     },
     "README.md": {
-      "bytes": 4630,
-      "sha256": "050b723d37215cb17f26c082f82afd6204f6d36376a6a588117d6566921ecf26"
+      "bytes": 5854,
+      "sha256": "59dbc7761c42e2c7cfa57e7092bd835b8e2c0abbcadc460c939260ae1d2d1099"
     },
     "configs/awl_comparison_20261024.json": {
       "bytes": 12994,
@@ -163,8 +163,8 @@
       "sha256": "057c5a557d1df813cbd647e75d3fa665d2bf9e23ca286b71427feff4685715c3"
     },
     "docs/REPRODUCIBILITY.md": {
-      "bytes": 3477,
-      "sha256": "f105748a205447a925af72dff0d005885c707c8cb0fce3d759eb8a2966d74cfd"
+      "bytes": 4380,
+      "sha256": "7c7e8d38d27b3f0de883f58803963cb50cc236512014bf3a7a910622268fb86f"
     },
     "docs/history/README_day3_snapshot.md": {
       "bytes": 8201,
@@ -179,8 +179,8 @@
       "sha256": "5a5858feeaacf6926b35232efd8c53c6f69f929069baa662c4fca0a2b157acff"
     },
     "reports/README.md": {
-      "bytes": 1074,
-      "sha256": "9af0bf59a4ed6a68f9143db8fef3fbb687246de1851f626f127c57e02e7aa801"
+      "bytes": 1447,
+      "sha256": "8b817ee90cabf7bb13c7e69fdad1a47ebfdbe084a796967ad2a62d37cfe8057b"
     },
     "reports/awl_comparison_20261024/AWL_comparison_figures.pdf": {
       "bytes": 62125,
@@ -2187,8 +2187,8 @@
       "sha256": "54abc1f447e13f07afff6784478c2d3993c9778e83a1fe105baf8da353dfd0a2"
     },
     "reproducibility/manifests/README.md": {
-      "bytes": 534,
-      "sha256": "17f62640d1af0c20aef1e984780da72809a1ca12fa764589f02460fabb4620f5"
+      "bytes": 722,
+      "sha256": "76549e32d05efe79f464deaa2ddf67506ae6cb6d22bebe1f626b659b354fb9a4"
     },
     "reproducibility/manifests/dapo_formal_splits.json": {
       "bytes": 150122,
@@ -2782,5 +2782,6 @@
       "bytes": 1729,
       "sha256": "48d9b4252276f255306c204ad6141213c7ad45a8d330a86b0c1c6cf0d753363f"
     }
-  }
+  },
+  "documentation_language": "English repository documentation; Chinese research reports retained"
 }
